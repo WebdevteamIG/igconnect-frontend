@@ -1,0 +1,77 @@
+/* Navbar component */
+#homeTab{
+  color: #29CCB7 !important;
+}
+.navbar-nav .nav-item .nav-link{
+  color: #282828;
+  font-weight: 600;
+}
+/* Home component */
+.headings-container h1{
+  color: #282828;
+  font: normal normal 900 100px/90px Segoe UI;
+  text-shadow: 5px 5px 2px rgba(41,204,183,0.4);
+}
+
+.mybtn{
+color: #fff;
+background: #2BC9B3 0% 0% no-repeat padding-box;
+border-radius:30px;
+display: inline-block;
+font: normal normal bold 1.25rem/45px Segoe UI;
+text-align: center;
+vertical-align: middle;
+user-select: none;
+border: 1px solid transparent;
+padding: .5rem 1rem;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.mybtn:hover{ 
+color: #fff;
+background-color: #23b39f;
+text-decoration: none;
+}
+.mybtn:focus{ 
+  box-shadow: 0 0 0 .2rem #29CCB73D;
+  outline: 0;
+}
+.right-graphics-position{
+  margin-right: 7rem !important;
+  padding-right: 3rem !important;
+}
+.left-graphics-position{
+  margin-left: 7rem !important;
+  padding-left: 3rem !important;
+}
+
+/* Event component */
+#dvEvents h1{
+  text-align: right;
+  font: normal normal 900 50px/60px Segoe UI;
+
+}
+.row{
+  overflow: auto;
+  padding: 22px;
+}
+/* Project component */
+#dvProject h1{
+  text-align: left;
+  font: normal normal 900 50px/60px Segoe UI;
+  /*  */
+}
+#project-text-coloum{
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-left: 90px;
+}
+/* Blog component */
+#dvBlog h1{
+  text-align: right;
+  font: normal normal 900 50px/60px Segoe UI;
+}
+/* footer component */
+
+footer{
+  background-color: #ECECEC;
+}
