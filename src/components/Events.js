@@ -2,11 +2,6 @@ import React, { Component } from 'react'
 
 export default class Events extends Component {
   render() {
-    const mystyle = {
-      // textAlign: right;
-      // font: normal normal 900 93px / 94px Segoe UI;
-
-    };
     return (
       <div>
         <div className="row ">

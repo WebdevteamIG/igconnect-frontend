@@ -85,7 +85,7 @@ export default class Footer extends Component {
                   </li>
                   <li>
                     <p>
-                      <i className="fas fa-envelope mr-3"></i> ig@company.com</p>
+                      <i className="fas fa-envelope mr-3"></i> ig-nitw@student.nitw.ac.in</p>
                   </li>
                   <li>
                     <p>
