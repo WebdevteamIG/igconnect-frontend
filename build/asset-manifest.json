@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da7a04e1.chunk.css",
+    "main.js": "/static/js/main.437e84bc.chunk.js",
+    "main.js.map": "/static/js/main.437e84bc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5e0920cb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5e0920cb.js.map",
+    "static/css/2.2d63d0b4.chunk.css": "/static/css/2.2d63d0b4.chunk.css",
+    "static/js/2.d4ae0181.chunk.js": "/static/js/2.d4ae0181.chunk.js",
+    "static/js/2.d4ae0181.chunk.js.map": "/static/js/2.d4ae0181.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.dacf36416de32a8ad014bd9e16c21849.js": "/precache-manifest.dacf36416de32a8ad014bd9e16c21849.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.2d63d0b4.chunk.css.map": "/static/css/2.2d63d0b4.chunk.css.map",
+    "static/css/main.da7a04e1.chunk.css.map": "/static/css/main.da7a04e1.chunk.css.map",
+    "static/js/2.d4ae0181.chunk.js.LICENSE.txt": "/static/js/2.d4ae0181.chunk.js.LICENSE.txt",
+    "static/media/Gitworkshop.jpeg": "/static/media/Gitworkshop.61a8695d.jpeg",
+    "static/media/OICposter.jpeg": "/static/media/OICposter.34621355.jpeg",
+    "static/media/igpic.png": "/static/media/igpic.6d4b8344.png",
+    "static/media/nitwlogo.png": "/static/media/nitwlogo.db356830.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5e0920cb.js",
+    "static/css/2.2d63d0b4.chunk.css",
+    "static/js/2.d4ae0181.chunk.js",
+    "static/css/main.da7a04e1.chunk.css",
+    "static/js/main.437e84bc.chunk.js"
+  ]
+}
