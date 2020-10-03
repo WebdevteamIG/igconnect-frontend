@@ -38,4 +38,5 @@ jobs:
           script: |
             sudo su
             cd /var/www/html
-            ls
+            git pull origin master
+            sudo service nginx restart
