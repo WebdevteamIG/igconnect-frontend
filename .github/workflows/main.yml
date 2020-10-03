@@ -28,7 +28,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Deploying to ec2
+      - name: Deploying to ec2 build
         uses: appleboy/ssh-action@master
         with: 
           host: ec2-34-237-4-72.compute-1.amazonaws.com
