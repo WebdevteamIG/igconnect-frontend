@@ -3,7 +3,7 @@ import Blog from './Blog'
 import Events from './Events'
 import Project from './Project'
 import Footer from './Footer'
-
+import firstimage from './images/first+image.png'
 import Navbar from "./Navbar";
 
 export default class AboutUs extends Component {
@@ -26,7 +26,7 @@ From assisting innovators in acquiring the skills required to make their idea a 
 
           {/* graphic div */}
           <div className="col-8 text-right ">
-            <img src={`${process.env.PUBLIC_URL}/img/first+image.png`} alt="Innovation garage logo 2" width="320px" height="500px" className="right-graphics-position" />
+            <img src={firstimage} alt="Innovation garage logo 2" width="320px" height="500px" className="right-graphics-position" />
             {/* <img src={`${process.env.PUBLIC_URL}/img/first+image.png`} alt="Innovation garage logo 2" width="487px" height="943px" /> */}
           </div>
         </div>

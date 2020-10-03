@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import eventimage from './images/events+image.png'
 
 export default class Events extends Component {
   render() {
@@ -7,7 +8,7 @@ export default class Events extends Component {
         <div className="row ">
           {/* graphic div */}
           <div className="col-6 text-left">
-            <img src={`${process.env.PUBLIC_URL}/img/events+image.png`} alt="Event Graphics" height="550px"
+            <img src={eventimage} alt="Event Graphics" height="550px"
               className="left-graphics-position" />
 
           </div>

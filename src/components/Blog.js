@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import blogimage from './images/blog+image.png'
 
 export default class Blog extends Component {
   render() {
@@ -7,7 +8,7 @@ export default class Blog extends Component {
         <div className="row">
           {/* graphic div */}
           <div className="col-6 text-left">
-            <img src={`${process.env.PUBLIC_URL}/img/blog+image.png`} alt="Event Graphics" width="650px" height="500px"
+            <img src={blogimage} alt="Event Graphics" width="650px" height="500px"
               className="ml-5" />
 
           </div>

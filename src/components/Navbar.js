@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./main.css";
 import nitw from './nitwlogo.png'
+import iglogo from './images/IG-logo-WITHOUT-BG.png'
+import c4ii from './images/C4II.png'
 
 export default class Navbar extends Component {
   render() {
@@ -10,10 +12,11 @@ export default class Navbar extends Component {
         <nav className="navbar navbar-light navbar-expand-lg" >
           <Link to="/" className="logo " >
           <img src={nitw} alt="Nitw" width="80px" height="80px" />
-            <img src={`${process.env.PUBLIC_URL}/img/IG-logo-WITHOUT-BG.png`} alt="Innovation garage logo 2" width="85px" height="80px" className="ml-3 mr-4" id="ig-logo" />
+            <img src={iglogo} alt="Innovation garage logo 2" width="85px" height="80px" className="ml-3 mr-4" id="ig-logo" />
 
           </Link>
-          <img src={`${process.env.PUBLIC_URL}/img/C4II.png`} alt="Innovation garage logo 2" width="130px" height="85px" />
+          <img src={c4ii} alt="Innovation garage logo 2" width="130px" height="85px" />
+          
 
           <div className="ml-auto mr-4">
             <ul className="navbar-nav " >

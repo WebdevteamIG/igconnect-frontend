@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import projectimage from './images/project+image.png'
 
 // import { ButtonContainer } from "./Button";  project+image.png
 
@@ -20,7 +20,7 @@ export default class Details extends Component {
 
           {/* graphic div */}
           <div className="col-7 text-right">
-            <img src={`${process.env.PUBLIC_URL}/img/project+image.png`} alt="Event Graphics" height="500px" width="650px"
+            <img src={projectimage} alt="Event Graphics" height="500px" width="650px"
               className="ml-5" />
           </div>
         </div>

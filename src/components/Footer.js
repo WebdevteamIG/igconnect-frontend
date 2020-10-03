@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import igrect from './images/Ig+logo+rectangular.png';
+import c4ii from './images/C4II.png'
 
 export default class Footer extends Component {
   render() {
@@ -16,8 +18,8 @@ export default class Footer extends Component {
               {/* <!-- Grid column --> */}
               <div className="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
-                <img src={`${process.env.PUBLIC_URL}/img/Ig+logo+rectangular.png`} alt="Ig+logo+rectangular.png" width="200px" height="80px" className="" />
-                <img src={`${process.env.PUBLIC_URL}/img/C4II.png`} alt="Ig+logo+rectangular.png" width="170px" height="110px" className="ml-3 mt-3" />
+                <img src={igrect} alt="Ig+logo+rectangular.png" width="200px" height="80px" className="" />
+                <img src={c4ii} alt="Ig+logo+rectangular.png" width="170px" height="110px" className="ml-3 mt-3" />
               </div>
               {/* <!-- Grid column --> */}
 
@@ -105,7 +107,7 @@ export default class Footer extends Component {
           <hr />
           {/* <!-- Copyright --> */}
           <div className="footer-copyright text-center py-3 font-weight-bold">© 2020 Copyright:
-          InnovationGarage.com
+          InnovationGarage
       </div>
           {/* <!-- Copyright --> */}
           <br />
