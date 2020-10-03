@@ -38,6 +38,6 @@ jobs:
           script: |
             sudo su
             cd /var/www/html
-            git status
-            git pull origin master
+            sudo git status
+            sudo git pull origin master
             sudo service nginx restart
