@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from "react-router-dom";
 import Blog from './Blog'
 import Events from './Events'
 import Project from './Project'
@@ -34,7 +33,7 @@ From assisting innovators in acquiring the skills required to make their idea a 
 
             <div className="social-icons-container">
               {/* facebook */}
-              <a href="#" className="icon-button">
+              <a href="https://www.facebook.com/TheInnovationGarage" className="icon-button">
                 <i class="fab fa-facebook-f"></i>
               </a>
               {/* insta */}
