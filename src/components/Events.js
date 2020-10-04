@@ -7,14 +7,14 @@ export default class Events extends Component {
       <div>
         <div className="row ">
           {/* graphic div */}
-          <div className="col-6 text-left">
+          <div className="col-lg-6 col-sm-12 ">
             <img src={eventimage} alt="Event Graphics" height="550px"
-              className="left-graphics-position" />
+              className="left-graphics-position img-fluid" />
 
           </div>
 
           {/* text div */}
-          <div className="col-6 mt-5 pr-5">
+          <div className="col-lg-6 col-sm-12 mt-5 pr-5">
             <div className="container" id="dvEvents" >
               <h1 className="text-uppercase">AI, ML, ROBOTICS, HACKING, DESIGN, ETC.</h1>
               <br />

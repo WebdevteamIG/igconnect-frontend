@@ -9,7 +9,7 @@ export default class Details extends Component {
       <div>
         <div className="row">
           {/* text div */}
-          <div className="col-5 pr-5" id="project-text-coloum">
+          <div className="col-lg-5 col-sm-12 pr-5" id="project-text-coloum">
             <div className="container " id="dvProject" >
               <h1 className="text-uppercase">WE MAKE THE FUTURE.</h1>
               <h1 className="text-uppercase"> TODAY.</h1>
@@ -19,9 +19,9 @@ export default class Details extends Component {
           </div>
 
           {/* graphic div */}
-          <div className="col-7 text-right">
-            <img src={projectimage} alt="Event Graphics" height="500px" width="650px"
-              className="ml-5" />
+          <div className="col-lg-7 col-sm-12 text-right mt-5">
+            <img src={projectimage} alt="Project Graphics" height="500px" width="650px"
+              className=" img-fluid" id="projectimage" />
           </div>
         </div>
       </div >

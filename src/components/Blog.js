@@ -7,14 +7,14 @@ export default class Blog extends Component {
       <div>
         <div className="row">
           {/* graphic div */}
-          <div className="col-6 text-left">
-            <img src={blogimage} alt="Event Graphics" width="650px" height="500px"
-              className="ml-5" />
+          <div className="col-lg-6 col-sm-12 text-left">
+            <img src={blogimage} alt="BLog Graphics" width="650px" height="500px"
+              className="img-fluid" id="blogImage" />
 
           </div>
 
           {/* text div */}
-          <div className="col-6 pr-5">
+          <div className="col-lg-6 col-sm-12 pr-5">
             <div className="container mt-3" id="dvBlog" >
               <h1 className="text-uppercase">WE HAVE A VAST COLLECTION OF CONTENT EXPLORE NOW</h1>
             </div>

@@ -19,7 +19,7 @@ export default class Footer extends Component {
               <div className="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
                 <img src={igrect} alt="Ig+logo+rectangular.png" width="200px" height="80px" className="" />
-                <img src={c4ii} alt="Ig+logo+rectangular.png" width="170px" height="110px" className="ml-3 mt-3" />
+                <img src={c4ii} alt="Ig+logo+rectangular.png" width="200px" height="110px" className=" mt-3" />
               </div>
               {/* <!-- Grid column --> */}
 
@@ -46,9 +46,8 @@ export default class Footer extends Component {
               </div>
 
               {/* <!-- Grid column --> */}
-
-              <hr className="clearfix w-100 d-md-none" />
-              {/* <!-- Grid column --> */}
+              {/* blog start */}
+              {/* <hr className="clearfix w-100 d-md-none" />
               <div className="col-md-2 col-lg-2 text-left  my-4">
                 <h5 className="font-weight-bold text-uppercase mb-4 ">BLOG</h5>
                 <ul className="list-unstyled">
@@ -65,9 +64,9 @@ export default class Footer extends Component {
                     <p >REPORT</p>
                   </li>
                 </ul>
+              </div> */}
+              {/* blog end */}
 
-              </div>
-              {/* <!-- Grid column --> */}
               {/* <!-- Grid column --> */}
 
               <hr className="clearfix w-100 d-md-none" />
