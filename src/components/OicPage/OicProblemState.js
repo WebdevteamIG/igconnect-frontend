@@ -56,7 +56,6 @@ export default class OicProblemState extends Component {
 
         </div>
 
-        <button className="btn btn-primary">Register</button>
 
       </div >
     )

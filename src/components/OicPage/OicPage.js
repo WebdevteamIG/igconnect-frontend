@@ -34,6 +34,8 @@ export default class OicPage extends Component {
             <p className="d-inline audioLabel" > A messgae from our esteemed Director:</p>
             <audio className="d-inline ml-3 audioLabel" ref="audio_tag" src={audio} controls />
           </div>
+          
+        <a href="https://ignitw.typeform.com/to/Ihz9RLmH" className="btn btn-primary">Register</a>
           {/* Audio tag end*/}
         </div>
 
