@@ -92,10 +92,10 @@ export default class Footer extends Component {
                     <p>
                       <i className="fas fa-phone mr-3"></i> +9 999 888 77 72</p>
                   </li>
-                  <li>
+                  {/* <li>
                     <p>
                       <i className="fas fa-print mr-3"></i> +9 999 888 77 74</p>
-                  </li>
+                  </li> */}
                 </ul>
 
               </div>
