@@ -11,7 +11,7 @@ export default class OicEventFlow extends Component {
           <div class="row">
             <div class="col-md-12">
               <div class="main-timeline">
-                <a  class="timeline">
+                <a href="#home" class="timeline">
                   <div class="timeline-icon"><i class="material-icons">laptop_mac</i></div>
                   <div class="timeline-content">
                     <h3 class="title">11th October </h3>
@@ -20,7 +20,7 @@ export default class OicEventFlow extends Component {
                                 </p>
                   </div>
                 </a>
-                <a  class="timeline">
+                <a href="#home" class="timeline">
                   <div class="timeline-icon"><i class="material-icons">build</i></div>
                   <div class="timeline-content">
                     <h3 class="title">12th to 14th October and 7th to 9th November</h3>
@@ -30,7 +30,7 @@ export default class OicEventFlow extends Component {
                                 </p>
                   </div>
                 </a>
-                <a  class="timeline">
+                <a href="#home" class="timeline">
                   <div class="timeline-icon"><i class="fas fa-calendar-check"></i></div>
                   <div class="timeline-content">
                     <h3 class="title">15th November</h3>
@@ -40,7 +40,7 @@ export default class OicEventFlow extends Component {
                                 </p>
                   </div>
                 </a>
-                <a class="timeline">
+                <a href="#home" class="timeline">
                   <div class="timeline-icon"><i class="material-icons">emoji_objects</i></div>
                   <div class="timeline-content">
                     <h3 class="title">21st to 22nd November</h3>

@@ -22,7 +22,7 @@ export default class OicPage extends Component {
             <h1 className="heading1 ml-5">OPEN INNOVATION CHALLENGE</h1>
           </div>
           <div className="col-lg-8 col-sm-12 text-right">
-            <img src={oicimage1} alt="oic image 1" width="500px" height="500px" className="img-fluid graphics" />
+            <img src={oicimage1} alt="oic" width="500px" height="500px" className="img-fluid graphics" />
 
           </div>
         </div>

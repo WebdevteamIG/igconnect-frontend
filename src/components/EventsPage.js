@@ -42,7 +42,7 @@ const Events=(props)=>{return (
         <h1 style={heading}>OPEN INNOVATION <br></br>CHALLENGE</h1>
         <p>24-12-2020</p>
         <p>In line with Atma Nirbhar Bharat, CII, NITW is conducting an Open Innovation Challenge for Students and Start-ups for developing apps and toys for children to help in their learning process. The outline of the event has been sent to the MHRD as per the call and this is a brilliant opportunity to impact a lot of the student community on a National level.</p>
-        <a href="/" style={link}>REGISTER NOW</a>
+        <a href="/events/oic" style={link}>Learn more</a>
         <IoIosShareAlt style={share}/>
         </Col>
         <Col xl="4" style={block}>
