@@ -6,6 +6,7 @@ import { IoIosShareAlt } from 'react-icons/io';
 import EventHeader from './EventHeader';
 import EventsCalender from './EventsCalender';
 import Footer from './EventFooter';
+import { Link} from 'react-router-dom'
 const content={
     backgroundColor:"rgb(56,56,56)",
     padding:"15px",
@@ -42,7 +43,7 @@ const Events=(props)=>{return (
         <h1 style={heading}>OPEN INNOVATION <br></br>CHALLENGE</h1>
         <p>24-12-2020</p>
         <p>In line with Atma Nirbhar Bharat, CII, NITW is conducting an Open Innovation Challenge for Students and Start-ups for developing apps and toys for children to help in their learning process. The outline of the event has been sent to the MHRD as per the call and this is a brilliant opportunity to impact a lot of the student community on a National level.</p>
-        <a href="/events/oic" style={link}>Learn more</a>
+        <Link to={`${process.env.PUBLIC_URL}/events/oic`} style={link}>Learn more</Link>
         <IoIosShareAlt style={share}/>
         </Col>
         <Col xl="4" style={block}>
@@ -65,7 +66,7 @@ const Events=(props)=>{return (
 Ever heard the terms fork and clone being used by software developers? It does sound silly, we digress, but Git is one of the most important tools for a software engineer. 
 
 Innovation Garage is here to give you the low down on GitHub and Open Source Tools. We’ll teach you cloning, forking and installing repositories as well as give you an insight on how to participate in Hacktoberfest, a month long celebration of Open Source software.</p>
-        <a href="/" style={link}>REGISTER NOW</a>
+        <Link to={`${process.env.PUBLIC_URL}/`} style={link}>REGISTER NOW</Link>
         <IoIosShareAlt style={share}/>
         </Col>
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Route, Router } from "react-router-dom";
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import logo from "../igLogo.png";
@@ -15,12 +15,12 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Switch>
-          <Route exact path="/cii" component={HomePage} />
-          <Route exact path="/cii/events" component={EventsPage} />
-          <Route exact path="/cii/events/oic" component={OicPage} />
-          <Route exact path="/cii/about" component={AboutUs} />
-        </Switch>
+        <Router basename={'/cii'}>
+          <Route exact path={`${process.env.PUBLIC_URL}/`} component={HomePage} />
+          <Route exact path={`${process.env.PUBLIC_URL}/events`} component={EventsPage} />
+          <Route exact path={`${process.env.PUBLIC_URL}/events/oic`} component={OicPage} />
+          <Route exact path={`${process.env.PUBLIC_URL}/about}`} component={AboutUs} />
+        </Router>
       </React.Fragment>
     );
   }
