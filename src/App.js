@@ -16,10 +16,10 @@ class App extends Component {
     return (
       <React.Fragment>
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/events" component={EventsPage} />
-          <Route exact path="/events/oic" component={OicPage} />
-          <Route exact path="/about" component={AboutUs} />
+          <Route exact path="/cii" component={HomePage} />
+          <Route exact path="/cii/events" component={EventsPage} />
+          <Route exact path="/cii/events/oic" component={OicPage} />
+          <Route exact path="/cii/about" component={AboutUs} />
         </Switch>
       </React.Fragment>
     );
