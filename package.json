@@ -2,12 +2,14 @@
   "name": "catosoft",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/cii/",
   "dependencies": {
     "@syncfusion/ej2-react-schedule": "^18.2.59",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.0",
+    "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.11.0",
@@ -27,7 +29,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://nitw.ac.in/cii",
   "browserslist": {
     "production": [
       ">0.2%",
