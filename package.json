@@ -1,8 +1,8 @@
 {
-  "name": "catosoft",
+  "name": "Innovation garage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/cii/",
+  "homepage": "/cii",
   "dependencies": {
     "@syncfusion/ej2-react-schedule": "^18.2.59",
     "@testing-library/jest-dom": "^4.2.4",

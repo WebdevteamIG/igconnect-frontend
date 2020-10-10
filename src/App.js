@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Router basename={"/cii"}>
+        <Router basename={""}>
             <Route
               exact
               path={`${process.env.PUBLIC_URL}/`}

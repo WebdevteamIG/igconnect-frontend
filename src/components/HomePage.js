@@ -34,15 +34,15 @@ From assisting innovators in acquiring the skills required to make their idea a 
             <div className="social-icons-container">
               {/* facebook */}
               <a href="https://www.facebook.com/TheInnovationGarage" className="icon-button">
-                <i class="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"></i>
               </a>
               {/* insta */}
               <a href="https://www.instagram.com/ig_nitw/" className="icon-button">
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
               </a>
               {/* linkedin */}
               <a href="https://www.instagram.com/ig_nitw/" className="icon-button" id="last-social-icon">
-                <i class="fab fa-linkedin-in "></i>
+                <i className="fab fa-linkedin-in "></i>
               </a>
               {/* <i class="fab fa-twitter-square"></i> */}
             </div>
