@@ -155,3 +155,7 @@ footer{
     right: 0;
   }
  }
+
+ .nav-link:hover {
+   color : blue;
+ }

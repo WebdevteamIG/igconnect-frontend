@@ -15,16 +15,14 @@ export default class Navbar extends Component {
 
           <Link to={`${process.env.PUBLIC_URL}/`} className="logo " >
             <img src={nitw} alt="Nitw" width="80px" height="80px" />
-            <img src={iglogo} alt="Innovation garage logo 2" width="85px" height="80px" className="ml-3 mr-4" id="ig-logo" />
-
+            <img src={iglogo} alt="Innovation garage logo 2" width="70px" height="80px" className="ml-3 mr-4" id="ig-logo" />
+            <img src={c4ii} alt="Innovation garage logo 2" width="130px" height="85px" />
           </Link>
-          <img src={c4ii} alt="Innovation garage logo 2" width="130px" height="85px" />
-
 
           <div className="" id="dvNAvMenu">
             <ul className="navbar-nav " >
               <li className="nav-item " >
-                <Link to={`${process.env.PUBLIC_URL}/`} className="nav-link" id="homeTab" >
+                <Link to={`${process.env.PUBLIC_URL}/`} className="nav-link" >
                   HOME
               </Link>
               </li>
@@ -36,11 +34,6 @@ export default class Navbar extends Component {
               <li className="nav-item ">
                 <Link to={`${process.env.PUBLIC_URL}/about`} className="nav-link">
                   ABOUT
-              </Link>
-              </li>
-              <li className="nav-item ">
-                <Link to="#" className="nav-link">
-                  PROJECTS
               </Link>
               </li>
 

@@ -3,9 +3,9 @@ import { Container, Row, Col } from 'reactstrap';
 import oic from './OICposter.jpeg'
 import git from './Gitworkshop.jpeg'
 import { IoIosShareAlt } from 'react-icons/io';
-import EventHeader from './EventHeader';
+import Navbar from './Navbar'
 import EventsCalender from './EventsCalender';
-import Footer from './EventFooter';
+import Footer from './Footer';
 import { Link} from 'react-router-dom'
 const content={
     backgroundColor:"rgb(56,56,56)",
@@ -35,7 +35,7 @@ const share={
 };
 const Events=(props)=>{return (
     <>
-    <EventHeader />
+    <Navbar />
     <div>
     <Container>
     <Row>

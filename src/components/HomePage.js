@@ -21,7 +21,7 @@ export default class HomePage extends Component {
             </div>
             <p className="ml-3  text-justify" >We are an incubation center that strives to promote innovations that have a direct impact on society, We do this by providing a platform for young and passionate innovators to incubate their startup and assist them at every step.
 From assisting innovators in acquiring the skills required to make their idea a reality to Intellectual Property Rights Cell, We have it all.</p>
-            <button className="mybtn mt-3"> LEARN MORE ABOUT US<i className="fas fa-angle-double-right ml-2"></i></button>
+            {/* <button className="mybtn mt-3"> LEARN MORE ABOUT US<i className="fas fa-angle-double-right ml-2"></i></button> */}
 
           </div>
 

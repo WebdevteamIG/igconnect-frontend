@@ -14,11 +14,16 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Router basename={""}>
+        <Router basename={"/"}>
             <Route
               exact
               path={`${process.env.PUBLIC_URL}/`}
               component={HomePage}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/about`}
+              component={AboutUs}
             />
             <Route
               exact
@@ -29,11 +34,6 @@ class App extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/events/oic`}
               component={OicPage}
-            />
-            <Route
-              exact
-              path={`${process.env.PUBLIC_URL}/about}`}
-              component={AboutUs}
             />
         </Router>
       </React.Fragment>

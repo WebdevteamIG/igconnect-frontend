@@ -15,7 +15,7 @@ export default class Details extends Component {
               <h1 className="text-uppercase"> TODAY.</h1>
 
             </div>
-            <button className="mybtn mt-3 "> VIEW PROJECTS<i className="fas fa-angle-double-right ml-2"></i></button>
+            {/* <button className="mybtn mt-3 "> VIEW PROJECTS<i className="fas fa-angle-double-right ml-2"></i></button> */}
           </div>
 
           {/* graphic div */}

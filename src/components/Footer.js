@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import igrect from './images/Ig+logo+rectangular.png';
-import c4ii from './images/C4II.png'
+import c4ii from './images/C4II.png';
+import {Link} from 'react-router-dom';
 
 export default class Footer extends Component {
   render() {
@@ -18,7 +19,7 @@ export default class Footer extends Component {
               {/* <!-- Grid column --> */}
               <div className="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
-                <img src={igrect} alt="Ig+logo+rectangular.png" width="200px" height="80px" className="" />
+                <img src={igrect} alt="Ig+logo+rectangular.png" width="250px" height="80px" className="" />
                 <img src={c4ii} alt="Ig+logo+rectangular.png" width="200px" height="110px" className=" mt-3" />
               </div>
               {/* <!-- Grid column --> */}
@@ -29,17 +30,13 @@ export default class Footer extends Component {
               <div className="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
 
                 {/* <!-- Links --> */}
-                <h5 className="font-weight-bold text-uppercase mb-4">ABOUT</h5>
 
                 <ul className="list-unstyled">
                   <li>
-                    <p >EVENTS</p>
+                    <Link to={`${process.env.PUBLIC_URL}/about`}>About</Link>
                   </li>
                   <li>
-                    <p >PROJECTS</p>
-                  </li>
-                  <li>
-                    <p >TEAM</p>
+                    <Link to={`${process.env.PUBLIC_URL}/events`}>Events </Link>
                   </li>
                 </ul>
 
@@ -90,7 +87,7 @@ export default class Footer extends Component {
                   </li>
                   <li>
                     <p>
-                      <i className="fas fa-phone mr-3"></i> +9 999 888 77 72</p>
+                      <i className="fas fa-phone mr-3"></i> +91 79 8786 8575</p>
                   </li>
                   {/* <li>
                     <p>

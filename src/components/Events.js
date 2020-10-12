@@ -23,7 +23,7 @@ export default class Events extends Component {
             </div>
             <div className="text-right">
 
-              <button className="mybtn mt-3 "> VIEW EVENTS<i className="fas fa-angle-double-right ml-2"></i></button>
+              {/* <button className="mybtn mt-3 "> VIEW EVENTS<i className="fas fa-angle-double-right ml-2"></i></button> */}
             </div>
           </div>
 
