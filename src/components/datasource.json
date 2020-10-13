@@ -49,10 +49,10 @@
     },
     {
         "Id": 5,
-        "Subject": "Hactober Fest",
+        "Subject": "HacktoberFest",
         "Description": "Group A",
-        "StartTime": "2020-10-07T09:30:00.000Z",
-        "EndTime": "2020-10-07T11:30:00.000Z",
+        "StartTime": "2020-10-01T09:30:00.000Z",
+        "EndTime": "2020-10-01T11:30:00.000Z",
         "StartTimezone": "Europe/Moscow",
         "EndTimezone": "Europe/Moscow",
         "City": "Moscow",
