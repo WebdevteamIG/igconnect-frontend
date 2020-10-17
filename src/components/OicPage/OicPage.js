@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import "./oicPageStyle.css";
 import Navbar from "../Navbar.js"
 import oicimage1 from './oic-image-1.png'
-import audio from './Director-audio.mp3'
-
+import oicvideo from '../media/oicvideo.mp4'
 import OicChallenges from './OicChallenges'
 import OicEventFlow from './OicEventFlow'
 import OicProblemState from './OicProblemState'
@@ -29,14 +28,9 @@ export default class OicPage extends Component {
         <div className="text-center">
           <p className="mx-auto" id="mainHeaderDescription" > In line with Atma Nirbhar Abhiyan, CII, NITW is conducting on Open Innocation Challenge for students and startups for developing apps and toys for children to help in their learning.
          </p>
-          {/* Audio tag */}
-          <div >
-            <p className="d-inline audioLabel" > A messgae from our esteemed Director:</p>
-            <audio className="d-inline ml-3 audioLabel" ref="audio_tag" src={audio} controls />
-          </div>
-          
-        <a href="https://ignitw.typeform.com/to/Ihz9RLmH" className="btn btn-primary">Register</a>
-          {/* Audio tag end*/}
+         <video controls>
+           <source src={oicvideo} type="video/mp4" ></source>Your browser doesnt support video
+         </video>
         </div>
 
 
