@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 import React, { Component } from 'react'
 import igrect from './images/Ig+logo+rectangular.png';
 import c4ii from './images/C4II.png';
-import { Link } from 'react-router-dom';
-=======
-import React, { Component } from "react";
-import igrect from "./images/Ig+logo+rectangular.png";
-import c4ii from "./images/C4II.png";
->>>>>>> b0bc12748ce331def5ab49b4375b59871939702f
 
 export default class Footer extends Component {
   render() {
@@ -42,20 +35,6 @@ export default class Footer extends Component {
 
               {/* <!-- Grid column --> */}
               <div className="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-<<<<<<< HEAD
-
-                <ul className="list-unstyled">
-                  <li>
-                    <h5 className="font-weight-bold text-uppercase mb-4 ">
-                      <Link to={`${process.env.PUBLIC_URL}/about`} className="footer-links">About</Link></h5>
-
-                  </li>
-                  <li>
-                    <h5 className="font-weight-bold text-uppercase mb-4">
-                      <Link to={`${process.env.PUBLIC_URL}/events`} className="footer-links">Events </Link></h5>
-
-                  </li>
-=======
                 {/* <!-- Links --> */}
 
                 <ul className="list-unstyled">
@@ -80,7 +59,6 @@ export default class Footer extends Component {
                   >
                     <i className="fab fa-linkedin-in "></i>
                   </a></li>
->>>>>>> b0bc12748ce331def5ab49b4375b59871939702f
                 </ul>
               </div>
 
