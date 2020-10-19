@@ -8,7 +8,7 @@ import Navbar from "./Navbar";
 import { Link} from 'react-router-dom'
 
 const oicstyle = {
-  color: "red",
+  color: "#23daf7",
   fontSize: "40px",
   textDecoration : "none"
 }
@@ -20,7 +20,7 @@ export default class HomePage extends Component {
         <Navbar />
         <div className="row ">
           <div className="col-lg-12 col-md-12 col-sm-12">
-            <center><Link to={`${process.env.PUBLIC_URL}/events/oic`} style={oicstyle}> Open Innovation Challenge is going on. Do check it out here </Link></center>
+            <center><Link to={`${process.env.PUBLIC_URL}/events/oic`} style={oicstyle}> Register for the All- India Open Innovation Challenge </Link></center>
           </div>
           {/* text div */}
           <div className="col-lg-5 col-sm-12" id="mainHomeDiv">

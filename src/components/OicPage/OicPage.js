@@ -29,9 +29,9 @@ export default class OicPage extends Component {
         <div className="text-center">
           <p className="mx-auto" id="mainHeaderDescription" > In line with Atma Nirbhar Abhiyan, CII, NITW is conducting on Open Innocation Challenge for students and startups for developing apps and toys for children to help in their learning.
          </p>
-         <p>A Message from out Esteemed Director:</p>
+         <p>A Message from our Esteemed Director:</p>
          <img src={directorphoto} alt="NITW Director" width="300px" height="360px" /><br />
-         <audio src={oicvideo} controls={true} autoPlay={true}></audio>
+         <audio src={oicvideo} controls={true}></audio>
         </div>
 
 
