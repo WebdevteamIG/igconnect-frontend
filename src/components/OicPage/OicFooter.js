@@ -16,7 +16,7 @@ export default class OicFooter extends Component {
           <div className="col-lg-6 col-sm-12 text-center" id="secondFooterText">
             <p>For queries, send an email to:
           </p >
-            <i class="fas fa-envelope mr-2"></i><span className="font-weight-bold">hod_cii@nitw.ac.in</span></div>
+            <i className="fas fa-envelope mr-2"></i><span className="font-weight-bold">hod_cii@nitw.ac.in</span></div>
 
         </div>
 

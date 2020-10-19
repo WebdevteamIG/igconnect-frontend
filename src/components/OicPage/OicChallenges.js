@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 
+const prizestyle = {
+  fontSize : "40px",
+  fontWeight : "bold"
+}
+
 export default class OicChallenges extends Component {
   render() {
     return (
@@ -19,7 +24,7 @@ export default class OicChallenges extends Component {
             </div>
             <ol>
               <li>Winners will get the opportunity to incubate their prototype at Center for Innovation and Incubation, NITW. Mentoring, Technology and Business development assistance will be provided.</li>
-              <li>Cash prizes worth 1 Lakh.</li>
+              <li><span style={prizestyle}>Cash prizes worth 1 Lakh.</span></li>
             </ol>
 
           </div>

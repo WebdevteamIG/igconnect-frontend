@@ -5,6 +5,13 @@ import Project from './Project'
 import Footer from './Footer'
 import firstimage from './images/first+image.png'
 import Navbar from "./Navbar";
+import { Link} from 'react-router-dom'
+
+const oicstyle = {
+  color: "#23daf7",
+  fontSize: "40px",
+  textDecoration : "none"
+}
 
 export default class HomePage extends Component {
   render() {
@@ -12,6 +19,9 @@ export default class HomePage extends Component {
       <div>
         <Navbar />
         <div className="row ">
+          <div className="col-lg-12 col-md-12 col-sm-12">
+            <center><Link to={`${process.env.PUBLIC_URL}/events/oic`} style={oicstyle}> Register for the All- India Open Innovation Challenge </Link></center>
+          </div>
           {/* text div */}
           <div className="col-lg-5 col-sm-12" id="mainHomeDiv">
             <div className="headings-container mt-5 pt-2  ">
