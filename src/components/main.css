@@ -72,12 +72,15 @@ text-decoration: none;
   background-color: #FCDD4F;
   margin-right: 5px !important;
 }
-.icon-button .fab{
+.icon-button .fab {
   color: #000000;
   vertical-align: middle;
   font-size: 32px;
   opacity: 1;
   padding-top: .35rem !important;
+}
+.icon-button .fas {
+  font-size: 30px !important;
 }
 #last-social-icon{
   margin-right: 70px !important;
@@ -119,6 +122,12 @@ footer{
   background-color: #ECECEC;
 }
 
+.footer-links{
+  color: #000000;
+}
+.footer-links :hover{
+  color: hsl(0, 0%, 11%);
+}
 /*making all homepage components responsive */
 @media (max-width: 540px) { 
   #mainHomeDiv{

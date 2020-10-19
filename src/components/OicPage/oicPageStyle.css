@@ -7,6 +7,9 @@
   margin-left: 3rem ;
   
 }
+.fas-icon{
+  color: #fff !important;
+}
 .audioLabel{
 vertical-align: middle;
 font-weight: bold;

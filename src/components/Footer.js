@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import igrect from './images/Ig+logo+rectangular.png';
 import c4ii from './images/C4II.png';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default class Footer extends Component {
   render() {
@@ -29,14 +29,16 @@ export default class Footer extends Component {
               {/* <!-- Grid column --> */}
               <div className="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
 
-                {/* <!-- Links --> */}
-
                 <ul className="list-unstyled">
                   <li>
-                    <Link to={`${process.env.PUBLIC_URL}/about`}>About</Link>
+                    <h5 className="font-weight-bold text-uppercase mb-4 ">
+                      <Link to={`${process.env.PUBLIC_URL}/about`} className="footer-links">About</Link></h5>
+
                   </li>
                   <li>
-                    <Link to={`${process.env.PUBLIC_URL}/events`}>Events </Link>
+                    <h5 className="font-weight-bold text-uppercase mb-4">
+                      <Link to={`${process.env.PUBLIC_URL}/events`} className="footer-links">Events </Link></h5>
+
                   </li>
                 </ul>
 

@@ -8,7 +8,7 @@ export default class OicChallenges extends Component {
           <div className="col-lg-6 col-sm-12 ">
             <div className="">
               <i className="material-icons d-inline mr-1">extension</i>
-              <h1 className="commonHeading d-inline">CHALLENGE</h1>
+              <h1 className="commonHeading d-inline">CHALLENGES</h1>
             </div>
             <p>Apps, AI and toys have helped accelerate physical, social and cognitive abilities of children. This innovation challenge aims to extract more such ideas in this field from students and innovators across the country</p>
           </div>
