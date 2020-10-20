@@ -17,6 +17,12 @@ font-weight: bold;
 #mainHeaderDescription{
   width: 500px ;
 }
+.register-btn{
+  text-align: left !important;
+  padding-left: 1.5rem !important;
+  margin-left: 3rem !important;
+}
+
 /* OicChallenges component */
 #OicChallengesRow{
   padding-left: 50px;
@@ -53,10 +59,18 @@ ol li{
 }
 
 @media (max-width: 540px) {
+  .col-sm-12-1{
+    text-align: left
+  }
+  .register-btn{
+    padding-left: .5rem !important;
+    margin-left: 1.5rem !important;
+  }
+  
   .heading1{
-    font: normal normal 900 60px/50px Segoe UI;  
-    margin-left: 0.75rem ;
-    margin-right: 0.75rem ;
+    font: normal normal 900 50px/40px Segoe UI;  
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
   }
   #OicFooter{
     margin-left: 0px;
@@ -75,17 +89,24 @@ ol li{
 .dvParticipant{
   padding: 5px 30px;
 }
- }
+/* event flow timeline responsive*/
+.text-right-align{
+  text-align: left !important;
+}
+.responsive-content{
+  display: none !important;
+}
+}
+/* responsive css end*/
 
 
  /* event flow timeline */
- 
-/* #fluterWorkshop{
-  text-align: right;
-} */
-
-
-
+ .text-right-align{
+   text-align: right;
+ }
+ .responsive-content{
+  display: inline-block;
+}
  a{text-decoration:none}
 .main-timeline{position:relative}
 .main-timeline::before{content:"";width:5px;height:100%;border-radius:20px;margin:0 auto;background:#242922;position:absolute;top:0;left:0;right:0}

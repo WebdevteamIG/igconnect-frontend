@@ -16,10 +16,10 @@ export default class OicPage extends Component {
       <div >
         <Navbar />
         <div className="row">
-          <div className="col-lg-4 col-sm-12 my-auto">
+          <div className="col-lg-4 col-sm-12 my-auto col-sm-12-1">
 
             <h1 className="heading1 ml-5">OPEN INNOVATION CHALLENGE</h1>
-            <div className="mt-4 ml-5 pl-2 text-left">
+            <div className="mt-4  pl-2 text-left register-btn">
               <a href="https://ignitw.typeform.com/to/Ihz9RLmH" type="button" className="mybtn "
                 style={{ lineHeight: "25px" }}>Register for All-India Open Innovation Challenge<i className="fas fa-angle-double-right ml-2 fas-icon"></i></a>
               {/* <button className="mybtn mt-3 "> VIEW EVENTS<i className="fas fa-angle-double-right ml-2"></i></button> */}
@@ -38,7 +38,7 @@ export default class OicPage extends Component {
           <div >
             <img src={directorpic} alt="Director" width="20%" height="30%" />
             <p className="d-inline audioLabel" > A messgae from our esteemed Director:</p>
-            <audio className="d-inline ml-3 mt-2 audioLabel" ref="audio_tag" src={audio} controls />
+            <audio className="d-inline ml-4 mt-2 audioLabel" ref="audio_tag" src={audio} controls type="audio/mpeg" autoplay="false" autostart="false" />
           </div>
 
           {/* Audio tag end*/}

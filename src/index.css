@@ -10,3 +10,8 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 540px) {
+  body {
+  overflow-x: scroll;
+}
+}
