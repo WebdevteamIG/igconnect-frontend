@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import "./oicPageStyle.css";
 import Navbar from "../Navbar.js"
 import oicimage1 from './oic-image-1.png'
-import oicvideo from '../media/Director-audio.mp3'
+import audio from '../media/Director-audio.mp3'
 import OicChallenges from './OicChallenges'
 import OicEventFlow from './OicEventFlow'
 import OicProblemState from './OicProblemState'
 import OicFooter from './OicFooter'
 import Footer from "../Footer.js"
-
+import directorpic from '../media/person.png'
 
 export default class OicPage extends Component {
   render() {
@@ -34,8 +34,14 @@ export default class OicPage extends Component {
         <div className="text-center">
           <p className="mx-auto" id="mainHeaderDescription" > In line with Atma Nirbhar Abhiyan, CII, NITW is conducting on Open Innocation Challenge for students and startups for developing apps and toys for children to help in their learning.
          </p>
-          <p><strong>A Message from our Esteemed Director:</strong></p>
-          <audio src={oicvideo} controls={true}></audio>
+          {/* Audio tag */}
+          <div >
+            <img src={directorpic} alt="Director" width="20%" height="30%" />
+            <p className="d-inline audioLabel" > A messgae from our esteemed Director:</p>
+            <audio className="d-inline ml-3 mt-2 audioLabel" ref="audio_tag" src={audio} controls />
+          </div>
+
+          {/* Audio tag end*/}
         </div>
 
 

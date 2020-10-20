@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import igrect from './images/Ig+logo+rectangular.png';
 import c4ii from './images/C4II.png';
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
+=======
+>>>>>>> 9b56e5130ae3ccb89373660703b4155107788b16
 
 export default class Footer extends Component {
   render() {
