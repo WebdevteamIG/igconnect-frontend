@@ -8,7 +8,7 @@ import OicEventFlow from './OicEventFlow'
 import OicProblemState from './OicProblemState'
 import OicFooter from './OicFooter'
 import Footer from "../Footer.js"
-
+import directorpic from '../media/person.png'
 
 export default class OicPage extends Component {
   render() {
@@ -35,6 +35,7 @@ export default class OicPage extends Component {
          </p>
           {/* Audio tag */}
           <div >
+            <img src={directorpic} alt="Director" width="20%" height="30%" />
             <p className="d-inline audioLabel" > A messgae from our esteemed Director:</p>
             <audio className="d-inline ml-3 mt-2 audioLabel" ref="audio_tag" src={audio} controls />
           </div>
