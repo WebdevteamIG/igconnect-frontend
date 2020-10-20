@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 import React, { Component } from 'react'
 import igrect from './images/Ig+logo+rectangular.png';
 import c4ii from './images/C4II.png';
 import { Link } from 'react-router-dom';
-=======
-import React, { Component } from "react";
-import igrect from "./images/Ig+logo+rectangular.png";
-import c4ii from "./images/C4II.png";
->>>>>>> b0bc12748ce331def5ab49b4375b59871939702f
 
 export default class Footer extends Component {
   render() {
@@ -42,7 +36,6 @@ export default class Footer extends Component {
 
               {/* <!-- Grid column --> */}
               <div className="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-<<<<<<< HEAD
 
                 <ul className="list-unstyled">
                   <li>
@@ -55,32 +48,28 @@ export default class Footer extends Component {
                       <Link to={`${process.env.PUBLIC_URL}/events`} className="footer-links">Events </Link></h5>
 
                   </li>
-=======
-                {/* <!-- Links --> */}
+                  {/* <!-- Links --> */}
 
-                <ul className="list-unstyled">
-                  <li><a
-                    href="https://www.facebook.com/TheInnovationGarage"
-                    className="icon-button"
-                  >
-                    <i className="fab fa-facebook-f"></i>
-                  </a><br /><br /></li>
-                  {/* insta */}
-                  <li><a
-                    href="https://www.instagram.com/ig_nitw/"
-                    className="icon-button"
-                  >
-                    <i className="fab fa-instagram"></i>
-                  </a><br /><br /></li>
-                  {/* linkedin */}
-                  <li><a
-                    href="https://www.instagram.com/ig_nitw/"
-                    className="icon-button"
-                    id="last-social-icon"
-                  >
-                    <i className="fab fa-linkedin-in "></i>
-                  </a></li>
->>>>>>> b0bc12748ce331def5ab49b4375b59871939702f
+                  {/* <ul className="list-unstyled">
+                    <li><a
+                      href="https://www.facebook.com/TheInnovationGarage"
+                      className="icon-button"
+                    >
+                      <i className="fab fa-facebook-f"></i>
+                    </a><br /><br /></li>
+                    <li><a
+                      href="https://www.instagram.com/ig_nitw/"
+                      className="icon-button"
+                    >
+                      <i className="fab fa-instagram"></i>
+                    </a><br /><br /></li>
+                    <li><a
+                      href="https://www.instagram.com/ig_nitw/"
+                      className="icon-button"
+                      id="last-social-icon"
+                    >
+                      <i className="fab fa-linkedin-in "></i>
+                    </a></li> */}
                 </ul>
               </div>
 
@@ -154,6 +143,8 @@ export default class Footer extends Component {
           {/* <!-- Copyright --> */}
           <br />
           <br />
+
+
         </footer>
         {/* <!-- Footer --></div> */}
       </div>
