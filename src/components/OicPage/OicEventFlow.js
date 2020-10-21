@@ -11,7 +11,7 @@ export default class OicEventFlow extends Component {
           <div className="row">
             <div className="col-md-12">
               <div className="main-timeline">
-                <div className="timeline">
+                <a href="/cii/events" className="timeline">
                   <div className="timeline-icon"><i className="material-icons">laptop_mac</i></div>
                   <div className="timeline-content">
                     <h3 className="title">10th October 11:00 AM-1:00 PM </h3>
@@ -20,8 +20,8 @@ export default class OicEventFlow extends Component {
                       An introductory session by a child psychologist to familiarize the participants with the use of AI, Apps, and Games in behavioral and academic learning.
                                 </p>
                   </div>
-                </div>
-                <div href="#" class="timeline" >
+                </a>
+                <a href="/cii/events" class="timeline" >
                   <div class="timeline-icon"><i class="material-icons">build</i></div>
                   <div class="timeline-content text-right-align" id="">
                     <h3 class="title">23th October</h3>
@@ -41,8 +41,8 @@ export default class OicEventFlow extends Component {
 
                     </p>
                   </div>
-                </div>
-                <div href="#" className="timeline">
+                </a>
+                <a href="/cii/events" className="timeline">
                   <div className="timeline-icon"><i className="material-icons">laptop_mac</i></div>
                   {/* <div className="timeline-icon"><i className="fas fa-calendar-check"></i></div> */}
                   <div className="timeline-content">
@@ -55,8 +55,8 @@ export default class OicEventFlow extends Component {
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </p>
                   </div>
-                </div>
-                <div href="#" className="timeline">
+                </a>
+                <a href="/cii/events" className="timeline">
                   <div class="timeline-icon"><i class="material-icons">build</i></div>
 
                   {/* <div className="timeline-icon"><i className="material-icons">laptop_mac</i></div> */}
@@ -70,9 +70,9 @@ export default class OicEventFlow extends Component {
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </p>
                   </div>
-                </div>
+                </a>
                 {/* row end */}
-                <div href="#" className="timeline">
+                <a href="/cii/events" className="timeline">
                   <div className="timeline-icon"><i className="material-icons">laptop_mac</i></div>
                   {/* <div className="timeline-icon"><i className="material-icons">emoji_objects</i></div> */}
                   <div className="timeline-content">
@@ -85,9 +85,9 @@ export default class OicEventFlow extends Component {
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </p>
                   </div>
-                </div>
+                </a>
                 {/* row end here */}
-                <div href="#" className="timeline">
+                <a href="/cii/events" className="timeline">
                   <div className="timeline-icon"><i className="material-icons">emoji_objects</i></div>
                   <div className="timeline-content text-right-align">
                     <h3 className="title">17th November</h3>
@@ -100,7 +100,7 @@ export default class OicEventFlow extends Component {
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </p>
                   </div>
-                </div>
+                </a>
                 {/* <div href="#" className="timeline">
                   <div className="timeline-icon"><i className="material-icons">emoji_objects</i></div>
                   <div className="timeline-content text-right-align">
@@ -114,7 +114,7 @@ export default class OicEventFlow extends Component {
                   </div>
                 </div> */}
                 {/* row end here */}
-                <div href="#" className="timeline">
+                <a href="/cii/events" className="timeline">
                   <div className="timeline-icon"><i className="fas fa-calendar-check"></i></div>
                   {/* <div className="timeline-icon"><i className="material-icons">emoji_objects</i></div> */}
                   <div className="timeline-content">
@@ -123,9 +123,9 @@ export default class OicEventFlow extends Component {
                       <span className="font-weight-bold mb-2">Hackathon</span><br /> Making and Mentoring  <span className="responsive-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </p>
                   </div>
-                </div>
+                </a>
                 {/* row end here */}
-                <div href="#" className="timeline">
+                <a href="/cii/events" className="timeline">
                   <div className="timeline-icon"><i className="fas fa-calendar-check"></i></div>
                   {/* <div className="timeline-icon"><i className="material-icons">emoji_objects</i></div> */}
                   <div className="timeline-content text-right-align">
@@ -139,7 +139,7 @@ export default class OicEventFlow extends Component {
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </p>
                   </div>
-                </div>
+                </a>
                 {/* row end here */}
               </div>
             </div>

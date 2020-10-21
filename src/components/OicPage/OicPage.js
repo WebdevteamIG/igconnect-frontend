@@ -38,7 +38,7 @@ export default class OicPage extends Component {
           <div >
             <img src={directorpic} alt="Director" width="20%" height="30%" />
             <p className="d-inline audioLabel" > A messgae from our esteemed Director:</p>
-            <audio className="d-inline ml-4 mt-2 audioLabel" ref="audio_tag" src={audio} controls type="audio/mpeg" autoplay="false" autostart="false" />
+            <audio className="d-inline ml-4 mt-2 audioLabel" ref="audio_tag" src={audio} controls type="audio/mpeg" autoPlay={false} />
           </div>
 
           {/* Audio tag end*/}
