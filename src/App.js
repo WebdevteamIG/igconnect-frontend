@@ -8,7 +8,8 @@ import { createBrowserHistory } from 'history';
 import HomePage from "./components/HomePage";
 import EventsPage from "./components/EventsPage";
 import AboutUs from "./components/AboutUs";
-import OicPage from "./components/OicPage/OicPage.js";
+import OicPage from "./components/OicPage/OicPage";
+import OICidea from './components/OicPage/OICIdeasubmission';
 
 class App extends Component {
   render() {
@@ -34,6 +35,11 @@ class App extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/events/oic`}
               component={OicPage}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/events/oic/ideasubmission`}
+              component={OICidea}
             />
         </Router>
       </React.Fragment>
