@@ -9,6 +9,7 @@ import OicProblemState from './OicProblemState'
 import OicFooter from './OicFooter'
 import Footer from "../Footer.js"
 import directorpic from '../media/person.png'
+import { Link } from 'react-router-dom';
 
 export default class OicPage extends Component {
   render() {
@@ -22,6 +23,7 @@ export default class OicPage extends Component {
             <div className="mt-4  pl-2 text-left register-btn">
               <a href="https://ignitw.typeform.com/to/Ihz9RLmH" type="button" className="mybtn "
                 style={{ lineHeight: "25px" }}>Register for All-India Open Innovation Challenge<i className="fas fa-angle-double-right ml-2 fas-icon"></i></a>
+              <center><Link to={`${process.env.PUBLIC_URL}/events/oic/ideasubmission`} className="mybtn">Idea Submission</Link></center>
               {/* <button className="mybtn mt-3 "> VIEW EVENTS<i className="fas fa-angle-double-right ml-2"></i></button> */}
             </div >
 
