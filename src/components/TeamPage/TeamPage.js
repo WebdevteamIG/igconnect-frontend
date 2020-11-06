@@ -6,11 +6,13 @@ import PRTeam from "./PRTeam";
 import DesignTeam from "./Design";
 import ECCTeam from "./ECCTeam";
 import AIRteam from "./AIRTeam";
+import Header from './Header';
 
 export default function TeamPage() {
   return (
     <>
       <Navbar />
+      <Header />
       <TechTeam />
       <PRTeam />
       <DesignTeam />

@@ -10,8 +10,6 @@ import malvika from './photos/malvika.jpg';
 import brist from './photos/bristi.jpg';
 
 export default function AIRteam(props){
-
-  const desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor magna libero, sed consequatmauris aliquet in.is placerat, neque neque rutrum lacus, nec luctut, non tristique dolor porttitor. Suspendisse leo libero, facilisis congue velit at, varius iaculis odio. Vestibulum rutrum dignissim fermentum. ";
   const teamName = "AIR Team"
     return (
     <div>
@@ -19,9 +17,9 @@ export default function AIRteam(props){
 
       <Box m={5}><Typography variant="h3" align="left">{teamName}</Typography></Box>
       </div>
-        <Box m={3} p={1} color="white" bgcolor="black">
+        {/* <Box m={3} p={1} color="white" bgcolor="black">
                     <h4>{desc}</h4>
-        </Box>
+        </Box> */}
         <div>
           <Grid>
           <Grid container>            

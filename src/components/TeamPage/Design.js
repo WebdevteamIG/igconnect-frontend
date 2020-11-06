@@ -6,18 +6,16 @@ import TeamMemberCard from './TeamMemberCard';
 import nitin from './photos/nitin.jpg';
 
 export default function DesignTeam(props){
-
-  const desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor magna libero, sed consequatmauris aliquet in.is placerat, neque neque rutrum lacus, nec luctut, non tristique dolor porttitor. Suspendisse leo libero, facilisis congue velit at, varius iaculis odio. Vestibulum rutrum dignissim fermentum. ";
-  const teamName = "Design Team"
+const teamName = "Design Team"
     return (
     <div>
       <div>
        
       <Box m={5} ><Typography variant="h3" align="left">{teamName}</Typography></Box>
       </div>
-        <Box m={3} p={1} color="white" bgcolor="black">
+        {/* <Box m={3} p={1} color="white" bgcolor="black">
                     <h4>{desc}</h4>
-        </Box>
+        </Box> */}
         <div>
           <Grid>
           <Grid container>            
