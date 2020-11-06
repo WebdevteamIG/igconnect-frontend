@@ -29,7 +29,7 @@ export default function TechTeam(props){
             <Grid item xs={12}>
               <Box p={1}> 
                 <Grid container spacing={2}>
-                  <Grid ><TeamMemberCard imageURL={saiteja} name="CH Sai Teja" linkedinURL="https://www.linkedin.com/in/sai-teja-ch-a0a50b18b/" githubURL="https://github.com/saitejach127" email="saitejach127@gmail.com"/></Grid>
+                  <Grid ><TeamMemberCard imageURL={saiteja} name="Ch Sai Teja" linkedinURL="https://www.linkedin.com/in/sai-teja-ch-a0a50b18b/" githubURL="https://github.com/saitejach127" email="saitejach127@gmail.com"/></Grid>
                   <Grid ><TeamMemberCard imageURL={ajeet} name="Ajeet Singh" linkedinURL="https://www.linkedin.com/in/raba-ajeet/" githubURL="https://github.com/raba-ajeet" email="raba.ajeet@gmail.com" /></Grid>
                   <Grid ><TeamMemberCard imageURL={santhi} name="Santhi Kiran Bura" linkedinURL="https://www.linkedin.com/in/santhi-kiran-bura/" githubURL="https://github.com/santhikiranbura" email="santhikiran0802@gmail.com" /></Grid>
                   <Grid ><TeamMemberCard imageURL={somal} name="Somal Chakraborty" linkedinURL="https://www.linkedin.com/in/somal-chakraborty-8752a6189/" githubURL="https://github.com/SomalRudra" email="sc941871@gmail.com" /></Grid>
