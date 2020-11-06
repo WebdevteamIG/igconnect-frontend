@@ -24,20 +24,3 @@ jobs:
           destination-github-username: 'saitejach127'
           destination-repository-name: 'ig_build'
           user-email: saitejach127@gmail.com
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploying to ec2 build
-        uses: appleboy/ssh-action@master
-        with: 
-          host: ec2-34-237-4-72.compute-1.amazonaws.com
-          username: ubuntu
-          key: ${{ secrets.SSH_KEY }}
-          port: 22
-          script: |
-            sudo su
-            cd /var/www/html
-            sudo git status
-            sudo git pull origin master
-            sudo service nginx restart
