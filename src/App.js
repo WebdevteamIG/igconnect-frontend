@@ -11,6 +11,7 @@ import AboutUs from "./components/AboutUs";
 import OicPage from "./components/OicPage/OicPage";
 import OICidea from './components/OicPage/OICIdeasubmission';
 import ideaadmin from './components/OicPage/ideaadmin';
+import TeamPage from './components/TeamPage/TeamPage';
 
 class App extends Component {
   render() {
@@ -31,6 +32,11 @@ class App extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/events`}
               component={EventsPage}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/team`}
+              component={TeamPage}
             />
             <Route
               exact
