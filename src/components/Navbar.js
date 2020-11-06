@@ -26,11 +26,6 @@ export default class Navbar extends Component {
                   HOME
               </Link>
               </li>
-              <li className="nav-item " >
-                <Link to={`${process.env.PUBLIC_URL}/team`} className="nav-link" >
-                  TEAM
-              </Link>
-              </li>
               <li className="nav-item ">
                 <Link to={`${process.env.PUBLIC_URL}/events`} className="nav-link ">
                   EVENTS

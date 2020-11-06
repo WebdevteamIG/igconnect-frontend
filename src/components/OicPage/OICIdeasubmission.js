@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import {database} from '../../Config'
@@ -12,6 +12,7 @@ export default function OICIdeasubmission() {
   const [email, setEmail] = useState("");
   const [idea, setIdea] = useState("");
   const [teamName, setTeamName] = useState("");
+  const submitbtn = useRef(null);
 
   useEffect(() => {
     if(localStorage.getItem("idea")){
@@ -42,6 +43,9 @@ export default function OICIdeasubmission() {
     setName("");
     setIdea("");
     setTeamName("");
+    if(submitbtn){
+      submitbtn.current.setAttribute("disabled", "true");
+    }
   };
 
   return (
@@ -54,7 +58,11 @@ export default function OICIdeasubmission() {
             <h1>Open Innovation Challenge Idea Submission</h1>
             <h3>Instructions for Submission</h3>
             <ol>
-              <li>Instruction 1</li>
+              <li>Fill the below form for submission</li>
+              <li>Only one Team member has to fill the form</li>
+              <li>If you want to attach any Github readme or any other sources, You can paste the links in idea section.</li>
+              <li>After you submit you will be alerted with Idea saved</li>
+              <li>You idea will also be visible in text boxes once you refresh.</li>
             </ol>
             <form id="ideaform" autoComplete="new-password">
               <div className="form-group">
@@ -116,6 +124,7 @@ export default function OICIdeasubmission() {
                 type="submit"
                 className="btn btn-success"
                 onClick={submitIdea}
+                ref={submitbtn}
               >
                 Submit
               </button>
