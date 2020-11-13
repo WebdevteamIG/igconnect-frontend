@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import {database} from '../../Config'
+import emailjs from 'emailjs-com';
 
 const textareastyle = {
   width: "100%",
@@ -24,29 +25,61 @@ export default function OICIdeasubmission() {
     }
   }, [])
 
-  const submitIdea = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    var draftIdea = {};
-    draftIdea.name = name;
-    draftIdea.email = email;
-    draftIdea.idea = idea;
-    draftIdea.teamName = teamName;
-    localStorage.setItem("idea", JSON.stringify(draftIdea));
-    database.ref("teams/" + teamName).set({
-      teamName : teamName,
-      name: name,
-      idea:idea,
-      email : email
-    });
-    alert("Idea saved");
-    setEmail("");
-    setName("");
-    setIdea("");
-    setTeamName("");
-    if(submitbtn){
-      submitbtn.current.setAttribute("disabled", "true");
-    }
-  };
+
+    emailjs.sendForm('idea-confirmation', 'template_meswgni', e.target, 'user_afH6uJhaoCv8BApXtEVTq')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      var draftIdea = {};
+      draftIdea.name = name;
+      draftIdea.email = email;
+      draftIdea.idea = idea;
+      draftIdea.teamName = teamName;
+      localStorage.setItem("idea", JSON.stringify(draftIdea));
+      database.ref("teams/" + teamName).set({
+        teamName : teamName,
+        name: name,
+        idea:idea,
+        email : email
+      });
+      alert("Idea saved");
+      setEmail("");
+      setName("");
+      setIdea("");
+      setTeamName("");
+      if(submitbtn){
+        submitbtn.current.setAttribute("disabled", "true");
+      }
+  }
+
+  // const submitIdea = (e) => {
+  //   e.preventDefault();
+  //   var draftIdea = {};
+  //   draftIdea.name = name;
+  //   draftIdea.email = email;
+  //   draftIdea.idea = idea;
+  //   draftIdea.teamName = teamName;
+  //   localStorage.setItem("idea", JSON.stringify(draftIdea));
+  //   database.ref("teams/" + teamName).set({
+  //     teamName : teamName,
+  //     name: name,
+  //     idea:idea,
+  //     email : email
+  //   });
+  //   alert("Idea saved");
+  //   setEmail("");
+  //   setName("");
+  //   setIdea("");
+  //   setTeamName("");
+  //   if(submitbtn){
+  //     submitbtn.current.setAttribute("disabled", "true");
+  //   }
+  // };
 
   return (
     <>
@@ -64,7 +97,7 @@ export default function OICIdeasubmission() {
               <li>After you submit you will be alerted with Idea saved</li>
               <li>You idea will also be visible in text boxes once you refresh.</li>
             </ol>
-            <form id="ideaform" autoComplete="new-password">
+            <form id="ideaform" autoComplete="new-password" onSubmit={sendEmail}>
               <div className="form-group">
                 <label htmlFor="name">Team Name</label>
                 <input
@@ -73,6 +106,7 @@ export default function OICIdeasubmission() {
                   id="teamName"
                   placeholder="Team Name"
                   value={teamName}
+                  name="teamName"
                   onChange={(e) => {
                     setTeamName(e.target.value);
                   }}
@@ -86,6 +120,7 @@ export default function OICIdeasubmission() {
                   className="form-control"
                   id="name"
                   placeholder="Name"
+                  name="name"
                   value={name}
                   onChange={(e) => {
                     setName(e.target.value);
@@ -101,6 +136,7 @@ export default function OICIdeasubmission() {
                   id="email"
                   placeholder="Email"
                   value={email}
+                  name="email"
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
@@ -114,6 +150,7 @@ export default function OICIdeasubmission() {
                   style={textareastyle}
                   placeholder="Your Awesome Idea"
                   value={idea}
+                  name="idea"
                   onChange={(e) => {
                     setIdea(e.target.value);
                   }}
@@ -123,7 +160,6 @@ export default function OICIdeasubmission() {
               <button
                 type="submit"
                 className="btn btn-success"
-                onClick={submitIdea}
                 ref={submitbtn}
               >
                 Submit

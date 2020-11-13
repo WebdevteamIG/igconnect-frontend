@@ -1,23 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { database } from "../../Config";
 
 export default function Ideaadmin() {
   const [ideas, setIdeas] = useState([]);
-
-  useEffect(() => {
-    database.ref("teams/").once("value", (snap) => {
-      var data = snap.val();
-      var teams = Object.keys(data);
-      var allideas = [];
-      for (var team of teams) {
-        allideas.push(data[team]);
-      }
-      setIdeas(allideas);
-      console.log(ideas);
-    });
-  });
 
   console.log(ideas);
   return (
