@@ -1,0 +1,275 @@
+/* .MainAboutPage{
+  background: red;
+} */
+
+
+
+.Main {
+    text-align: left;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    margin: 40px;
+    font-size: 50px;
+}
+
+.building_image {
+    text-align: right;
+    padding: 50px;
+    margin: 20px;
+    vertical-align: middle;
+    float: left;
+}
+
+.people_icon {
+    padding: 50px;
+    margin: 20px;
+    vertical-align: middle;
+    float: center;
+}
+
+
+
+#heading {
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    margin: 40px;
+    text-align: left;
+    letter-spacing: 0ch;
+    line-height: 0%;
+}
+
+#heading_ig {
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    margin: 40px;
+    text-align: left;
+    letter-spacing: 0ch;
+    line-height: 100%;
+}
+
+#text {
+    color: black;
+    font-family: 'Acme', sans-serif;
+    font-size: 18px;
+    margin: 40px;
+    text-align: left;
+    
+}
+
+#stats_people {
+    color: #ee2b7a;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#stats_event {
+    color: #00a79d;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#stats_contrib {
+    color: #f9921f;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#stats_proj {
+    color: #1c74bc;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#icon_bulb {
+    color: #1c74bc;
+    font-size: 100px;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 75%;
+}
+
+#icon_hand {
+    color: #f9921f;
+    font-size: 68px;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 75%;
+}
+
+#icon_people {
+    color: #ee2b7a;
+    font-size: 100px;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 50%;
+}
+
+#icon_event {
+    color: #00a79d;
+    font-size: 100px;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 75%;
+}
+
+#text_stats {
+    font-size: 22px;
+    text-align: center;
+    line-height: 30%;
+}
+
+.ig_logo {
+    word-wrap: normal;
+}
+
+
+.facilities-heading{
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .facilities-main-heading{  
+    font-size: 50px;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    margin: 40px;
+    text-align: left;
+    letter-spacing: 0ch;
+    line-height: 0%;
+  }
+  
+  .facilities-heading-text{
+    font-size:15px;
+    margin-left: 2%;
+    display: flex;
+    font-weight: 700;
+    flex-direction: column;
+    
+  }
+  
+  .facilites-text{
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 2%;
+    text-align: justify;
+    font-size: 18px;
+    color: black;
+    font-family: 'Acme', sans-serif;
+    font-size: 18px;
+    margin: 40px;
+    text-align: left;
+    
+  }
+  
+  
+  .collab-heading{
+    margin-left:5%;
+    margin-top: 15vh;
+    margin-right: 5%;
+    width: 90vw;  
+    line-height: 50px;
+    font-size: 40px; 
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    margin: 40px;
+    text-align: left;
+  }
+  
+  
+  .roleOfCII-heading{
+    font-size: 50px;
+    margin-top: 5%;
+    margin-left: 5%;  
+    line-height: 50px;
+    font-size: 40px;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    margin: 40px;
+    text-align: left;
+  }
+  
+  .roleOfCII-text{
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+    text-align: justify;
+    color: black;
+    font-family: 'Acme', sans-serif;
+    font-size: 18px;
+    margin: 40px;
+    text-align: left;
+    
+  }
+  
+  .images-box{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    /* justify-content: auto; */
+    /* flex-direction: auto; */
+    flex-wrap: wrap;
+  }
+  .images-box > img{
+    height: 150px;
+  }
+  
+  .doorImage{
+    float:right;
+    margin-right:15%;
+    
+  }
+  
+  
+  @media (max-width:670px) {
+    .facilities-main-heading{
+      font-size: 30px;
+    line-height: 30px;
+    }
+    .facilities-heading-text{
+      margin-right: 10%;
+      font-size:15px;
+      font-weight: 700;
+    }
+    .collab-heading{
+      line-height: 30px;
+      font-size: 30px;
+    }
+    .doorImage{
+      margin-right:30px;
+    }
+    .facilites-text{
+      width:50%;
+      font-size: 15px;
+    }
+    .images-box{
+      width: 90vw;
+    }
+    .doorImage{
+      margin-left: 5%;
+      margin-right: -10%;
+    }
+  }
