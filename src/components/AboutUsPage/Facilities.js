@@ -1,5 +1,5 @@
 import React from 'react';
-import doorImage from '../images/door.jpg';
+import doorImage from './doorImage.jpg';
 import './styles.css';
 
 export const Facilities = () => {
