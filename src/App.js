@@ -10,7 +10,6 @@ import EventsPage from "./components/EventsPage";
 import AboutUs from "./components/AboutUs";
 import OicPage from "./components/OicPage/OicPage";
 import OICidea from './components/OicPage/OICIdeasubmission';
-import ideaadmin from './components/OicPage/ideaadmin';
 import TeamPage from './components/TeamPage/TeamPage';
 
 class App extends Component {
@@ -47,11 +46,6 @@ class App extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/events/oic/ideasubmission`}
               component={OICidea}
-            />
-            <Route
-              exact
-              path={`${process.env.PUBLIC_URL}/events/oic/ideasubmission/adminrandom`}
-              component={ideaadmin}
             />
         </Router>
       </React.Fragment>
