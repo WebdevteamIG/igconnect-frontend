@@ -11,6 +11,7 @@ import AboutUs from "./components/AboutUs";
 import OicPage from "./components/OicPage/OicPage";
 import OICidea from './components/OicPage/OICIdeasubmission';
 import TeamPage from './components/TeamPage/TeamPage';
+import Abouttest from './components/AboutUsPage/index';
 
 class App extends Component {
   render() {
@@ -46,6 +47,11 @@ class App extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/events/oic/ideasubmission`}
               component={OICidea}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/abouttest`}
+              component={Abouttest}
             />
         </Router>
       </React.Fragment>

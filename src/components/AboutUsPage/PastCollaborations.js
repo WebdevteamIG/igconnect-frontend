@@ -1,8 +1,5 @@
 import React from 'react'
 import './styles.css';
-
-
-
 import google from "./collabs/google.png";
 import facebook from "./collabs/facebook.png";
 import servicenow from "./collabs/servicenow.png";
@@ -24,16 +21,16 @@ const PastCollabrations = () => {
                 COLLABRATIONS 
             </div>
             <div className="images-box">
-                <img src={google}/> 
-                <img src={facebook}/> 
-                <img src={servicenow} style={{width:"350px"}}/>
-                <img src={microsoft}/>
-                <img src={yellowMessanger}/>
-                <img src={TIC}/>
-                <img src={texasInstruments}/>
-                <img src={girlscript}/>
-                <img src={LearningLinksFoundation}/>
-                <img src={Merge}/>
+                <img src={google} alt="google logo" /> 
+                <img src={facebook} alt="facebook logo" /> 
+                <img src={servicenow} style={{width:"350px"}} alt="servicenow logo" />
+                <img src={microsoft} alt="microsoft logo"/>
+                <img src={yellowMessanger} alt="yellow meesanger logo"/>
+                <img src={TIC} alt="TIC logo"/>
+                <img src={texasInstruments} alt="texas logo "/>
+                <img src={girlscript} alt="Girlscript logo "/>
+                <img src={LearningLinksFoundation} alt="learninglinks logo "/>
+                <img src={Merge} alt="merge logo "/>
             </div>
         </div>
     )

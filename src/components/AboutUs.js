@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
-import igpic from './igpic.png'
-import {Container} from 'reactstrap'
 import Footer from './Footer'
 import './example.css'
 import IntroAboutUs from './AboutUsPage/IntroAboutUs'

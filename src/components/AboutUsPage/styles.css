@@ -226,8 +226,7 @@
   }
   
   .images-box{
-    margin-left: 5%;
-    margin-right: 5%;
+    
     display: flex;
     /* justify-content: auto; */
     /* flex-direction: auto; */
@@ -235,6 +234,8 @@
   }
   .images-box > img{
     height: 150px;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   
   .doorImage{

@@ -18,7 +18,7 @@ export const Facilities = () => {
                           
                         </span>
                     </span>
-                <img src={doorImage} className="doorImage"  />
+                <img src={doorImage} className="doorImage" alt="door"  />
                     <div className="facilites-text">
 
             The Centre for Innovation and Incubation, popularly known as Dr V.A.Sastry Innovation Centre 
