@@ -7,11 +7,11 @@ import { createBrowserHistory } from 'history';
 
 import HomePage from "./components/HomePage";
 import EventsPage from "./components/EventsPage";
-import AboutUs from "./components/AboutUs";
 import OicPage from "./components/OicPage/OicPage";
 import OICidea from './components/OicPage/OICIdeasubmission';
 import TeamPage from './components/TeamPage/TeamPage';
-import Abouttest from './components/AboutUsPage/index';
+import About from './components/AboutUsPage/index';
+import Hackathon from './components/hackathon/index';
 
 class App extends Component {
   render() {
@@ -26,7 +26,7 @@ class App extends Component {
             <Route
               exact
               path={`${process.env.PUBLIC_URL}/about`}
-              component={AboutUs}
+              component={About}
             />
             <Route
               exact
@@ -50,8 +50,8 @@ class App extends Component {
             />
             <Route
               exact
-              path={`${process.env.PUBLIC_URL}/abouttest`}
-              component={Abouttest}
+              path={`${process.env.PUBLIC_URL}/makerswavehackathon`}
+              component={Hackathon}
             />
         </Router>
       </React.Fragment>
