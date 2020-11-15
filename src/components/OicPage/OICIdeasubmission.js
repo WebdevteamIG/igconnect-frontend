@@ -28,6 +28,11 @@ export default function OICIdeasubmission() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if(teamName == "" || name == "" || email == "" || idea == ""){
+      alert("fill all details");
+      return;
+    } 
+
     emailjs.sendForm('idea-confirmation', 'template_meswgni', e.target, 'user_afH6uJhaoCv8BApXtEVTq')
       .then((result) => {
           console.log(result.text);
