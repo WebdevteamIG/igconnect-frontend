@@ -28,7 +28,7 @@ export default function OICIdeasubmission() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if(teamName == "" || name == "" || email == "" || idea == ""){
+    if(teamName === "" || name === "" || email === "" || idea === ""){
       alert("fill all details");
       return;
     } 
