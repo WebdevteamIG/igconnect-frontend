@@ -32,14 +32,12 @@ export default function OICIdeasubmission() {
       alert("fill all details");
       return;
     } 
-
     emailjs.sendForm('idea-confirmation', 'template_meswgni', e.target, 'user_afH6uJhaoCv8BApXtEVTq')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
-
       var draftIdea = {};
       draftIdea.name = name;
       draftIdea.email = email;
