@@ -15,14 +15,16 @@ vertical-align: middle;
 font-weight: bold;
 }
 #mainHeaderDescription{
-  width: 500px ;
+  width: 550px ;
 }
 .register-btn{
   text-align: left !important;
   padding-left: 1.5rem !important;
   margin-left: 3rem !important;
 }
-
+.btn_Idea_Submission{
+  width: 343px;
+}
 /* OicChallenges component */
 #OicChallengesRow{
   padding-left: 50px;
