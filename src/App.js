@@ -46,17 +46,17 @@ class App extends Component {
             />
             <Route
               exact
-              path={`${process.env.PUBLIC_URL}/events/oic/ideasubmission`}
+              path={`${process.env.PUBLIC_URL}/events/oic/ideasubmissiondone`}
               component={OICidea}
             />
             <Route
               exact
-              path={`${process.env.PUBLIC_URL}/events/oic/ideasubmission/adminrandom`}
+              path={`${process.env.PUBLIC_URL}/events/oic/ideasubmission/all`}
               component={IdeaAdmin}
             />
             <Route
               exact
-              path={`${process.env.PUBLIC_URL}/makerswavehackathon`}
+              path={`${process.env.PUBLIC_URL}/makerswave`}
               component={Hackathon}
             />
         </Router>

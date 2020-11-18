@@ -83,8 +83,10 @@ text-decoration: none;
   font-size: 30px !important;
 }
 #last-social-icon{
-  margin-right: 70px !important;
+  /* margin-right: 70px !important; */
+  margin-top: 1.4rem;
 }
+
 /* Event component */
 #dvEvents h1{
   text-align: right;
@@ -128,6 +130,32 @@ footer{
 .footer-links :hover{
   color: hsl(0, 0%, 11%);
 }
+.scrollTopDiv{
+  flex: 0 0 6.666667%;
+  max-width: 6.666667%;
+  display: flex;
+  flex-direction: column-reverse;
+ }
+.scrollTopIcon{
+  font-size: 4rem !important;
+}
+.scrollTopIcon:hover{
+  /* font-size: 5rem !important; */
+  color: #23b39f;
+}
+.scrollTopIcon:focus{
+box-shadow: 0 0 0 .2rem #29CCB73D;
+}
+
+.scrollTop{
+border: none;
+outline: none;
+background: transparent;
+}
+.para-contact-us{
+  font-size: 1.4rem;
+}
+
 /*making all homepage components responsive */
 @media (max-width: 540px) { 
   #mainHomeDiv{
@@ -163,7 +191,11 @@ footer{
     bottom: 5px;
     right: 0;
   }
+.scrollTopDiv{
+  max-width: none;
  }
+
+ }/* end of media query */
 
  .nav-link:hover {
    color : blue;
