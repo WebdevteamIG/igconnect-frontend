@@ -9,7 +9,6 @@ import OicProblemState from './OicProblemState'
 import OicFooter from './OicFooter'
 import Footer from "../Footer.js"
 import directorpic from '../media/person.png'
-import { Link } from 'react-router-dom';
 
 export default class OicPage extends Component {
   render() {
@@ -23,13 +22,6 @@ export default class OicPage extends Component {
             <div className="mt-4  pl-2 text-left register-btn">
               <p className="mx-auto mt-1" id="mainHeaderDescription" > In line with Atma Nirbhar Abhiyan, CII, NITW is conducting an Open Innocation Challenge for students and startups for developing apps and toys for children to help in their learning.
               </p>
-
-              <a href="https://ignitw.typeform.com/to/Ihz9RLmH" type="button" className="mybtn"
-                style={{ lineHeight: "25px" }}>REGISTER FOR ALL-INDIA OPEN INNOVATION CHALLENGE
-                {/* <i className="fas fa-angle-double-right ml-2 fas-icon"></i> */}
-              </a>
-              <Link to={`${process.env.PUBLIC_URL}/events/oic/ideasubmission`}
-                className="mybtn btn_Idea_Submission mt-1">IDEA SUBMISSION</Link>
 
               {/* <button className="mybtn mt-3 "> VIEW EVENTS<i className="fas fa-angle-double-right ml-2"></i></button> */}
             </div >
