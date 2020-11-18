@@ -1,8 +1,6 @@
 import React from 'react'
 import './styles.css';
 
-import crossImage from "./Cross.png";
-
 
 // Collabrations 
 import google from "./collabs/google.png";

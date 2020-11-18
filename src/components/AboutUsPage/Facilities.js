@@ -26,7 +26,7 @@ export const Facilities = () => {
             </div>
             </div>  
             <div className="doorImage" >
-                <img src={doorImage} alt="Door Image" className="door" />
+                <img src={doorImage} alt="Door " className="door" />
             </div>
         </div>
     )
