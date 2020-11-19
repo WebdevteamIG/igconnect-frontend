@@ -31,6 +31,11 @@ export default class Navbar extends Component {
                   OIC
               </Link>
               </li>
+              <li className="nav-item " >
+                <Link to={`${process.env.PUBLIC_URL}/startups`} className="nav-link" >
+                  START UPS
+              </Link>
+              </li>
               <li className="nav-item ">
                 <Link to={`${process.env.PUBLIC_URL}/events`} className="nav-link ">
                   EVENTS
