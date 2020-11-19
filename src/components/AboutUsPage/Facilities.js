@@ -1,24 +1,15 @@
 import React from 'react';
 import doorImage from './doorImage.jpg';
+import c4iiblack from '../images/CIIBlack.png';
 import './styles.css';
 
 export const Facilities = () => {
     return (
         <div  className="Facilities">
-
-            <div>
-                    <span className="facilities-heading" >
-                        <span className="facilities-main-heading">
-                            FACILITIES AND SPACE AT 
-                        </span>
-                        <span className="facilities-heading-text">
-                                <span>CENTER FOR</span> 
-                                <span>INOVATION </span> 
-                                <span>INCUBATION</span>
-                          
-                        </span>
-                    </span>
-                <img src={doorImage} className="doorImage" alt="door"  />
+            <div style={{alignSelf:"flex-start"}} >
+                <h1 id="heading_ig">FACILITIES AND SPACE AT <span class="tab" />    
+                    <img src={c4iiblack} alt="Innovation Garage Logo" width="200px" height="100px" className="ig_logo"/>
+                </h1>
                     <div className="facilites-text">
 
             The Centre for Innovation and Incubation, popularly known as Dr V.A.Sastry Innovation Centre 
@@ -34,7 +25,9 @@ export const Facilities = () => {
                 <br></br>
             </div>
             </div>  
-            
+            <div className="doorImage" >
+                <img src={doorImage} alt="Door " className="door" />
+            </div>
         </div>
     )
 }

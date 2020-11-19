@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ig from '../images/ig.png'
+import ig from '../images/IGLogo(notext).png'
 
 export class InnovationGarage extends Component {
     render() {
