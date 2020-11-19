@@ -13,6 +13,7 @@ import TeamPage from './components/TeamPage/TeamPage';
 import About from './components/AboutUsPage/index';
 import Hackathon from './components/hackathon/index';
 import IdeaAdmin from './components/OicPage/ideaadmin';
+import Startups from './components/AboutUsPage/startups'
 
 class App extends Component {
   render() {
@@ -51,13 +52,18 @@ class App extends Component {
             />
             <Route
               exact
-              path={`${process.env.PUBLIC_URL}/events/oic/ideasubmission/all`}
+              path={`${process.env.PUBLIC_URL}/events/oic/ideasubmission/adminrandom`}
               component={IdeaAdmin}
             />
             <Route
               exact
               path={`${process.env.PUBLIC_URL}/makerswave`}
               component={Hackathon}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/startups`}
+              component={Startups}
             />
         </Router>
       </React.Fragment>
