@@ -44,7 +44,7 @@ export default function index() {
 
             <div className="schedule">
                 <center>
-                    <h3 className="heading text-design">SCHEDULE</h3>
+                    <h3 className="heading ">SCHEDULE</h3>
                 </center>
                 <div className="schedule-container">
                     <div className="schedule-item">
@@ -77,7 +77,7 @@ export default function index() {
             <div className="incentive-div">
                 
                 <center>
-                    <h3 className="heading text-design">INCENTIVES</h3>
+                    <h3 className="heading ">INCENTIVES</h3>
                 </center>
                 <div className="desc-div">
                     <p className="txt">Prize money, along with the chance for selected team to include at CII and receive mentoring, infrastructure and seed funding.</p>
