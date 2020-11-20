@@ -10,7 +10,7 @@ export default function index() {
             <div className="header">
                 <Navbar />
                 <div className="heading-div">
-                    <h2 className="heading">MLH HACKATHON</h2>
+                    <h2 className="heading">Makeathon</h2>
                     <h2 className="heading-date">MARCH 12-14, 2021</h2>
                 </div>
                 <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -35,7 +35,7 @@ export default function index() {
             </svg>
 
             <div className="desc-div">
-                <p className="desc">The CII is conducting its annual makeathon during the Makerswave 2021, for students and other participants to develop solutions or prototypes for the given problem statements. Participants can use both software or hardware approach to get the solution of the problem statement. This hackathon aims to extract more innovative ideas in the fields from students and innovators accros the country.</p>
+                <p className="desc">The CII is conducting its annual makeathon during the Makerswave 2021, for students and other participants to develop solutions or prototypes for the given problem statements. Participants can use both software or hardware approach to get the solution of the problem statement. This hackathon aims to extract more innovative ideas in the fields from students and innovators across the country.</p>
             </div>
             
             <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
