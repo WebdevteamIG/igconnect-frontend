@@ -5,6 +5,9 @@ import skylark from "./collabs/skylark-dark.png";
 import cusmat from "./collabs/cusmat-dark.png";
 import archphillic from "./collabs/archphillic.jpg";
 import epic from "./collabs/epicbikes.jpeg";
+import kalam from './collabs/kalam.jpg';
+import gbit from './collabs/gbit.png';
+import flowhrex from './collabs/flohrex.png';
 
 export default function Startups() {
   return (
@@ -97,6 +100,57 @@ export default function Startups() {
             </p>
             <a
               href="https://www.linkedin.com/company/epick-bikes/"
+              className="btn btn-primary"
+            >
+              Learn More
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3">
+            <br />
+            <img alt="Archphillic" src={kalam} height="200px" />
+          </div>
+          <div className="col-lg-9 col-md-9">
+            <br />
+            <h3>Kalam Notebooks</h3>
+            <p>
+            A startup that focuses on 'notebook advertising. Successfully sold over 25K Notebooks within a year
+            </p>
+            <a
+              href="https://www.linkedin.com/in/ghanshyam-s/"
+              className="btn btn-primary"
+            >
+              Learn More
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3">
+            <br />
+            <img alt="Archphillic" src={gbit} height="130px" />
+          </div>
+          <div className="col-lg-9 col-md-9">
+            <br />
+            <h3>GBit Studios</h3>
+            <p>
+            GBit Studios consists of a group of individuals who share a common passion and love for making games. We design and develop games from scratch for the various niches of the gaming world, learning and growing together in the process.
+            </p>
+            <a
+              href="https://gbitstudios.com/"
+              className="btn btn-primary"
+            >
+              Learn More
+            </a>
+          </div>
+          <div className="col-lg-3 col-md-3">
+            <br /><br />
+            <img alt="Archphillic" src={flowhrex} height="70px" />
+          </div>
+          <div className="col-lg-9 col-md-9">
+            <br />
+            <h3>Flowhrex Technologies</h3>
+            <p>
+            To make process intensification and flow chemistry, available, applicable and affordable for chemical industries and create a greener impact over Indian Chemical Industry
+            </p>
+            <a
+              href="https://www.flowrhex.com/"
               className="btn btn-primary"
             >
               Learn More
