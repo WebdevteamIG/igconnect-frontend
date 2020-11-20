@@ -1,0 +1,72 @@
+.header {
+    background-color: #2bc9b3;
+}
+
+.heading-div {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.heading {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.heading.text-design{
+    text-decoration: underline #2bc9b3 wavy;
+
+}
+
+.heading-date {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.desc-div {
+    text-align: center;
+    padding: 2.5%;
+}
+
+.desc {
+    color: black;
+    font-size: large;
+    font-weight: 400;
+    padding: 5%;
+}
+
+.incentive-div {
+    background-color: #b4b4b4;
+    padding: 10% 2.5%;
+}
+
+.schedule {
+    background-color: #d4d4d4;
+}
+
+.schedule-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10% 2.5%;
+}
+
+.schedule-item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 2.5%;
+}
+
+.schedule-heading {
+    font-size: large;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #2bc9b3;
+}
+
+.schedule-txt, .txt {
+    color: black;
+    font-size: medium;
+    font-weight: 300;
+}
