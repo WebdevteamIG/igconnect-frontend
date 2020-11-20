@@ -2,23 +2,24 @@
   background: red;
 } */
 
-
-
+.AboutUsIntro{
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.BuildingImage{
+  margin-right: 200px;
+}
 .Main {
     text-align: left;
     color: black;
     font-family: 'Anton', sans-serif;
     margin: 20px;
-    font-size: 50px;
+    font-size: 120px;
 }
 
-.building_image {
-    text-align: right;
-    padding: 50px;
-    margin: 20px;
-    vertical-align: middle;
-    float: left;
-}
+
 
 .people_icon {
     padding: 50px;
@@ -54,18 +55,28 @@
     font-family: 'Acme', sans-serif;
     font-size: 18px;
     margin: 40px;
-  
+    margin-left: 25px;
     text-align: left;
-    
 }
 
 #text > li {
   color: black;
   font-family: 'Acme', sans-serif;
   font-size: 18px;
-
+  margin-left: -22px;
   text-align: left;
 
+}
+.OurMission{
+  margin-left: -25px;
+}
+
+.ig-aboutuspage-text{
+  color: black;
+  font-family: 'Acme', sans-serif;
+  font-size: 18px;
+  margin: 40px;
+  text-align: left;
 }
 
 @media (max-width:670px) {
@@ -80,6 +91,22 @@
   }
   #text{
     margin-left: 10px;
+  }
+  .AboutUsIntro{
+   flex-direction: column;
+  }
+  .building_img{
+    width: 350px;
+    height: 300px;
+  }
+  .Main {
+    font-size: 80px;
+  }
+  .BuildingImage{
+    margin-right: 0px;
+  }
+  .ig-aboutuspage-text{
+    margin-left:20px;
   }
 }
 
@@ -170,7 +197,9 @@
 }
 .doorImage{
   align-self: flex-end;
-  margin-bottom: -70px;
+  margin-bottom: -80px;
+  /* margin-left:-100px; */
+  margin-right: 100px;
 }
 .door{
   width: 400px;
@@ -203,7 +232,7 @@
     
   }
   .facilites-text{
-    width: 40%;
+    width: 75%;
     margin-left:40px;
     margin-top: 2%;
     text-align: justify;
@@ -211,11 +240,11 @@
     color: black;
     font-family: 'Acme', sans-serif;
     font-size: 18px;
-    text-align: left;
+    /* text-align: left; */
     
   }
   
-
+  
   .collab-heading{
     width: 90vw;
     background-image: url(./Cross.png);
@@ -272,7 +301,8 @@
  
   .images-box > img{
     height: 150px;
-    padding:1%;
+    margin: 1%;
+    /* padding:1%; */
   }
   
 
@@ -307,6 +337,7 @@
       align-self: flex-start;
       margin-bottom: 0px;
       margin-left: -20px;
+      margin-right: 0px;
       background-color: green;
     }
     .door{
@@ -315,10 +346,14 @@
     }
     .facilites-text{
       width:50%;
+      margin-left: 20px;
       font-size: 15px;
     }
     .images-box{
       width: 90vw;
       margin-left: 20px;
+     }
+     .roleOfCII-text{
+       margin-left: 20px;
      }
   }

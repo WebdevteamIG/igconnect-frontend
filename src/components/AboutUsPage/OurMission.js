@@ -4,7 +4,7 @@ import './styles.css'
 export class OurMission extends Component {
     render() {
         return (
-            <div class="row" style={{textAlign:'center'}}>
+            <div class="row OurMission" style={{textAlign:'center'}}>
                 <div class="col-md-6">
                     <h1 id="heading">OUR MISSION</h1>
                     <p id="text">
