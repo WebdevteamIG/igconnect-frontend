@@ -13,7 +13,8 @@ import TeamPage from './components/TeamPage/TeamPage';
 import About from './components/AboutUsPage/index';
 import Hackathon from './components/hackathon/index';
 import IdeaAdmin from './components/OicPage/ideaadmin';
-import Startups from './components/AboutUsPage/startups'
+import Startups from './components/AboutUsPage/startups';
+import Leaderboard from './components/Leaderboard/leaderboard';
 
 class App extends Component {
   render() {
@@ -64,6 +65,11 @@ class App extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/startups`}
               component={Startups}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/OpenSourceFest/Leaderboard`}
+              component={Leaderboard}
             />
         </Router>
       </React.Fragment>
