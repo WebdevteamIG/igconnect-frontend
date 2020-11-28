@@ -68,7 +68,7 @@ class App extends Component {
             />
             <Route
               exact
-              path={`${process.env.PUBLIC_URL}/OpenSourceFest/Leaderboard`}
+              path={`${process.env.PUBLIC_URL}/osf/leaderboard`}
               component={Leaderboard}
             />
         </Router>

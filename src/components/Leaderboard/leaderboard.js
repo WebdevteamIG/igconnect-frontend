@@ -3,12 +3,12 @@ import React,{useState, useEffect} from 'react';
 export default function Main() {
 
     const [rows, setRows] = useState([]);
-    const [username, setUserName] = useState("");
-    const [serverFail, setServerFail] = useState(0);
+    const [username] = useState("");
+    const [ setServerFail] = useState(0);
 
 
     useEffect(() => {
-        fetch("https://cors-anywhere.herokuapp.com/https://leaderboardserver.herokuapp.com/score/")
+        fetch("https://leaderboardserver.herokuapp.com/score/")
           .then(res => res.json())
           .then(
             (result) => {
@@ -24,12 +24,12 @@ export default function Main() {
               setServerFail(-1)
             }
           )
-      }, [])
+      })
 
     // How to Sort : 
     // Score, Same score means same rank. 
     rows.sort((a, b) => (a.points < b.points) ? 1 : -1)
-    var bounds = require('binary-search-bounds')
+    // var bounds = require('binary-search-bounds')
     return (
         <>
             <div><br></br></div>
