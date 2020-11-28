@@ -4,7 +4,7 @@ export default function Main() {
 
     const [rows, setRows] = useState([]);
     const [username] = useState("");
-    const [ setServerFail] = useState(0);
+    const [, setServerFail] = useState(0);
 
 
     useEffect(() => {
