@@ -24,7 +24,7 @@ export default function Main() {
               setServerFail(-1)
             }
           )
-      })
+      }, [])
 
     // How to Sort : 
     // Score, Same score means same rank. 
