@@ -24,12 +24,11 @@ export default function Main() {
               setServerFail(-1)
             }
           )
-      })
+      },[])
 
     // How to Sort : 
     // Score, Same score means same rank. 
     rows.sort((a, b) => (a.points < b.points) ? 1 : -1)
-    // var bounds = require('binary-search-bounds')
     return (
         <>
             <div><br></br></div>
