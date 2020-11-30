@@ -1,4 +1,6 @@
 import React,{useState, useEffect} from 'react';
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 export default function Main() {
 
@@ -24,17 +26,14 @@ export default function Main() {
               setServerFail(-1)
             }
           )
-<<<<<<< HEAD
-      },[])
-=======
       }, [])
->>>>>>> a4539c1dacb2e66f4be2513b3e8a89ba63b406d9
 
     // How to Sort : 
     // Score, Same score means same rank. 
     rows.sort((a, b) => (a.points < b.points) ? 1 : -1)
     return (
         <>
+            <Navbar />
             <div><br></br></div>
             <div><br></br></div>
             <div className = "container">
@@ -65,6 +64,7 @@ export default function Main() {
                 </table>
                 </center>
             </div>
+            <Footer />
         </>
     )
 }
