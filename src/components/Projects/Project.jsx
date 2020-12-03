@@ -19,7 +19,7 @@ export default ({ project }) => (
         <div className="col-lg-4 col-md-3">
             {project.projectImage === ""?<center><p style={{marginTop: 100}} >Image not available</p></center>:
                 <center>
-                    <img alt={project.name} src={"/cii" + project.projectImage} height="230px" />
+                    <img alt={project.name} src={"/cii" + project.projectImage} height="200px" />
                 </center>
             }
         </div>
@@ -33,11 +33,11 @@ export default ({ project }) => (
               {project.description}
             </p>
             <br />
-            <p>Status: {project.status}</p>
+            <p>Status: {project.status!=="" ? project.status : "Work in progress"}</p>
             <br />
-            {JSON.stringify(project.moreInfo) === "{}"||project.moreInfo===undefined?null:
+            {/* {JSON.stringify(project.moreInfo) === "{}"||project.moreInfo===undefined?null:
                 <h6 className="tag">{JSON.stringify(project.moreInfo)}</h6>
-            }
+            } */}
             <br />
             {project.Link === ""? null:
                 <a href={project.Link} className="btn btn-primary">
