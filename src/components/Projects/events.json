@@ -372,7 +372,7 @@
                 "name":"Musical Instrument Clusturing",
                 "Link":"",
                 "description":"In Nevrónas, we're working on Clusturing of Musical Instruments. Though promising results have been obtained with convolutional architecture, more extensive research is going on to improve it further.",
-                "projectImage":"Artistic Image Generation using GAN-Nevronas.jpg",
+                "projectImage":"/images/Musical Instrument Clusturing - Nevronas.jpg",
                 "status":"April, 2019- Present",
                 "moreInfo":{}
             }

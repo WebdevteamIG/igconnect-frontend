@@ -17,8 +17,10 @@ export{
 export default ({ project }) => (
     <div className="row">
         <div className="col-lg-4 col-md-3">
-            {project.projectImage === ""?"Image not available.":
-                <img alt={project.name} src={"/cii" + project.projectImage} height="230px" />
+            {project.projectImage === ""?<center><p style={{marginTop: 100}} >Image not available</p></center>:
+                <center>
+                    <img alt={project.name} src={"/cii" + project.projectImage} height="230px" />
+                </center>
             }
         </div>
           <div className="col-lg-8 col-md-9">
