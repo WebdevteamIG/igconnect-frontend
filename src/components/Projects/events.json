@@ -1,0 +1,403 @@
+[
+    {
+        "teamName":"GBit Studios",
+        "description":"GBit Studios is a group which shares a common passion and love for making games. The team is involved in  designing and developing games from scratch for the various niches of the gaming world.  They aspire to expand their horizons in the field of Virtual Reality & Augmented Reality and publish their games to console platforms such as PlayStation, Xbox and Nintendo.",
+        "teamImage":"",
+        "teamsitelink":"",
+        "projects":[
+            {
+                "name":"Zenith",
+                "Link":"https://gbitstudios.com/zenith/",
+                "description":"Mechanization has taken over the world, and in a dash for modernization, the ethnicity of their res publica is now at stake. Accusations have been made and wars have been waged! Will the brave body politic be able to uphold their torch of dignity? Use menacing weapons to fight your way into the fierce battlegrounds.            Wit, speed and zeal will be your only aid when friends turn into foes. Jump, slide, wall run – parkour your way to the flag and battle menacing weapons to fight for the sacred flag of Ze. Complete this quest to conquer the flag once and forever.But remember, the fight will not be easy and the battle shall not spare anyone. Capture the flag, save the res publica and see the body politic pay their obeisance to the hero that they’d hail as ‘Zenith’ or be banished to lifelong tribulation!",
+                "projectImage":"/images/Zenith.png",
+                "status":"work in progress",
+                "moreInfo":{
+                    "genre":"Action,Parkour",
+                    "platform":"Windows,MacOS"
+                }
+            },
+            {
+                "name":"Maya",
+                "Link":"https://gbitstudios.com/maya/",
+                "description":"Hailing from a family devoted to serving the nation, yet unknown to their true profession, Maya wakes up to find herself on a deserted island. A lush green island filled with beautiful flora but devoid of any sort of human traces.From waking up to a heartwarming smell of pancakes with cool breeze rushing in through the window nearby to waking up amidst a deserted island, all Maya can feel is despair and uncertainty. Completely disconnected from the outside world, she now has to do whatever it takes to survive until any sort of help arrives. Lost and broken, she wades her way through to what seems to be a… \n Survive through the desolation, keep your willpower high this isolation and fend off mortal enemies while you discover the hitherto unknown abilities that you possessed. Learn as much as you can, be it assassination or building a house, for you never know what might come in handy in the bewildered future that lies ahead of you.",
+                "projectImage":"/images/Maya.png",
+                "status":"work in progress",
+                "moreInfo":{
+                    "genre":"VR, Simulation, Fantasy",
+                    "platform":"Android, IOS"
+                }
+            },
+            {
+                "name":"3DX Wall ",
+                "Link":"https://gbitstudios.com/3dxwall/",
+                "description":"With simplistic tap control, get ready to find yourselves in a realm of walls that are sworn of secrecy. But like every other vow, this one is meant to be broken too, tap away to find out the secrets hidden behind these walls. Smash through all the baileys and surpass all the fortifications to break all the high scores. Improve your focus! Balancing one ball will only get you so far into the game, unlock the extra hassle to reach greater depths and discover the secrets faster! Juggle between three balls without losing track of any of them to amp up your focus levels.\n\nVibe!\n\nRevamps!\nRanging from textures to health, every wall has a unique identity and secret to protect. Get a revamped look as you progress through the game! ",
+                "projectImage":"/images/3Dx-Wall.png",
+                "status":"Coming Soon",
+                "moreInfo":{
+                    "genre":"Arcade",
+                    "platform":"Android, IOS",
+                    "features":[
+                        "Intuitive controls",
+                        "Simple tap game",
+                        "Focus booster ",
+                        "Every wall is unique", 
+                        "Near perfect physics ",
+                        "Addictive gameplay",
+                        "Catchy Music",
+                        "Retro look"
+                    ]
+                }
+            },
+            {
+                "name":"Net it",
+                "Link":"https://gbitstudios.com/net-it/",
+                "description":"Practice winning all day long! Shoot across the half court line to make it count, and defend your hoop against the CPU genius by blocking the shots before the clock runs out. The cherished game of basketball is now available as a one-on-one shooting and blocking game on your mobiles. This unique take on your all time favourite sport now let’s you experience playing Basketball even through rain and snow! Keep shooting and blocking to perfect your skills with a plethora of available customizations and match duration. With Net It, winning is nothing but a habit that comes with a lot practice through rain and snow!",
+                "projectImage":"/images/Net-It-Screenshot-5.png",
+                "status":"April 23, 2020",
+                "moreInfo":{
+                    "genre":"Casual, Sports",
+                    "platform":"Android, IOS",
+                    "features":["Free Basketball throughout the year",
+                        "Ball customizations available",
+                        "Choice of ideal match duration available",
+                        "Realistic shooting and defending movements",
+                        "Near perfect physics and controls"
+                        ]
+                }
+            },
+            {
+                "name":"Blade Demon ",
+                "Link":"https://gbitstudios.com/blade-demon/",
+                "description":"A merciless warrior fought for the gods with great zeal and bravery. Seeing his devilish nature, the gods of heaven, although thankful and impressed, found his devilish deeds unworthy of deserving a place in their realm of virtue and morality. They collectively decided to banish him from their realm but reward him generously with powers and riches for his devilish deeds of heroism. Dejected and despondent, he set out on his journey to oblivion. There is only so much one can do to exist, living was a concept that he had let go of a long time ago. He was fuelled by madness. The anger he couldn’t contain. The kind of anger that overshadows both reasoning and virtue. He wielded his blade and vowed to rule over the gods and the demons alike to avenge his dishonor. Fuelled by his abyss filled with anger, the demon slayer slays everything that comes in his path to take over both the realms.",
+                "projectImage":"/images/Blade-Demon.png",
+                "status":"Work in Progress",
+                "moreInfo":{
+                    "genre":"Action, Combat, Third Person",
+                    "platform":"Windows,MacOS"
+                }
+            },
+            {
+                "name":"Maximum Velocity",
+                "Link":"https://gbitstudios.com/maximum-velocity/",
+                "description":"Shatter highscores and dash through the endless cosmos with Maximum Velocity! Dash through space using your spacecraft's maximum velocity. Break through barriers and dash through distress! Feel the rush of adrenaline through your veins as you fight against our space manifesto while dashing through the cosmos. Distinct focus will help you break highscores with maximum velocity. Let the dash of adrenaline rush begin!",
+                "projectImage":"/images/Maximum-Velocity.png",
+                "status":" October 21, 2019",
+                "moreInfo":{
+                    "genre":"Arcade, Casual",
+                    "platform":"Android,IOS"
+                }
+            },
+            {
+                "name":"Flick to Kick Rugby",
+                "Link":"https://gbitstudios.com/flick-to-kick-rugby/",
+                "description":"Flick to simulate a kick! Aim to perfection! This unique new take on your standard game of Rugby allows the player to enjoy playing even through rain and snow. Flick your finger to shoot, lob, hurl, fling or kick the rugby through the goal post. Your record breaking kick is just a flick away! Win something every day! With daily and weekly available loot boxes, one can make full use of the opportunity to win coins or unlock cool and otherwise coin heavy customizations in a shorter span of time. Also allows one to test their luck every day. Keep flicking and kicking in any of the 3 available Game Modes to sweep your way to the top of the leaderboard.",
+                "projectImage":"/images/Flick-To-Kick-Rugby.png",
+                "status":"August 1, 2019",
+                "moreInfo":{
+                    "genre":"Casual, Sports",
+                    "platform":"Android, IOS",
+                    "downloads":"1000"
+                }
+            },
+            {
+                "name":"Revenge of the Sudoku",
+                "Link":"https://gbitstudios.com/revenge-of-the-sudoku/",
+                "description":"This twist of Sudoku finally lets you enjoy your favourite number’s game against your friends or against your phone. Players take turns entering numbers on the Sudoku battlefield while keeping the classic rules of the game in mind, with one addition rule – last one standing wins. Be sure to read the in-game help page before getting started.\nBonne chance!\nWhat more could you ask for, it also lets you enjoy it against your phone. Players take turns entering numbers on the Sudoku battlefield while keeping the classic rules of the game in mind, with one addition rule – the last one standing wins.",
+                "projectImage":"/images/Revenge-of-The-Sudoku.png",
+                "status":"July 5, 2019",
+                "moreInfo":{
+                    "genre":" Strategy, Brain Teaser",
+                    "platform":"Android",
+                    "downloads":"500"
+                }
+            },
+            {
+                "name":"Orbit Rush",
+                "Link":" https://gbitstudios.com/orbit-rush/",
+                "description":"The apocalypse is real; the obstreperous black hole is expanding at the speed of light. Your ship is your only safe haven now, and finding a new abode your sole goal. Cruising from one orbit to the other, exploring the hitherto unexplored multiverse, competing against the others affected, beating high scores on your way, the dash to the perfect planet is going to be one hell of a voyage.\nBon Voyage!\nTap to blast into space and escape the apocalyptic black hole with agility!\nFrom an array of available choices, the players are free to customize their ship to suit their mood and help them beat high scores. Revamp the look of the game and continue that winning streak!",
+                "projectImage":"/images/Orbit-Rush.png",
+                "status":"April 19, 2019",
+                "moreInfo":{
+                    "genre":"Adventure, Endless",
+                    "platform":"Android,iOS",
+                    "downloads":"1,000",
+                    "features":[
+                        "Easy and intuitive tap control",
+                        "Addictive game play",
+                        "Catchy customizations available to improve game feel",
+                        "Available for free on phone and tablet"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "teamName":"IG Robotics team",
+        "description":"We are a team of robotics enthusiasts consisting of members with various complimentary  interdisciplinary expertise that converge at the bleeding edge of the field of robotics. We seek to design and actualize innovative and practical robotics solutions to various real world problems.",
+        "teamImage":"",
+        "teamsitelink":"",
+        "projects":[
+            {
+                "name":"Autonomous Wheeled Robot",
+                "Link":"",
+                "description":"It is a mobile robot which moves on wheels and senses it’s immediate surroundings and develops a map using the technique of SLAM and can navigate autonomously.  Use Case include dispensing sanitizer to passersby and wider applications exist",
+                "projectImage":"",
+                "status":"work in progress",
+                "moreInfo":{
+                "goals":["Design a robot that can practically be used within the campus",
+                    "Release the blueprint and source-code for the college"
+                    ]
+                }
+            },
+            {
+                "name":"Intelligent Industrial Warehousing Mechanism",
+                "Link":"",
+                "description":"Recognize discrete objects in a dynamic environment using a unique algorithm with the aim of transferring the objects to their designated places. Use Cases include retrieving and depositing objects within storage facilities. Transferring complex shaped products from production lines into storage and/or delivery lines ",
+                "projectImage":"",
+                "status":"work in progress",
+                "moreInfo":{
+                "goals":["Develop a versatile gripper that can grasp objects of varying shapes and sizes",
+                    "Map the objects and the surroundings with minimal interference",
+                    "Develop an optimal algorithm to achieve the required kinematics"
+                    ]
+                }
+            },
+            {
+                "name":"Bionic Butterfly",
+                "Link":"",
+                "description":"Bionics is the application of biological methods and systems found in nature to study and design of engineering systems and modern technology.",
+                "projectImage":"",
+                "status":"work in progress",
+                "moreInfo":{
+                "goals":["Can use this complex flight maneuverability concepts for aviation.",
+                    "Coordination within the swarm can be used for automation and interaction between the robots for processing of cargo",
+                    "Mimicking the exact size and aesthetics of natural butterfly can be used for infiltration.",
+                    "Most efficient aviation landing systems."
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "teamName":"Multimedia Design and Branding agency",
+        "description":"",
+        "teamImage":"",
+        "teamsitelink":"",
+        "projects":[
+            {
+                "name":" Trademanza",
+                "Link":"",
+                "description":"Trademanza a fintech app that focuses on teaching students how the stock market works via a simulation environment and daily stock market challenges.",
+                "projectImage":"",
+                "status":"",
+                "moreInfo":{
+                    "work":"  Website redesign, User persona and audience segmentation, App interface redesign and social media rebranding",
+                    "head":"Avinash Pulugurtha"
+                }
+            },
+            {
+                "name":"Nest and Spoon",
+                "Link":"",
+                "description":"Nest and Spoon a b2c2c company that sells travel packages to their guides who then resell the package for a profit margin of their own. ",
+                "projectImage":"",
+                "status":"",
+                "moreInfo":{
+                    "work":"   Website redesign, App interface design and development and social media rebranding.",
+                    "head":"Avinash Pulugurtha"
+                }
+            },
+            {
+                "name":" Workerhub",
+                "Link":"",
+                "description":"Workerhub a startup by students of IIM-A that provides a seamless on-demand hire of unskilled labour eliminating the commission loss incurred by firms when they do the same via contractors. Due to the stellar performance of the team, the project head Avinash Pulugurtha was later offered a full-time startup core team position as the head of product development and currently leads a team of 2 IIM Rohtak students.",
+                "projectImage":"",
+                "status":"",
+                "moreInfo":{
+                    "work":"  Website design, App interface and User experience design along with social media marketing.",
+                    "head":"Avinash Pulugurtha"
+                }
+            },
+            {
+                "name":" Saevus",
+                "Link":"",
+                "description":"Saevus India's premium print magazine & web portal, showcasing the best of Photography, Travel, Nature, bio-diversity & wildlife of India and the world. ",
+                "projectImage":"",
+                "status":"",
+                "moreInfo":{
+                    "work":"  Social media and digital graphic content for their flagship event. Saevus eco achievers olympiad 2020",
+                    "head":"Avinash Pulugurtha"
+                }
+            },
+            {
+                "name":"Elite Mart",
+                "Link":"",
+                "description":"Elite Mart is an upcoming chain of supermarkets targetted at tier 2 and tier 3 cities. The USP of elite marts is a door to door delivery and an app interface and website for local residents to order, these features have not yet penetrated their target market and elite mart is leading the transformation. ",
+                "projectImage":"",
+                "status":"",
+                "moreInfo":{
+                    "work":"   Design of User experience and brand identity for elite marts. Logo design, packaging design, store interior design, store banner design, team uniform design, store website design, store app design.",
+                    "head":"Hanumanth and Avinash Pulugurtha "
+                }
+            },
+            {
+                "name":"Grub Shack",
+                "Link":"",
+                "description":"Grub Shack a personal project of the team that is under development for the students of NITW. The app has features that enable students to order food from the stalls present within our campus and notifies students when their order is ready. The app has an inbuilt payment gateway and also has a delivery option should a student choose to get the item delivered to their hostels.",
+                "projectImage":"",
+                "status":"",
+                "moreInfo":{
+                    "work":"",
+                    "head":"Avinash Pulugurtha and Srikanth Burra. "
+                }
+            }
+
+        ]
+
+    },
+    {
+        "teamName":"CybSec",
+        "description":"CybSecNITW is a group of information security enthusiasts from National Institute of Technology, Warangal. We are a bunch of self-motivated security enthusiasts who love learning and sharing their knowledge with everyone genuinely interested in information security.",
+        "teamImage":"",
+        "teamsitelink":"https://cybsec.in/",
+        "projects":[
+            {
+                "name":"Kaumodaki",
+                "Link":" https://github.com/CybSec-NITW/kaumodaki",
+                "description":"Kaumodaki is a tool which has a collection of all the popular hacking tools at one place. Purpose: All in one pentesting tool. Kaumodaki contains all relevant tools which can be used in pen-testing Company Infrastructure.",
+                "projectImage":"/images/Kaumodaki.jpg",
+                "status":"",
+                "moreInfo":{
+                    "Categories":[
+                        "AnonSurf",
+                        "Information Gathering",
+                        "Password Attack",
+                        "Wireless Attack",
+                        "SQL Injection Tools",
+                        "Phishing Attack",
+                        "Web Attack",
+                        "Post Exploitation",
+                        "Forensic Tool",
+                        "Payload Generator",
+                        "Router Exploitation",
+                        "SocialMedia Attack",
+                        "SocialMedia Finder",
+                        "Android Hacking",
+                        "Steganography"
+                    ]
+                }
+            },
+            {
+                "name":"WeaponHEX",
+                "Link":"https://github.com/CybSec-NITW/WeaponHEX",
+                "description":"All in one tool kit for CTF players. Contains all important tools useful for CTFs.",
+                "projectImage":"/images/weapon hex.png",
+                "status":"",
+                "moreInfo":{
+                    "Categories":[
+                        "Reverse Engineering",
+                        "Pwning",
+                        "Forensics",
+                        "Cryptography",
+                        "Web Exploitation",
+                        "OSINT"
+                    ]
+                }
+            },
+            {
+                "name":"BadUSB Implementation",
+                "Link":"",
+                "description":"We CybSec NITW have developed a Bad USB script for social Engineering Attack. This Script uses very low space around 4kB and can be used as a low cost Bad USB. Bad USB is a tool which is detected by a computer as a Keyboard and it executes commands with super fast speed which can be used to exploit PCs. It can be further used for development of our own Rubber Ducky To hack PCs and remote administer them from our servers ",
+                "projectImage":"/images/badUSB Implementation.png",
+                "status":"",
+                "moreInfo":{
+                
+                }
+            },
+            {
+                "name":"Bug Analysing Project",
+                "Link":"",
+                "description":"Team worked on analysis of different types of bugs and reported some of them.",
+                "projectImage":"/images/Bug Analysing Project_1.png",
+                "status":"",
+                "moreInfo":{
+                
+                }
+            },
+            {
+                "name":"Malware Analysis",
+                "Link":"",
+                "description":"We created and analysed some malicious files like virus, trojans and ransomware, and noted functionalities like Darth Vader, KingLockerRansomWare, etc",
+                "projectImage":"",
+                "status":"",
+                "moreInfo":{
+                
+                }
+            },
+            {
+                "name":"CTF Platform",
+                "Link":"",
+                "description":"Since CTFs are very popular in cybersecurity Team CybSec wants to develop their own Open Source CTF platform for effective conduction and management. The Framework will be focusing on ease of use and customizability. The Platform is Currently private and under development.",
+                "projectImage":"/images/CTF Platform.png",
+                "status":"",
+                "moreInfo":{
+                
+                }
+            }
+        ]
+
+    },
+    {
+        "teamName":"Nevrónas",
+        "description":"Nevrónas is a machine Learning research group in National Institute of Technology, Warangal, India, which tries to spread and embrace Machine Learning research culture in the campus. Formed in the year of 2018 by Innovation Garage, NITW, Nevrónas includes a bunch of students experienced in machine learning, pursuing collaborative research on Computer Vision, Natural Language Processing, Speech Processing and Information Retrieval.",
+        "teamImage":"/images/Nevrónas Logo.jpg",
+        "teamsitelink":"https://www.nevronas.in/",
+        "projects":[
+            {
+                "name":" Space Debris Tracking",
+                "Link":"",
+                "description":"This is an ongoing project of Nevrónas. We're trying to use ML models, specifically Recurrent Neural Networks to predict the future position of objects in orbit around the Earth for quick and accurate tracking of space debris.",
+                "projectImage":"/images/Space Debris Tracking-Nevronas.jpg",
+                "status":"February, 2019- Present",
+                "moreInfo":{}
+            },
+            {
+                "name":"Artistic Image Generation using GAN",
+                "Link":"",
+                "description":"In this project we're working on generation of artistic image using Generative Adversarial Network. Considering the existence various types of artistic images, we are focusing on abstract art as of now.",
+                "projectImage":"/images/Artistic Image Generation using GAN-Nevronas.jpg",
+                "status":"May, 2019-Present",
+                "moreInfo":{}
+            },
+            {
+                "name":"Musical Instrument Clusturing",
+                "Link":"",
+                "description":"In Nevrónas, we're working on Clusturing of Musical Instruments. Though promising results have been obtained with convolutional architecture, more extensive research is going on to improve it further.",
+                "projectImage":"/images/Musical Instrument Clusturing - Nevronas.jpg",
+                "status":"April, 2019- Present",
+                "moreInfo":{}
+            }
+
+            
+
+        ]
+
+    },
+    {
+        "teamName":"MEGHAM - CLOUD INFRASTRUCTURE TEAM",
+        "description":"Megham is a cloud based IaaS platform, with a specially designed workflow for academic institutions. Megham takes into account entities like courses/projects and users like students and instructors to create a workflow specially suited for academic environments.\n\nIt will help us in engaging all the developers and coders to host their projects on our own Git network restricted to college only.\n\nIt will also help internal teams and clubs to showcase their events and other things, to engage students",
+        "teamImage":"",
+        "teamsitelink":"",
+        "projects":[
+
+        ]
+
+    },
+    {
+        "teamName":" OPEN SOURCE TEAM",
+        "description":"We are forming a team to build and maintain Open Source projects and grow Open Source culture on campus",
+        "teamImage":"",
+        "teamsitelink":"",
+        "projects":[
+        ]
+    }
+]

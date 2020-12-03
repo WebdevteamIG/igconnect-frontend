@@ -15,6 +15,7 @@ import Hackathon from './components/hackathon/index';
 import IdeaAdmin from './components/OicPage/ideaadmin';
 import Startups from './components/AboutUsPage/startups';
 import Leaderboard from './components/Leaderboard/leaderboard';
+import Projects from './components/Projects/Projects';
 
 class App extends Component {
   render() {
@@ -65,6 +66,11 @@ class App extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/startups`}
               component={Startups}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/projects`}
+              component={Projects}
             />
             <Route
               exact

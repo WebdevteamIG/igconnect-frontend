@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { Link} from 'react-router-dom'
+
+
 import projectimage from './images/project+image.png'
 
 // import { ButtonContainer } from "./Button";  project+image.png
@@ -15,7 +18,7 @@ export default class Details extends Component {
               <h1 className="text-uppercase"> TODAY.</h1>
 
             </div>
-            {/* <button className="mybtn mt-3 "> VIEW PROJECTS<i className="fas fa-angle-double-right ml-2"></i></button> */}
+            <Link to={`${process.env.PUBLIC_URL}/projects`} className="mybtn mt-3 "> VIEW PROJECTS<i className="fas fa-angle-double-right ml-2"></i></Link>
           </div>
 
           {/* graphic div */}
