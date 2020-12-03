@@ -27,8 +27,8 @@ export default class Navbar extends Component {
               </Link>
               </li>
               <li className="nav-item " >
-                <Link to={`${process.env.PUBLIC_URL}/events/oic`} className="nav-link" >
-                  OIC
+                <Link to={`${process.env.PUBLIC_URL}/projects`} className="nav-link" >
+                  PROJECTS
               </Link>
               </li>
               <li className="nav-item " >
