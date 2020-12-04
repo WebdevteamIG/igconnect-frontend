@@ -36,7 +36,12 @@ export default ({ project }) => (
             <p>Status: {project.status}</p>
             <br />
             {JSON.stringify(project.moreInfo) === "{}"||project.moreInfo===undefined?null:
-                <h6 className="tag">{JSON.stringify(project.moreInfo)}</h6>
+                <div className="tag">
+                    {Object.keys(project.moreInfo).map((key)=>(
+                        <h6 className="tag">{key} : {typeof(project.moreInfo[key])==="string"?project.moreInfo[key]:project.moreInfo[key].join(", ")}</h6>
+                    ))}
+
+                </div>
             }
             <br />
             {project.Link === ""? null:
