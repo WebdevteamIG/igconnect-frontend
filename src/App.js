@@ -16,6 +16,7 @@ import IdeaAdmin from './components/OicPage/ideaadmin';
 import Startups from './components/AboutUsPage/startups';
 import Leaderboard from './components/Leaderboard/leaderboard';
 import Projects from './components/Projects/Projects';
+import Userboard from './components/Leaderboard/Userboard';
 
 class App extends Component {
   render() {
@@ -76,6 +77,11 @@ class App extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/osf/leaderboard`}
               component={Leaderboard}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/osf/leaderboard/:username`}
+              component={Userboard}
             />
         </Router>
       </React.Fragment>

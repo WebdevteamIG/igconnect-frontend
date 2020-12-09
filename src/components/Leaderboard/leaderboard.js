@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import {Link} from 'react-router-dom';
 
 export default function Main() {
 
@@ -55,7 +56,7 @@ export default function Main() {
                     {rows.map((row,index) => (
                     <tr className={row.username === username?"table-primary":""} key={index}>
                     <th scope="row">{index+1}</th>
-                    <td>{row.username}</td>
+                    <td><Link to={`${process.env.PUBLIC_URL}/osf/leaderboard/${row.username}`}>{row.username}</Link></td>
                     <td>{row.points}</td>
                     </tr>
                 ))}
