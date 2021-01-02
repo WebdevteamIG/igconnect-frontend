@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
+import './bootstrap.min.css';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserHistory } from 'history';
 // import logo from "../igLogo.png";

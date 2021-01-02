@@ -24,11 +24,7 @@ export default function Main() {
               setServerFail(-1)
             }
           )
-<<<<<<< HEAD
-      },[])
-=======
       }, [])
->>>>>>> a4539c1dacb2e66f4be2513b3e8a89ba63b406d9
 
     // How to Sort : 
     // Score, Same score means same rank. 
@@ -43,7 +39,7 @@ export default function Main() {
             <div><br></br></div>
             <div className="container">
                 <center>
-                <table className="table table-hover">
+                <table class="table table-striped">
                 <thead>
                     <tr>
                     <th scope="col">#</th>
