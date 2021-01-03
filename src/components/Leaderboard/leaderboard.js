@@ -43,21 +43,21 @@ export default function Main() {
             <div><br></br></div>
             <div className="container">
                 <center>
-                <table class="table table-striped">
-                <thead>
+                <table class="table table-hover">
+                <thead class="table-dark">
                     <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Username</th>
-                    <th scope="col">Score</th>
+                    <th scope="col"><center>#</center></th>
+                    <th scope="col"><center>Username</center></th>
+                    <th scope="col"><center>Score</center></th>
                     {/* <th scope="col">Issues Resolved</th> */}
                     </tr>
                 </thead>
                 <tbody>
                     {rows.map((row,index) => (
-                    <tr className={row.username === username?"table-primary":""} key={index}>
-                    <th scope="row">{index+1}</th>
-                    <td><Link to={`${process.env.PUBLIC_URL}/osf/leaderboard/${row.username}`}>{row.username}</Link></td>
-                    <td>{row.points}</td>
+                    <tr className={index+1 <= 3?"table-primary":""} key={index}>
+                    <th scope="row"><center>{index+1}<ion-icon className="trophy"></ion-icon></center></th>
+                    <td><center><Link to={`${process.env.PUBLIC_URL}/osf/leaderboard/${row.username}`}>{row.username}</Link></center></td>
+                    <td><center>{row.points}</center></td>
                     </tr>
                 ))}
                     
