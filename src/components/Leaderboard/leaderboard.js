@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 export default function Main() {
 
     const [rows, setRows] = useState([]);
-    const [username] = useState("");
+    // const [username] = useState("");
     const [, setServerFail] = useState(0);
 
 
@@ -43,8 +43,8 @@ export default function Main() {
             <div><br></br></div>
             <div className="container">
                 <center>
-                <table class="table table-hover">
-                <thead class="table-dark">
+                <table className="table table-hover">
+                <thead className="table-dark">
                     <tr>
                     <th scope="col"><center>#</center></th>
                     <th scope="col"><center>Username</center></th>
