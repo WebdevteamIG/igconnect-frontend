@@ -27,7 +27,7 @@ export default function Userboard() {
         <div>
             <Navbar />
             <br /><br/>
-            <center><h1><a href={`https://github.com/${username}`}>{username}</a> contributed to following repo's</h1></center>
+            <center><h1 className="font-monospace"><a href={`https://github.com/${username}`}>{username}</a> contributed to following repo's</h1></center>
             <div className="container">
                 <center>
                 <table className="table table-hover">

@@ -31,14 +31,25 @@ export default function Main() {
 
     // How to Sort : 
     // Score, Same score means same rank. 
+    let points = new Set()
     rows.sort((a, b) => (a.points < b.points) ? 1 : -1)
+    rows.forEach(row => {
+      
+      points.add(row.points)
+    });
+
+    let pointsArr = Array.from(points)
+    pointsArr.sort((a, b) => (a < b) ? 1 : -1)
+    rows.forEach(row => {
+      row.rank = pointsArr.indexOf(row.points)
+    });
     return (
         <>
             <Navbar />
             <div><br></br></div>
             <div><br></br></div>
             <div className = "container">
-                <center><h2>LeaderBoard</h2></center>
+                <center><h2 className="font-monospace">LeaderBoard</h2></center>
             </div>
             <div><br></br></div>
             <div className="container">
@@ -54,8 +65,8 @@ export default function Main() {
                 </thead>
                 <tbody>
                     {rows.map((row,index) => (
-                    <tr className={index+1 <= 3?"table-primary":""} key={index}>
-                    <th scope="row"><center>{index+1}<ion-icon className="trophy"></ion-icon></center></th>
+                    <tr className={row.rank+1 <= 3?"table-secondary":""} key={index}>
+                    <th scope="row"><center>{row.rank + 1}<ion-icon className="trophy"></ion-icon></center></th>
                     <td><center><Link to={`${process.env.PUBLIC_URL}/osf/leaderboard/${row.username}`}>{row.username}</Link></center></td>
                     <td><center>{row.points}</center></td>
                     </tr>
