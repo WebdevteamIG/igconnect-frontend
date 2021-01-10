@@ -27,7 +27,7 @@ export default function Userboard() {
         <div>
             <Navbar />
             <br /><br/>
-            <center><h1>User : {username} contributed to following repo's</h1></center>
+            <center><h1><a href={`https://github.com/${username}`}>{username}</a> contributed to following repo's</h1></center>
             <div className="container">
                 <center>
                 <table className="table table-hover">
@@ -43,7 +43,7 @@ export default function Userboard() {
                     {repos.map((row,index) => (
                     <tr key={index}>
                     <th scope="row">{index+1}</th>
-                    <td>{row.repo}</td>
+                    <td><a href={`https://github.com/${row.repo}/pulls?q=is%3Apr+author%3A${username}`}>{row.repo}</a></td>
                     <td>{row.points}</td>
                     </tr>
                 ))}
