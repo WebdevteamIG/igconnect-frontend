@@ -31,7 +31,7 @@ export default function Userboard() {
             <div className="container">
                 <center>
                 <table className="table table-hover">
-                <thead class="table-dark">
+                <thead className="table-dark">
                     <tr>
                     <th scope="col">#</th>
                     <th scope="col">Username</th>
