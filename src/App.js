@@ -18,6 +18,7 @@ import Startups from './components/AboutUsPage/startups';
 import Leaderboard from './components/Leaderboard/leaderboard';
 import Projects from './components/Projects/Projects';
 import Userboard from './components/Leaderboard/Userboard';
+import Teamform from './components/forms/Teamform';
 
 class App extends Component {
   render() {
@@ -83,6 +84,11 @@ class App extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/osf/leaderboard/:username`}
               component={Userboard}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/forms/1`}
+              component={Teamform}
             />
         </Router>
       </React.Fragment>
