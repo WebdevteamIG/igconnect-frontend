@@ -55,8 +55,6 @@ export default function Teamform() {
       70, // quality
       0, // rotation
       (uri) => {
-        console.log(uri);
-        console.log(uri.length);
         setImg(uri);
         // You upload logic goes here
       },
