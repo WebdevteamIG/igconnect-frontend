@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import Compress from 'react-image-file-resizer'
 
 export default function Teamform() {
   const [name, setName] = useState("");
@@ -9,10 +8,12 @@ export default function Teamform() {
   const [phone, setPhone] = useState("");
   const [newemail, setnewemai] = useState("");
   const [img, setImg] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [uploading, setUploading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(name, email);
+    setLoading(true);
 
     var data = {
       id: "1sK5MQ-JYacpJEwowvu8yp3GPpSNnM2CoKR28TWCZnTo",
@@ -27,41 +28,25 @@ export default function Teamform() {
       },
       body: JSON.stringify(data),
     });
-    var response = await resp.json();
-    console.log(response);
+    console.log(await resp.json());
+    setLoading(false);
     alert("Submitted");
+    setName("");
+    setEmail("");
+    setPhone("");
+    setnewemai("");
   };
 
-  // const base64calc = (file) => {
-  //     return new Promise((res,rej) => {
-  //         var filereader = new FileReader();
-  //         filereader.readAsDataURL(file);
-  //         filereader.onload = () => {
-  //           res(filereader.result);
-  //         }
-  //         filereader.onerror = (e) => {
-  //             rej(e);
-  //         }
-  //     })
-  // }
-
   const handleUpload = async (e) => {
+    setUploading(true);
     const file = e.target.files[0];
-    Compress.imageFileResizer(
-      file, // the file from input
-      480, // width
-      480, // height
-      "JPEG", // compress format WEBP, JPEG, PNG
-      70, // quality
-      0, // rotation
-      (uri) => {
-        setImg(uri);
-        // You upload logic goes here
-      },
-      "base64" // blob or base64 default base64
-    );
-      // const base64 = await base64calc(e.target.files[0]);
-    //   console.log(base64);
+    const formdata = new FormData();
+    formdata.append("file", file);
+    var resp = await fetch("https://sheetman.herokuapp.com/drive/upload", {method: "POST", body : formdata});
+    var response = await resp.json();
+    console.log(response);
+    setImg(response.id);
+    setUploading(false);
   }
 
   return (
@@ -69,6 +54,8 @@ export default function Teamform() {
       <Navbar />
       <center>
         <h1>Team page missing details</h1>
+        {loading && <h3>Submitting please wait...</h3>}
+        {uploading && <h3>Uploading please wait...</h3>}
       </center>
       <div className="container">
         <div>
