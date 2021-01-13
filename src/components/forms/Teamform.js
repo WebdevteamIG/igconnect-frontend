@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import Compress from 'react-image-file-resizer'
 
 export default function Teamform() {
   const [name, setName] = useState("");
@@ -12,6 +13,7 @@ export default function Teamform() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(name, email);
+
     var data = {
       id: "1sK5MQ-JYacpJEwowvu8yp3GPpSNnM2CoKR28TWCZnTo",
       name: "Data",
@@ -30,23 +32,38 @@ export default function Teamform() {
     alert("Submitted");
   };
 
-  const base64calc = (file) => {
-      return new Promise((res,rej) => {
-          var filereader = new FileReader();
-          filereader.readAsDataURL(file);
-          filereader.onload = () => {
-            res(filereader.result);
-          }
-          filereader.onerror = (e) => {
-              rej(e);
-          }
-      })
-  }
+  // const base64calc = (file) => {
+  //     return new Promise((res,rej) => {
+  //         var filereader = new FileReader();
+  //         filereader.readAsDataURL(file);
+  //         filereader.onload = () => {
+  //           res(filereader.result);
+  //         }
+  //         filereader.onerror = (e) => {
+  //             rej(e);
+  //         }
+  //     })
+  // }
 
   const handleUpload = async (e) => {
-      const base64 = await base64calc(e.target.files[0]);
+    const file = e.target.files[0];
+    Compress.imageFileResizer(
+      file, // the file from input
+      480, // width
+      480, // height
+      "JPEG", // compress format WEBP, JPEG, PNG
+      70, // quality
+      0, // rotation
+      (uri) => {
+        console.log(uri);
+        console.log(uri.length);
+        setImg(uri);
+        // You upload logic goes here
+      },
+      "base64" // blob or base64 default base64
+    );
+      // const base64 = await base64calc(e.target.files[0]);
     //   console.log(base64);
-      setImg(base64);
   }
 
   return (
