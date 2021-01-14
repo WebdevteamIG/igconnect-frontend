@@ -37,12 +37,13 @@ export default function Teamform() {
     setnewemai("");
   };
 
+  // For uploading the file when file is selected
   const handleUpload = async (e) => {
     setUploading(true);
-    const file = e.target.files[0];
-    const formdata = new FormData();
-    formdata.append("file", file);
-    var resp = await fetch("https://sheetman.herokuapp.com/drive/upload", {method: "POST", body : formdata});
+    const file = e.target.files[0];// Get the file
+    const formdata = new FormData(); // Create a formdata object to send in the POST request
+    formdata.append("file", file); // append the file with name as "file"
+    var resp = await fetch("https://sheetman.herokuapp.com/drive/upload", {method: "POST", body : formdata}); //Sending the POST request
     var response = await resp.json();
     console.log(response);
     setImg(response.id);
