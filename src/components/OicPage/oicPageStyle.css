@@ -169,3 +169,9 @@ ol li{
 .main-timeline .timeline-content::before,.main-timeline .timeline:nth-child(2n) .timeline-content::before{left:99px}
 .main-timeline .timeline-content::after,.main-timeline .timeline:nth-child(2n) .timeline-content::after{left:65px}
 }
+
+
+/* Oic Winners */
+th,td{
+  border: 1px solid #dee2e6 !important;
+}
