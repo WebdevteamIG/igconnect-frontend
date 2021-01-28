@@ -21,6 +21,7 @@ import Userboard from "./components/Leaderboard/Userboard";
 import Teamform from "./components/forms/Teamform";
 import Formadmin from "./components/forms/Formadmin";
 import Mainform from "./components/forms/Mainform";
+import Prodcast from "./components/Prodcast/ProdcastMain";
 
 class App extends Component {
   render() {
@@ -103,10 +104,9 @@ class App extends Component {
             component={Mainform}
           />
           <Route
-            path=""
-            component={() => {
-              return <p>Not found</p>;
-            }}
+            exact
+            path={`${process.env.PUBLIC_URL}/podcasts`}
+            component={Prodcast}
           />
         </Router>
       </React.Fragment>

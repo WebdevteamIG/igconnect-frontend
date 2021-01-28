@@ -9,6 +9,8 @@ import OicProblemState from './OicProblemState'
 import OicFooter from './OicFooter'
 import Footer from "../Footer.js"
 import directorpic from '../media/person.png'
+import OicWinners from "./OicWinners"
+
 
 export default class OicPage extends Component {
   render() {
@@ -52,6 +54,7 @@ export default class OicPage extends Component {
         <OicChallenges />
         <OicEventFlow />
         <OicProblemState />
+        <OicWinners />
         <OicFooter />
         <Footer />
       </div >
