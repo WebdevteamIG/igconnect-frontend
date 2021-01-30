@@ -1,55 +1,87 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./main.css";
-import nitw from './nitwlogo.png'
-import iglogo from './images/IG-logo-WITHOUT-BG.png'
-import c4ii from './images/C4II.png'
+import nitw from "./nitwlogo.png";
+import iglogo from "./images/IG-logo-WITHOUT-BG.png";
+import c4ii from "./images/C4II.png";
 
 export default class Navbar extends Component {
   render() {
     return (
       <div className="">
-
-
-        <nav className="navbar navbar-light navbar-expand-lg" >
-
-          <Link to={`${process.env.PUBLIC_URL}/`} className="logo " >
+        <nav className="navbar navbar-light navbar-expand-lg">
+          <Link to={`${process.env.PUBLIC_URL}/`} className="logo ">
             <img src={nitw} alt="Nitw" width="80px" height="80px" />
-            <img src={iglogo} alt="Innovation garage logo 2" width="70px" height="80px" className="ml-3 mr-4" id="ig-logo" />
-            <img src={c4ii} alt="Innovation garage logo 2" width="130px" height="85px" />
+            <img
+              src={iglogo}
+              alt="Innovation garage logo 2"
+              width="70px"
+              height="80px"
+              className="ml-3 mr-4"
+              id="ig-logo"
+            />
+            <img
+              src={c4ii}
+              alt="Innovation garage logo 2"
+              width="130px"
+              height="85px"
+            />
           </Link>
 
           <div className="" id="dvNAvMenu">
-            <ul className="navbar-nav " >
-              <li className="nav-item " >
-                <Link to={`${process.env.PUBLIC_URL}/`} className="nav-link" >
+            <ul className="navbar-nav ">
+              <li className="nav-item ">
+                <Link to={`${process.env.PUBLIC_URL}/`} className="nav-link">
                   HOME
-              </Link>
+                </Link>
               </li>
-              <li className="nav-item " >
-                <Link to={`${process.env.PUBLIC_URL}/projects`} className="nav-link" >
+              <li className="nav-item ">
+                <Link
+                  to={`${process.env.PUBLIC_URL}/projects`}
+                  className="nav-link"
+                >
                   PROJECTS
-              </Link>
+                </Link>
               </li>
-              <li className="nav-item " >
-                <Link to={`${process.env.PUBLIC_URL}/startups`} className="nav-link" >
+              <li className="nav-item ">
+                <Link
+                  to={`${process.env.PUBLIC_URL}/startups`}
+                  className="nav-link"
+                >
                   START UPS
-              </Link>
+                </Link>
               </li>
               <li className="nav-item ">
-                <Link to={`${process.env.PUBLIC_URL}/events`} className="nav-link ">
+                <Link
+                  to={`${process.env.PUBLIC_URL}/events`}
+                  className="nav-link "
+                >
                   EVENTS
-              </Link>
+                </Link>
               </li>
               <li className="nav-item ">
-                <Link to={`${process.env.PUBLIC_URL}/team`} className="nav-link ">
+                <Link
+                  to={`${process.env.PUBLIC_URL}/podcasts`}
+                  className="nav-link "
+                >
+                  PODCASTS
+                </Link>
+              </li>
+              <li className="nav-item ">
+                <Link
+                  to={`${process.env.PUBLIC_URL}/team`}
+                  className="nav-link "
+                >
                   TEAM
-              </Link>
+                </Link>
               </li>
               <li className="nav-item ">
-                <Link to={`${process.env.PUBLIC_URL}/about`} className="nav-link">
+                <Link
+                  to={`${process.env.PUBLIC_URL}/about`}
+                  className="nav-link"
+                >
                   ABOUT
-              </Link>
+                </Link>
               </li>
 
               {/* <li className="nav-item ">
@@ -57,11 +89,9 @@ export default class Navbar extends Component {
                   BLOG
               </Link>
               </li> */}
-
             </ul>
           </div>
         </nav>
-
       </div>
     );
   }

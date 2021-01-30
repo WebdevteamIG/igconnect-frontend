@@ -21,7 +21,7 @@ import Userboard from "./components/Leaderboard/Userboard";
 import Teamform from "./components/forms/Teamform";
 import Formadmin from "./components/forms/Formadmin";
 import Mainform from "./components/forms/Mainform";
-import Prodcast from "./components/Prodcast/ProdcastMain";
+import Prodcast from "./components/Podcast/PodcastMain";
 
 class App extends Component {
   render() {
