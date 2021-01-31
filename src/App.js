@@ -90,13 +90,13 @@ class App extends Component {
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/forms/1`}
-            component={Teamform}
+            path={`${process.env.PUBLIC_URL}/formsadmin`}
+            component={Formadmin}
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/forms/formsadmin`}
-            component={Formadmin}
+            path={`${process.env.PUBLIC_URL}/forms/1`}
+            component={Teamform}
           />
           <Route
             exact
@@ -107,6 +107,12 @@ class App extends Component {
             exact
             path={`${process.env.PUBLIC_URL}/podcasts`}
             component={Prodcast}
+          />
+          <Route
+            path={`${process.env.PUBLIC_URL}/*`}
+            component={() => {
+              return <h1>Not found</h1>;
+            }}
           />
         </Router>
       </React.Fragment>
