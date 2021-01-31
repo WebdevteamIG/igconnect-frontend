@@ -108,12 +108,6 @@ class App extends Component {
             path={`${process.env.PUBLIC_URL}/podcasts`}
             component={Prodcast}
           />
-          <Route
-            path={`${process.env.PUBLIC_URL}/*`}
-            component={() => {
-              return <h1>Not found</h1>;
-            }}
-          />
         </Router>
       </React.Fragment>
     );
