@@ -22,6 +22,7 @@ import Teamform from "./components/forms/Teamform";
 import Formadmin from "./components/forms/Formadmin";
 import Mainform from "./components/forms/Mainform";
 import Prodcast from "./components/Podcast/PodcastMain";
+import Cynuxsecurity from './components/Projects/Cynuxsecurity';
 
 class App extends Component {
   render() {
@@ -102,6 +103,11 @@ class App extends Component {
             exact
             path={`${process.env.PUBLIC_URL}/forms/:formid`}
             component={Mainform}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/cynuxsecurity`}
+            component={Cynuxsecurity}
           />
           <Route
             exact
