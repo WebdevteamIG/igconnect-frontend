@@ -23,6 +23,7 @@ import Formadmin from "./components/forms/Formadmin";
 import Mainform from "./components/forms/Mainform";
 import Prodcast from "./components/Podcast/PodcastMain";
 import Cynuxsecurity from './components/Projects/Cynuxsecurity';
+import Registerstartup from './components/Registerstartup';
 
 class App extends Component {
   render() {
@@ -113,6 +114,11 @@ class App extends Component {
             exact
             path={`${process.env.PUBLIC_URL}/podcasts`}
             component={Prodcast}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/registerstartup`}
+            component={Registerstartup}
           />
         </Router>
       </React.Fragment>
