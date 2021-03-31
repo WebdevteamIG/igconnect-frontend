@@ -10,6 +10,7 @@ export default function Formadmin() {
   const [required, setRequired] = useState(false);
   const [title, setTitle] = useState("");
   const [allforms, setAllforms] = useState([]);
+  const [login, setLogin] = useState(false);
 
   const makevisible = () => {
     visible ? setVisible(false) : setVisible(true);
@@ -30,7 +31,13 @@ export default function Formadmin() {
       console.log(response);
       setAllforms(response.values);
     }
-    getForms();
+    var password = prompt("Password please");
+    if(window.forge_sha256(password) === "ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae"){
+      getForms();
+      setLogin(true);
+    } else {
+      setLogin(false);
+    }
   }, []);
 
   const submitData = async () => {
@@ -73,7 +80,8 @@ export default function Formadmin() {
   return (
     <div>
       <Navbar />
-      <center>
+      {login && <div>
+        <center>
         <h1>Admin panel to create and manage all forms</h1> <br />
         <br />
         <table className="table container">
@@ -186,6 +194,8 @@ export default function Formadmin() {
       )}
       <br />
       <br />
+        </div>}
+        {!login && <center><h1>Access Denied. Get Out</h1></center>}
       <Footer />
     </div>
   );
