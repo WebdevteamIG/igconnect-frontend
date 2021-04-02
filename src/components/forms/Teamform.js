@@ -21,7 +21,7 @@ export default function Teamform() {
       ncells: 3,
       values: [name, newemail, email, phone, img],
     };
-    var resp = await fetch("https://sheetman.herokuapp.com/sheets/append", {
+    var resp = await fetch("https://sheetman.glitch.me/sheets/append", {
       method: "POST",
       headers : {
         'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ export default function Teamform() {
     const file = e.target.files[0];// Get the file
     const formdata = new FormData(); // Create a formdata object to send in the POST request
     formdata.append("file", file); // append the file with name as "file"
-    var resp = await fetch("https://sheetman.herokuapp.com/drive/upload", {method: "POST", body : formdata}); //Sending the POST request
+    var resp = await fetch("https://sheetman.glitch.me/drive/upload", {method: "POST", body : formdata}); //Sending the POST request
     var response = await resp.json();
     console.log(response);
     setImg(response.id);

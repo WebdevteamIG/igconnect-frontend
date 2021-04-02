@@ -10,6 +10,7 @@ export default function Mainform() {
   const [sheetId, setSheetId] = useState("");
   const [exists, setExists] = useState(true);
   const [submitted, setSubmitted] = useState(false);
+  const [uploading, setUploading] = useState(false);
 
   useEffect(() => {
     const getData = async () => {
@@ -34,11 +35,29 @@ export default function Mainform() {
     }
   }, [formid]);
 
+  const uploadToDrive = async (e) => {
+    setUploading(true);
+    const domelem = e.target;
+    const file = domelem.files[0];// Get the file
+    const formdata = new FormData(); // Create a formdata object to send in the POST request
+    formdata.append("file", file); // append the file with name as "file"
+    var resp = await fetch("https://sheetman.glitch.me/drive/upload", {method: "POST", body : formdata}); //Sending the POST request
+    var response = await resp.json();
+    console.log(response);
+    setUploading(false);
+    domelem.setAttribute("uploadedurl", response.id);
+    console.log(domelem);
+  }
+
   const submitData = async (e) => {
     e.preventDefault();
     var values = [];
     for (let i = 0; i < fields.length; i++) {
-      values.push(document.getElementById(JSON.stringify(i)).value);
+      if(document.getElementById(JSON.stringify(i)).type === "file"){
+        values.push(document.getElementById(JSON.stringify(i)).getAttribute("uploadedurl"));
+      } else {
+        values.push(document.getElementById(JSON.stringify(i)).value);
+      }
     }
     console.log(values);
 
@@ -58,7 +77,7 @@ export default function Mainform() {
     console.log(response);
     if (response.success) {
       alert("Form submitted");
-      localStorage.setItem(formid, true);
+      // localStorage.setItem(formid, true);
       setSubmitted(true);
     }
   };
@@ -72,6 +91,7 @@ export default function Mainform() {
       <Navbar />
       <center>
         <h1>{title}</h1>
+        {uploading && <h1>Uploading please wait......</h1>}
       </center>
       {!submitted ? (
         <div>
@@ -82,7 +102,7 @@ export default function Mainform() {
                   {fields.map((field, id) => {
                     return field.type === "long" ? (
                       <div className="from-group" key={id}>
-                        <label htmlFor={id}>{field.name}</label>
+                        <label htmlFor={id}>{field.name} : </label>
                         <textarea
                           id={id}
                           width="100%"
@@ -90,6 +110,19 @@ export default function Mainform() {
                           className="form-control"
                           required={field.required}
                         ></textarea>
+                      </div>
+                    ) : field.type === "file" ? (
+                      <div key={id} className="form-group">
+                        <label htmlFor={id}>{field.name} : </label>
+                        <input
+                          type={field.type}
+                          id={id}
+                          name={id}
+                          className="form-control"
+                          placeholder={field.name}
+                          required={field.required}
+                          onChange={uploadToDrive}
+                        />
                       </div>
                     ) : (
                       <div key={id} className="form-group">
@@ -111,7 +144,11 @@ export default function Mainform() {
                   </center>
                 </form>
               )}
-              {!fields && <center><h1>Loading..... Please wait</h1></center>}
+              {!fields && (
+                <center>
+                  <h1>Loading..... Please wait</h1>
+                </center>
+              )}
               <br />
               <br />
             </div>
