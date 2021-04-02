@@ -5,7 +5,7 @@ import Footer from "../Footer";
 
 export default function Mainform() {
   const { formid } = useParams();
-  const [fields, setFields] = useState([]);
+  const [fields, setFields] = useState(false);
   const [title, setTilte] = useState("");
   const [sheetId, setSheetId] = useState("");
   const [exists, setExists] = useState(true);
@@ -14,7 +14,7 @@ export default function Mainform() {
   useEffect(() => {
     const getData = async () => {
       var resp = await fetch(
-        `https://sheetman.herokuapp.com/sheets/getform?id=${formid}`
+        `https://sheetman.glitch.me/sheets/getform?id=${formid}`
       );
       var response = await resp.json();
       console.log(response);
@@ -27,9 +27,10 @@ export default function Mainform() {
         setExists(false);
       }
     };
-    getData();
     if (localStorage.getItem(formid)) {
       setSubmitted(true);
+    } else {
+      getData();
     }
   }, [formid]);
 
@@ -41,7 +42,7 @@ export default function Mainform() {
     }
     console.log(values);
 
-    var resp = await fetch("https://sheetman.herokuapp.com/sheets/append", {
+    var resp = await fetch("https://sheetman.glitch.me/sheets/append", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -63,7 +64,7 @@ export default function Mainform() {
   };
 
   if (formid.includes("<script>")) {
-    alert("You have been hacked\n You tried XSS and I hacked you simple");
+    alert("You have been hacked\n You tried XSS and I hacked you. simple");
   }
 
   return (
@@ -110,6 +111,7 @@ export default function Mainform() {
                   </center>
                 </form>
               )}
+              {!fields && <center><h1>Loading..... Please wait</h1></center>}
               <br />
               <br />
             </div>
@@ -118,7 +120,7 @@ export default function Mainform() {
       ) : (
         <center>
           <br />
-          <h1>Responded to the form</h1>
+          <h1>Already responded to the form</h1>
           <br />
         </center>
       )}

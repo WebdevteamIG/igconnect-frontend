@@ -25,13 +25,16 @@ export default function Formadmin() {
   useEffect(() => {
     async function getForms() {
       var resp = await fetch(
-        "https://sheetman.herokuapp.com/sheets/getform?id=all"
+        "https://sheetman.glitch.me/sheets/getform?id=all"
       );
       var response = await resp.json();
       console.log(response);
       setAllforms(response.values);
     }
     var password = prompt("Password please");
+    if(password === null){
+      window.location.reload();
+    }
     if(window.forge_sha256(password) === "ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae"){
       getForms();
       setLogin(true);
@@ -43,7 +46,7 @@ export default function Formadmin() {
   const submitData = async () => {
     var data = { fields, title };
     console.log(JSON.stringify(data));
-    var resp = await fetch("https://sheetman.herokuapp.com/sheets/create", {
+    var resp = await fetch("https://sheetman.glitch.me/sheets/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -53,13 +56,13 @@ export default function Formadmin() {
     var tempresp = await resp.json();
     var sheetId = tempresp.sheetId;
     console.log(sheetId);
-    var response = await fetch("https://sheetman.herokuapp.com/sheets/append", {
+    var response = await fetch("https://sheetman.glitch.me/sheets/append", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        id: "1KzTnQxCxfuIRLwdJLZkJ98r0FnJ1rf6PlQkJ3r8XhhI",
+        id: "12SQ2hzzYqUjkCzlDrSWg8dmxYdo6WGrJmSUaiE9JQ_E",
         name: "Sheet1",
         ncells: 3,
         values: [
@@ -83,6 +86,7 @@ export default function Formadmin() {
       {login && <div>
         <center>
         <h1>Admin panel to create and manage all forms</h1> <br />
+        <a target="__blank" href="https://docs.google.com/spreadsheets/d/12SQ2hzzYqUjkCzlDrSWg8dmxYdo6WGrJmSUaiE9JQ_E/edit#gid=0">Main sheet</a>
         <br />
         <table className="table container">
           <thead>
@@ -90,6 +94,7 @@ export default function Formadmin() {
               <td>#</td>
               <td>Title</td>
               <td>Responses URL</td>
+              <td>View form</td>
             </tr>
           </thead>
           <tbody>
@@ -104,6 +109,7 @@ export default function Formadmin() {
                       href={`https://docs.google.com/spreadsheets/d/${form[1]}/edit#gid=0`}
                     >{`https://docs.google.com/spreadsheets/d/${form[1]}/edit#gid=0`}</a>
                   </td>
+                  <td><a target="__blank" href={`/cii/forms/${form[2]}`}>view form</a></td>
                 </tr>
               );
             })}
