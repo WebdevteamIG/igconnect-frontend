@@ -30,10 +30,9 @@ export default function Mainform() {
         setExists(false);
       }
     };
+    getData();
     if (localStorage.getItem(formid)) {
       setSubmitted(true);
-    } else {
-      getData();
     }
   }, [formid]);
 
@@ -125,8 +124,8 @@ export default function Mainform() {
                               <textarea
                                 id={id}
                                 width="100%"
-                                style={{ paddingBottom: "100px" }}
-                                className="input--style-3"
+                                height="600px"
+                                className="input--style-3 input--style-4"
                                 required={field.required}
                               ></textarea>
                             </div>
@@ -187,12 +186,10 @@ export default function Mainform() {
                 )}
               </div>
             ) : (
-                <center>
-                  <div className="text-center thankudiv ">
-                    <h1 className="font-weight-bold pb-2">Thank You!</h1>
-                    <h4>Your submission has been successfully sent.</h4>
-                  </div>
-                </center>
+                <div className="text-center thankudiv " style={{ color: "white" }}>
+                  <h1 className="font-weight-bold pb-2">Thank You!</h1>
+                  <h4>Your submission has been successfully sent.</h4>
+                </div>
               )}
           </div>
         </div>
