@@ -194,11 +194,13 @@ export default function Mainform() {
                     <i className="fas fa-arrow-circle-right nextBtnIcon"></i>
                   </button>
                 </div>
+                {/* Part 1/3 end */}
                 {/* Part 2/3 */}
                 {/* <div className="input-group">
                   <label className="label--style">Describe your project</label>
-                  <input className="input--style-3" type="text" placeholder="Type your answer here" name="description" />
+                  <textarea class="input--style-3 input--style-4" placeholder="Type your answer here" ></textarea>
                 </div>
+
                 <label className="label--style">Upload your file</label>
                 <div className="image-upload-wrap">
                   <input className="file-upload-input" type='file' />
@@ -210,13 +212,14 @@ export default function Mainform() {
                 <div className="p-t-10 mt-3">
                   <button className="btn btn--pill btn--blue" type="submit">Submit</button>
                 </div> */}
-                {/* Part 3/3 */}
-                {/* <div className="text-center thankudiv ">
-                  <h1 className="font-weight-bold pb-2">Thank You!</h1>
-                  <h4>Your submission has been successfully sent.</h4>
-                </div> */}
-                {/* div end */}
+                {/* Part 2/3 end */}
               </div>
+              {/* Part 3/3 */}
+              {/* <div className="card-body-ty">
+                <h1 className="font-weight-bold pb-2 ">Thank You!</h1>
+                <h4 className="">Your submission has been successfully sent.</h4>
+              </div> */}
+              {/* Part 3/3 end */}
             </div>
           </div>
         </div>
@@ -224,6 +227,6 @@ export default function Mainform() {
       </div>
 
       <Footer />
-    </div>
+    </div >
   );
 }
