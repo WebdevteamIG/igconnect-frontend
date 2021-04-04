@@ -249,7 +249,7 @@ export default function Mainform() {
                 </div>
                 {/* Part 1/3 end */}
                 {/* Part 2/3 */}
-                <div className="input-group">
+                {/* <div className="input-group">
                   <label className="label--style">Describe your project</label>
                   <textarea class="input--style-3 input--style-4" placeholder="Type your answer here" ></textarea>
                 </div>
@@ -264,14 +264,15 @@ export default function Mainform() {
                 </div>
                 <div className="p-t-10 mt-3">
                   <button className="btn btn--pill btn--blue" type="submit">Submit</button>
-                </div> */}
+                </div>  */}
                 {/* Part 2/3 end */}
               </div>
               {/* Part 3/3 */}
-              {/* <div className="card-body-ty">
-                <h1 className="font-weight-bold pb-2 ">Thank You!</h1>
-                <h4 className="">Your submission has been successfully sent.</h4>
-              </div> */}
+              {/*
+               <div className="card-body-ty">
+                  <h1 className="font-weight-bold pb-2 ">Thank You!</h1>
+                  <h4 className="">Your submission has been successfully sent.</h4>
+                </div> */}
               {/* Part 3/3 end */}
             </div>
           </div>
