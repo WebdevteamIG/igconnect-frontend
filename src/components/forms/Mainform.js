@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import './FormStyles.css';
+import mailIcon from '../images/mail_icon.svg';
+
 
 export default function Mainform() {
   const { formid } = useParams();
@@ -41,7 +44,7 @@ export default function Mainform() {
     const file = domelem.files[0];// Get the file
     const formdata = new FormData(); // Create a formdata object to send in the POST request
     formdata.append("file", file); // append the file with name as "file"
-    var resp = await fetch("https://sheetman.glitch.me/drive/upload", {method: "POST", body : formdata}); //Sending the POST request
+    var resp = await fetch("https://sheetman.glitch.me/drive/upload", { method: "POST", body: formdata }); //Sending the POST request
     var response = await resp.json();
     console.log(response);
     setUploading(false);
@@ -53,7 +56,7 @@ export default function Mainform() {
     e.preventDefault();
     var values = [];
     for (let i = 0; i < fields.length; i++) {
-      if(document.getElementById(JSON.stringify(i)).type === "file"){
+      if (document.getElementById(JSON.stringify(i)).type === "file") {
         values.push(document.getElementById(JSON.stringify(i)).getAttribute("uploadedurl"));
       } else {
         values.push(document.getElementById(JSON.stringify(i)).value);
@@ -125,18 +128,18 @@ export default function Mainform() {
                         />
                       </div>
                     ) : (
-                      <div key={id} className="form-group">
-                        <label htmlFor={id}>{field.name} : </label>
-                        <input
-                          type={field.type}
-                          id={id}
-                          name={id}
-                          className="form-control"
-                          placeholder={field.name}
-                          required={field.required}
-                        />
-                      </div>
-                    );
+                          <div key={id} className="form-group">
+                            <label htmlFor={id}>{field.name} : </label>
+                            <input
+                              type={field.type}
+                              id={id}
+                              name={id}
+                              className="form-control"
+                              placeholder={field.name}
+                              required={field.required}
+                            />
+                          </div>
+                        );
                   })}
                   <br />
                   <center>
@@ -155,12 +158,71 @@ export default function Mainform() {
           )}
         </div>
       ) : (
-        <center>
-          <br />
-          <h1>Already responded to the form</h1>
-          <br />
-        </center>
-      )}
+          <center>
+            <br />
+            <h1>Already responded to the form</h1>
+            <br />
+          </center>
+        )}
+
+      <div>
+        <div className="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+          <div className="wrapper wrapper--w780">
+            <div className="card card-3">
+              <div className="card-heading ">
+                <h1 className="idea-heading px-5" id="id-heading">Idea Submission</h1>
+
+                <img src={mailIcon} alt="Mail Icon" className="mailIcon img-thumbnail" />
+
+              </div>
+              <div className="card-body">
+                {/* Part 1/3 */}
+                <div className="input-group">
+                  <label className="label--style">Name</label>
+                  <input className="input--style-3" type="text" placeholder="Enter your full name" name="name" />
+                </div>
+                <div className="input-group">
+                  <label className="label--style">Email</label>
+                  <input className="input--style-3" type="email" placeholder="Enter your email address" name="email" />
+                </div>
+                <div className="input-group">
+                  <label className="label--style">Phone</label>
+                  <input className="input--style-3" type="text" placeholder="Enter your phone number" name="phone" />
+                </div>
+                <div className="p-t-10 text-right">
+                  <button className="nextBtn " type="submit">
+                    <i className="fas fa-arrow-circle-right nextBtnIcon"></i>
+                  </button>
+                </div>
+                {/* Part 2/3 */}
+                {/* <div className="input-group">
+                  <label className="label--style">Describe your project</label>
+                  <input className="input--style-3" type="text" placeholder="Type your answer here" name="description" />
+                </div>
+                <label className="label--style">Upload your file</label>
+                <div className="image-upload-wrap">
+                  <input className="file-upload-input" type='file' />
+                  <div className="drag-text">
+                    <i class="fas fa-upload fas-upload-icon"></i>
+                    <p>Choose file or drag here</p>
+                  </div>
+                </div>
+                <div className="p-t-10 mt-3">
+                  <button className="btn btn--pill btn--blue" type="submit">Submit</button>
+                </div> */}
+                {/* Part 3/3 */}
+                {/* <div className="text-center thankudiv ">
+                  <h1 className="font-weight-bold pb-2">Thank You!</h1>
+                  <h4>Your submission has been successfully sent.</h4>
+                </div> */}
+                {/* div end */}
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
       <Footer />
     </div>
   );

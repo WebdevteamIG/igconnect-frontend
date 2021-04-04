@@ -150,7 +150,7 @@ const Footer = () => {
         <hr />
         {/* <!-- Copyright --> */}
         <div className="footer-copyright text-center py-3 font-weight-bold">
-          © 2020 Copyright: InnovationGarage, NIT Warangal
+          © 2021 Copyright: InnovationGarage, NIT Warangal
           </div>
         {/* <!-- Copyright --> */}
         <br />
