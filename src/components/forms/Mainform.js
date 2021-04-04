@@ -30,10 +30,9 @@ export default function Mainform() {
         setExists(false);
       }
     };
+    getData();
     if (localStorage.getItem(formid)) {
       setSubmitted(true);
-    } else {
-      getData();
     }
   }, [formid]);
 
@@ -125,8 +124,8 @@ export default function Mainform() {
                               <textarea
                                 id={id}
                                 width="100%"
-                                style={{ paddingBottom: "100px" }}
-                                className="input--style-3"
+                                height="600px"
+                                className="input--style-3 input--style-4"
                                 required={field.required}
                               ></textarea>
                             </div>
@@ -187,97 +186,14 @@ export default function Mainform() {
                 )}
               </div>
             ) : (
-                <center>
-                  <div className="text-center thankudiv ">
+                  <div className="text-center thankudiv " style={{color: "white"}}>
                     <h1 className="font-weight-bold pb-2">Thank You!</h1>
                     <h4>Your submission has been successfully sent.</h4>
                   </div>
-                </center>
               )}
           </div>
         </div>
       </div>
-
-      <div>
-        <div className="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
-          <div className="wrapper wrapper--w780">
-            <div className="card card-3">
-              <div className="card-heading ">
-                <h1 className="idea-heading px-5" id="id-heading">
-                  Idea Submission
-                </h1>
-
-                <img
-                  src={mailIcon}
-                  alt="Mail Icon"
-                  className="mailIcon img-thumbnail"
-                />
-              </div>
-              <div className="card-body">
-                {/* Part 1/3 */}
-                <div className="input-group">
-                  <label className="label--style">Name</label>
-                  <input
-                    className="input--style-3"
-                    type="text"
-                    placeholder="Enter your full name"
-                    name="name"
-                  />
-                </div>
-                <div className="input-group">
-                  <label className="label--style">Email</label>
-                  <input
-                    className="input--style-3"
-                    type="email"
-                    placeholder="Enter your email address"
-                    name="email"
-                  />
-                </div>
-                <div className="input-group">
-                  <label className="label--style">Phone</label>
-                  <input
-                    className="input--style-3"
-                    type="text"
-                    placeholder="Enter your phone number"
-                    name="phone"
-                  />
-                </div>
-                <div className="p-t-10 text-right">
-                  <button className="nextBtn " type="submit">
-                    <i className="fas fa-arrow-circle-right nextBtnIcon"></i>
-                  </button>
-                </div>
-                {/* Part 1/3 end */}
-                {/* Part 2/3 */}
-                <div className="input-group">
-                  <label className="label--style">Describe your project</label>
-                  <textarea class="input--style-3 input--style-4" placeholder="Type your answer here" ></textarea>
-                </div>
-
-                <label className="label--style">Upload your file</label>
-                <div className="image-upload-wrap">
-                  <input className="file-upload-input" type="file" />
-                  <div className="drag-text">
-                    <i class="fas fa-upload fas-upload-icon"></i>
-                    <p>Choose file or drag here</p>
-                  </div>
-                </div>
-                <div className="p-t-10 mt-3">
-                  <button className="btn btn--pill btn--blue" type="submit">Submit</button>
-                </div> */}
-                {/* Part 2/3 end */}
-              </div>
-              {/* Part 3/3 */}
-              {/* <div className="card-body-ty">
-                <h1 className="font-weight-bold pb-2 ">Thank You!</h1>
-                <h4 className="">Your submission has been successfully sent.</h4>
-              </div> */}
-              {/* Part 3/3 end */}
-            </div>
-          </div>
-        </div>
-      </div>
-
       <Footer />
     </div >
   );
