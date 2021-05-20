@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 import "./oicPageStyle.css";
-import Navbar from "../Navbar.js"
 import oicimage1 from './oic-image-1.png'
 import audio from '../media/Director-audio.mp3'
 import OicChallenges from './OicChallenges'
 import OicEventFlow from './OicEventFlow'
 import OicProblemState from './OicProblemState'
 import OicFooter from './OicFooter'
-import Footer from "../Footer.js"
 import directorpic from '../media/person.png'
 import OicWinners from "./OicWinners"
 
@@ -16,7 +14,6 @@ export default class OicPage extends Component {
   render() {
     return (
       <div >
-        <Navbar />
         <div className="row">
           <div className="col-lg-4 col-sm-12 my-auto col-sm-12-1">
 
@@ -56,7 +53,6 @@ export default class OicPage extends Component {
         <OicProblemState />
         <OicWinners />
         <OicFooter />
-        <Footer />
       </div >
     )
   }

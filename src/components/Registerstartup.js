@@ -1,11 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import patri from './TeamPage/photos/patri.jpg'
 export default function Registerstartup() {
   return (
     <div>
-      <Navbar />
       <div className="row">
 
         <div className="col-lg-5 col-sm-12" id="mainHomeDiv">
@@ -41,7 +38,6 @@ export default function Registerstartup() {
             </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

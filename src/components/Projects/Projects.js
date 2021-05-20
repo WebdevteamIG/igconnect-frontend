@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-
-import Navbar from '../Navbar';
-import Footer from '../Footer';
 import Project, {Heading} from './Project';
 
 const data = require('./events.json');
@@ -20,7 +17,6 @@ export default class Projects extends Component{
     render(){
         return (
             <React.Fragment>
-                <Navbar />
                 <Heading />
                 {this.state.projects.map(_item => (
                     <div className="shadow padding">
@@ -35,7 +31,6 @@ export default class Projects extends Component{
                         </div>
                     </div>
                 ))}
-                <Footer />
             </React.Fragment>
         );
     }

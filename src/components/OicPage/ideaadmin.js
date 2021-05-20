@@ -1,6 +1,4 @@
 import React, { useState, useEffect} from "react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
 import { database } from "../../Config";
 import './admin.css';
 
@@ -22,7 +20,6 @@ export default function Ideaadmin() {
 
   return (
     <>
-      <Navbar />
       <center>
       <table>
         <thead>
@@ -46,7 +43,6 @@ export default function Ideaadmin() {
       </table>
       </center>
       <br />
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import React from 'react';
-import Navbar from '../Navbar';
-import Footer from '../Footer';
 
 import "./stylesheet.css";
 
@@ -8,7 +6,6 @@ export default function index() {
     return (
         <div>
             <div className="header">
-                <Navbar />
                 <div className="heading-div">
                     <h2 className="heading">Makeathon</h2>
                     <h2 className="heading-date">MARCH 12-14, 2021</h2>
@@ -83,7 +80,6 @@ export default function index() {
                     <p className="txt">Prize money, along with the chance for selected team to include at CII and receive mentoring, infrastructure and seed funding.</p>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

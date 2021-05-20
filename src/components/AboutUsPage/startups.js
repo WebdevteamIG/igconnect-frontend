@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
 import skylark from "./collabs/skylark-dark.png";
 import cusmat from "./collabs/cusmat-dark.png";
 import archphillic from "./collabs/archphillic.jpg";
@@ -12,7 +10,6 @@ import flowhrex from './collabs/flohrex.png';
 export default function Startups() {
   return (
     <div>
-      <Navbar />
       <div className="container">
         <center>
           <h1>
@@ -160,7 +157,6 @@ export default function Startups() {
         </div>
       </div>
 
-      <Footer />
     </div>
   );
 }

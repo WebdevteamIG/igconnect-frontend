@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
 import {database} from '../../Config'
 import emailjs from 'emailjs-com';
 
@@ -86,7 +84,6 @@ export default function OICIdeasubmission() {
 
   return (
     <>
-      <Navbar />
       <div className="container">
         <div className="row">
           <div className="col-lg-2 col-md-0"></div>
@@ -171,7 +168,6 @@ export default function OICIdeasubmission() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from 'react'
-import Navbar from '../Navbar';
-import Footer from '../Footer';
 import {useParams} from 'react-router-dom';
 
 export default function Userboard() {
@@ -25,7 +23,6 @@ export default function Userboard() {
 
     return (
         <div>
-            <Navbar />
             <br /><br/>
             <center><h1 className="font-monospace"><a href={`https://github.com/${username}`}>{username}</a> contributed to following repo's</h1></center>
             <div className="container">
@@ -52,7 +49,6 @@ export default function Userboard() {
                 </table>
                 </center>
             </div>
-            <Footer />
         </div>
     )
 }

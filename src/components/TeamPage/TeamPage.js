@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
 import TechTeam from "./TechTeam";
 import PRTeam from "./PRTeam";
 import DesignTeam from "./Design";
@@ -28,7 +26,6 @@ export default function TeamPage() {
 
   return (
     <>
-      <Navbar />
       <Header />
       <TechTeam />
       <PRTeam />
@@ -85,7 +82,6 @@ export default function TeamPage() {
           </div>
         </center>
       </div>
-      <Footer />
     </>
   );
 }

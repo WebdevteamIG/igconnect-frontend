@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
+import {getForm, append, createForm} from '../database/utils';
 
 export default function Formadmin() {
   const [fields, setFields] = useState([]);
@@ -24,12 +23,12 @@ export default function Formadmin() {
 
   useEffect(() => {
     async function getForms() {
-      var resp = await fetch(
-        "https://sheetman.glitch.me/sheets/getform?id=all"
-      );
-      var response = await resp.json();
+      var response = await getForm({
+        sheetid: "12SQ2hzzYqUjkCzlDrSWg8dmxYdo6WGrJmSUaiE9JQ_E",
+        id : "all"
+      });
       console.log(response);
-      setAllforms(response.values);
+      setAllforms(response);
     }
     var password = prompt("Password please");
     if(password === null){
@@ -46,34 +45,19 @@ export default function Formadmin() {
   const submitData = async () => {
     var data = { fields, title };
     console.log(JSON.stringify(data));
-    var resp = await fetch("https://sheetman.glitch.me/sheets/create", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
-    var tempresp = await resp.json();
+    var tempresp = await createForm();
     var sheetId = tempresp.sheetId;
     console.log(sheetId);
-    var response = await fetch("https://sheetman.glitch.me/sheets/append", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        id: "12SQ2hzzYqUjkCzlDrSWg8dmxYdo6WGrJmSUaiE9JQ_E",
-        name: "Sheet1",
-        ncells: 3,
-        values: [
-          JSON.stringify({ fields }),
-          `${sheetId}`,
-          allforms.length + 1,
-          `${title}`,
-        ],
-      }),
-    });
-    var finalresp = await response.json();
+    var finalresp = await append({
+      sheetid : "12SQ2hzzYqUjkCzlDrSWg8dmxYdo6WGrJmSUaiE9JQ_E",
+      value: [
+        JSON.stringify({ fields }),
+        `${sheetId}`,
+        allforms.length + 1,
+        `${title}`,
+      ],
+      range: "A:E",
+    })
     console.log(finalresp);
     if (finalresp.success) {
       alert("Form created");
@@ -82,7 +66,6 @@ export default function Formadmin() {
 
   return (
     <div>
-      <Navbar />
       {login && <div>
         <center>
         <h1>Admin panel to create and manage all forms</h1> <br />
@@ -202,7 +185,6 @@ export default function Formadmin() {
       <br />
         </div>}
         {!login && <center><h1>Access Denied. Get Out</h1></center>}
-      <Footer />
     </div>
   );
 }

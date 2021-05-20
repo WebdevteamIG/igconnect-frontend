@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
 
 export default class ProdcastMain extends Component {
   render() {
     return (
       <div>
-        <Navbar />
         <br />
         <center>
           <h1>Podcasts by Innovation Garage</h1>
@@ -70,7 +67,6 @@ export default class ProdcastMain extends Component {
         </div>
         <br />
         <br />
-        <Footer />
       </div>
     );
   }

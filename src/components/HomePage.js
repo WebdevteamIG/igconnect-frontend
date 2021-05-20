@@ -2,15 +2,12 @@ import React, { Component } from 'react'
 import Blog from './Blog'
 import Events from './Events'
 import Project from './Project'
-import Footer from './Footer'
 import firstimage from './images/first+image.png'
-import Navbar from "./Navbar";
 
 export default class HomePage extends Component {
   render() {
     return (
       <div>
-        <Navbar />
         <div className="row ">
           {/* text div */}
           <div className="col-lg-5 col-sm-12" id="mainHomeDiv">
@@ -57,7 +54,6 @@ From assisting innovators in acquiring the skills required to make their idea a 
         <Events />
         <Project />
         <Blog />
-        <Footer />
 
       </div >
     )

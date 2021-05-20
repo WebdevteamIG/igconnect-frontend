@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
 import "./FormStyles.css";
 import mailIcon from "../images/mail_icon.svg";
+import { getForm, append, upload } from "../database/utils";
 
 export default function Mainform() {
   const { formid } = useParams();
@@ -16,10 +15,10 @@ export default function Mainform() {
 
   useEffect(() => {
     const getData = async () => {
-      var resp = await fetch(
-        `https://sheetman.glitch.me/sheets/getform?id=${formid}`
-      );
-      var response = await resp.json();
+      var response = await getForm({
+        sheetid: "12SQ2hzzYqUjkCzlDrSWg8dmxYdo6WGrJmSUaiE9JQ_E",
+        id: `${formid}`,
+      });
       console.log(response);
       if (!response.noform) {
         setTilte(response.title);
@@ -40,16 +39,10 @@ export default function Mainform() {
     setUploading(true);
     const domelem = e.target;
     const file = domelem.files[0]; // Get the file
-    const formdata = new FormData(); // Create a formdata object to send in the POST request
-    formdata.append("file", file); // append the file with name as "file"
-    var resp = await fetch("https://sheetman.glitch.me/drive/upload", {
-      method: "POST",
-      body: formdata,
-    }); //Sending the POST request
-    var response = await resp.json();
-    console.log(response);
+    var resp = await upload({file});
+    console.log(resp);
     setUploading(false);
-    domelem.setAttribute("uploadedurl", response.id);
+    domelem.setAttribute("uploadedurl", resp.id);
     console.log(domelem);
   };
 
@@ -66,24 +59,16 @@ export default function Mainform() {
       }
     }
     console.log(values);
-
-    var resp = await fetch("https://sheetman.glitch.me/sheets/append", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        id: sheetId,
-        name: "Sheet1",
-        ncells: fields.length,
-        values: values,
-      }),
+    var response = await append({
+      sheetid: sheetId,
+      range: `A:${String.fromCharCode(
+        "A".charCodeAt(0) + parseInt(fields.length - 1)
+      )}`,
+      value : values
     });
-    var response = await resp.json();
-    console.log(response);
     if (response.success) {
       alert("Form submitted");
-      localStorage.setItem(formid, true);
+      // localStorage.setItem(formid, true);
       setSubmitted(true);
     }
   };
@@ -94,7 +79,6 @@ export default function Mainform() {
 
   return (
     <div>
-      <Navbar />
       <div className="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
         <div className="wrapper wrapper--w780">
           <div className="card card-3">
@@ -102,7 +86,11 @@ export default function Mainform() {
               <h1 className="idea-heading px-5" id="id-heading">
                 {title}
               </h1>
-              {uploading && <h1 className="idea-heading px-5" id="id-heading">Uploading please wait......</h1>}
+              {uploading && (
+                <h1 className="idea-heading px-5" id="id-heading">
+                  Uploading please wait......
+                </h1>
+              )}
               <img
                 src={mailIcon}
                 alt="Mail Icon"
@@ -120,7 +108,7 @@ export default function Mainform() {
                             <div className="input-group" key={id}>
                               <label className="label--style" htmlFor={id}>
                                 {field.name} :
-                                </label>
+                              </label>
                               <textarea
                                 id={id}
                                 width="100%"
@@ -144,25 +132,25 @@ export default function Mainform() {
                                 onChange={uploadToDrive}
                               />
                               <div className="drag-text">
-                                <i class="fas fa-upload fas-upload-icon"></i>
+                                <i className="fas fa-upload fas-upload-icon"></i>
                                 <p>Choose file or drag here</p>
                               </div>
                             </div>
                           ) : (
-                                <div key={id} className="input-group">
-                                  <label className="label--style" htmlFor={id}>
-                                    {field.name} :{" "}
-                                  </label>
-                                  <input
-                                    type={field.type}
-                                    id={id}
-                                    name={id}
-                                    className="input--style-3"
-                                    placeholder={field.name}
-                                    required={field.required}
-                                  />
-                                </div>
-                              );
+                            <div key={id} className="input-group">
+                              <label className="label--style" htmlFor={id}>
+                                {field.name} :{" "}
+                              </label>
+                              <input
+                                type={field.type}
+                                id={id}
+                                name={id}
+                                className="input--style-3"
+                                placeholder={field.name}
+                                required={field.required}
+                              />
+                            </div>
+                          );
                         })}
                         <br />
                         <div className="p-t-10 mt-3">
@@ -171,7 +159,7 @@ export default function Mainform() {
                             type="submit"
                           >
                             Submit
-                            </button>
+                          </button>
                         </div>
                       </form>
                     )}
@@ -186,16 +174,17 @@ export default function Mainform() {
                 )}
               </div>
             ) : (
-                <div className="text-center thankudiv " style={{ color: "white" }}>
-                  <h1 className="font-weight-bold pb-2">Thank You!</h1>
-                  <h4>Your submission has been successfully sent.</h4>
-                </div>
-              )}
+              <div
+                className="text-center thankudiv "
+                style={{ color: "white" }}
+              >
+                <h1 className="font-weight-bold pb-2">Thank You!</h1>
+                <h4>Your submission has been successfully sent.</h4>
+              </div>
+            )}
           </div>
         </div>
       </div>
-
-      <Footer />
-    </div >
+    </div>
   );
 }

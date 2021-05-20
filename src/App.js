@@ -24,11 +24,15 @@ import Mainform from "./components/forms/Mainform";
 import Prodcast from "./components/Podcast/PodcastMain";
 import Cynuxsecurity from './components/Projects/Cynuxsecurity';
 import Registerstartup from './components/Registerstartup';
+import Staticforms from './components/database/Staticforms';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer'
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <Navbar/>
         <Router basename={"/"}>
           <Route
             exact
@@ -120,7 +124,13 @@ class App extends Component {
             path={`${process.env.PUBLIC_URL}/registerstartup`}
             component={Registerstartup}
           />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/staticforms`}
+            component={Staticforms}
+          />
         </Router>
+        <Footer />
       </React.Fragment>
     );
   }

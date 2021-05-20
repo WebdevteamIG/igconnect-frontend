@@ -1,6 +1,4 @@
 import React,{useState, useEffect} from 'react';
-import Navbar from '../Navbar';
-import Footer from '../Footer';
 import {Link} from 'react-router-dom';
 
 export default function Main() {
@@ -45,7 +43,6 @@ export default function Main() {
     });
     return (
         <>
-            <Navbar />
             <div><br></br></div>
             <div><br></br></div>
             <div className = "container">
@@ -76,7 +73,6 @@ export default function Main() {
                 </table>
                 </center>
             </div>
-            <Footer />
         </>
     )
 }

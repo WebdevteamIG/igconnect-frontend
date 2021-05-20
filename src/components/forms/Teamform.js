@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
 
 export default function Teamform() {
   const [name, setName] = useState("");
@@ -52,7 +50,6 @@ export default function Teamform() {
 
   return (
     <div>
-      <Navbar />
       <center>
         <h1>Team page missing details</h1>
         {loading && <h3>Submitting please wait...</h3>}
@@ -140,7 +137,6 @@ export default function Teamform() {
           </form>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
