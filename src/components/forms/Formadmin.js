@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
+const URL = "https://sheetman.glitch.me";
+
 export default function Formadmin() {
   const [fields, setFields] = useState([]);
   const [visible, setVisible] = useState(true);
@@ -25,7 +27,7 @@ export default function Formadmin() {
   useEffect(() => {
     async function getForms() {
       var resp = await fetch(
-        "https://sheetman.glitch.me/sheets/getform?id=all"
+        `${URL}/sheets/getform?id=all`
       );
       var response = await resp.json();
       console.log(response);
@@ -46,7 +48,7 @@ export default function Formadmin() {
   const submitData = async () => {
     var data = { fields, title };
     console.log(JSON.stringify(data));
-    var resp = await fetch("https://sheetman.glitch.me/sheets/create", {
+    var resp = await fetch(`${URL}/sheets/create`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -56,7 +58,7 @@ export default function Formadmin() {
     var tempresp = await resp.json();
     var sheetId = tempresp.sheetId;
     console.log(sheetId);
-    var response = await fetch("https://sheetman.glitch.me/sheets/append", {
+    var response = await fetch(`${URL}/sheets/append`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -5,6 +5,8 @@ import Footer from "../Footer";
 import "./FormStyles.css";
 import mailIcon from "../images/mail_icon.svg";
 
+const URL = "https://sheetman.glitch.me";
+
 export default function Mainform() {
   const { formid } = useParams();
   const [fields, setFields] = useState(false);
@@ -17,7 +19,7 @@ export default function Mainform() {
   useEffect(() => {
     const getData = async () => {
       var resp = await fetch(
-        `https://sheetman.glitch.me/sheets/getform?id=${formid}`
+        `${URL}/sheets/getform?id=${formid}`
       );
       var response = await resp.json();
       console.log(response);
@@ -42,7 +44,7 @@ export default function Mainform() {
     const file = domelem.files[0]; // Get the file
     const formdata = new FormData(); // Create a formdata object to send in the POST request
     formdata.append("file", file); // append the file with name as "file"
-    var resp = await fetch("https://sheetman.glitch.me/drive/upload", {
+    var resp = await fetch(`${URL}/drive/upload`, {
       method: "POST",
       body: formdata,
     }); //Sending the POST request
@@ -67,7 +69,7 @@ export default function Mainform() {
     }
     console.log(values);
 
-    var resp = await fetch("https://sheetman.glitch.me/sheets/append", {
+    var resp = await fetch(`${URL}/sheets/append`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
