@@ -32,17 +32,17 @@ const Footer = () => {
             {/* <!-- Grid column --> */}
             <div className="col-md-4 col-lg-4 mr-auto my-md-4 my-0 mt-4 mb-1">
               <img
-                src={igrect}
-                alt="Ig+logo+rectangular.png"
-                width="250px"
-                height="80px"
-                className=""
-              />
-              <img
                 src={c4ii}
                 alt="Ig+logo+rectangular.png"
                 width="250px"
                 height="110px"
+                className=""
+              />
+              <img
+                src={igrect}
+                alt="Ig+logo+rectangular.png"
+                width="250px"
+                height="80px"
                 className=" mt-3"
               />
             </div>
@@ -61,18 +61,19 @@ const Footer = () => {
                 <li>
                   <p className="para-contact-us">
                     <i className="fas fa-home mr-3 "></i>
-        NIT Warangal, Telangana
+        CII HOD, NIT Warangal, Telangana
       </p>
                 </li>
                 <li>
                   <p className="para-contact-us">
                     <i className="fas fa-envelope mr-3"></i>{" "}
-        ig-nitw@student.nitw.ac.in
+                    hod_cii@nitw.ac.in <br/>     
+                    ig-nitw@student.nitw.ac.in
       </p>
                 </li>
                 <li>
                   <p className="para-contact-us">
-                    <i className="fas fa-phone mr-3"></i> +91 79 8786 8575
+                    <i className="fas fa-phone mr-3"></i> +91 94413 42324 <br/>+91 96184 11000
       </p>
                 </li>
                 {/* <li>
@@ -121,7 +122,7 @@ const Footer = () => {
                   className="icon-button"
                 // id="last-social-icon"
                 >
-                  <i className="fab fa-linkedin-in "></i>
+                  <i className="fab fa-linkedin "></i>
                 </a></li>
                 <li><a
                   href="https://linktr.ee/ig.nitw"
