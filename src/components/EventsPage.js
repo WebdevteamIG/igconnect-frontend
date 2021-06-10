@@ -7,6 +7,8 @@ import Navbar from './Navbar'
 import EventsCalender from './EventsCalender';
 import Footer from './Footer';
 import { Link} from 'react-router-dom'
+import toycathon from './toycathon21.jpeg'
+
 const content={
     backgroundColor:"rgb(56,56,56)",
     padding:"15px",
@@ -33,11 +35,30 @@ const share={
     fontSize:"25px",
     float:"Right"
 };
+
 const Events=(props)=>{return (
     <>
     <Navbar />
     <div>
     <Container>
+    <Row>
+    <Col xl="4" style={block}>
+        <img src={toycathon} style={image} alt="InnovationGarage" />
+
+        </Col>
+        <Col xl="8" style={content}>
+        <h1 style={heading}>TOYCATHON'21</h1>
+        <p>22-24th June 2021</p>
+        <p>Toycathon 2021 is an inter-ministerial initiative organized by Ministry of Education’s Innovation Cell with support from All India Council for Technical Education, Ministry of Women and Child Development, Ministry of Commerce and Industry, Ministry of MSME, Ministry of Textiles and Ministry of Information and Broadcasting.
+
+Toycathon 2021 is a unique opportunity for Students, Teachers, Start-ups and Toy experts/professionals in India to submit their innovative toys/games concepts and win large number of prizes worth Rs. 50 lakhs.</p>
+        {/* <Link to="https://toycathon.mic.gov.in" >LEARN MORE</Link> */}
+        <a href="https://toycathon.mic.gov.in" style={link}>Learn More</a>
+        
+        <IoIosShareAlt style={share}/>
+        </Col>
+
+    </Row>
     <Row>
         <Col xl="8" style={content}>
         <h1 style={heading}>OPEN INNOVATION <br></br>CHALLENGE</h1>
