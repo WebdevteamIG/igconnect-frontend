@@ -7,7 +7,7 @@ import Navbar from './Navbar'
 import EventsCalender from './EventsCalender';
 import Footer from './Footer';
 import { Link} from 'react-router-dom'
-import toycathon from './toycathon21.jpeg'
+import toycathon from './Toycathon.png'
 
 const content={
     backgroundColor:"rgb(56,56,56)",
