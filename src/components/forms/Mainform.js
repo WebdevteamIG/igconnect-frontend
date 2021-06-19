@@ -153,7 +153,7 @@ export default function Mainform() {
                               <div className="drag-text">
                                 <i class="fas fa-upload fas-upload-icon"></i>
                                 <p>Choose file or drag here</p>
-                                {setFileUpload && (<p>{fileName}</p>)}
+                                {fileupload && (<p>{fileName}</p>)}
                               </div>
                             </div>
                           ) : (

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { Box, Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
-import TeamMemberCard from './TeamMemberCard';
+// import TeamMemberCard from './TeamMemberCard';
 // import nitin from './photos/nitin.jpg';
 
 export default function DesignTeam(props){
