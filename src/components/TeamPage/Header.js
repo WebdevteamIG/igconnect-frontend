@@ -1,6 +1,6 @@
 import React from 'react'
 import patri from './photos/patri.jpg';
-import asad from './photos/asad.JPG';
+import avinash from './photos/avinash.jpg';
 import Board from './Board';
 
 export default function Header() {
@@ -17,10 +17,10 @@ export default function Header() {
         <center>
             <hr />
             <h1>General Manager</h1>
-            <img src={asad} width="300" height="300" alt="SRIHARI RAO PATRI"/>
-            <h3>ASAD AHMED</h3>
-            <a href="/cii/team" className="btn btn-primary" >Linkedin</a>&nbsp;&nbsp;
-            <a href="/cii/team" className="btn btn-success" >Github</a>
+            <img src={avinash} width="300" height="300" alt="SRIHARI RAO PATRI"/>
+            <h3>AVINASH PULUGURTHA</h3>
+            <a href="https://www.linkedin.com/in/avinash-pulugurtha-98b862160/" className="btn btn-primary" >Linkedin</a>&nbsp;&nbsp;
+            <a href="/cii/team/ap861873@student.nitw.ac.in" className="btn btn-success" >Email</a>
         </center>
 
         </>

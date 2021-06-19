@@ -42,7 +42,7 @@ From assisting innovators in acquiring the skills required to make their idea a 
               </a>
               {/* linkedin */}
               <a href="https://www.linkedin.com/company/ignitw" className="icon-button" >
-                <i className="fab fa-linkedin-in "></i>
+                <i className="fab fa-linkedin "></i>
               </a>
               <a href="https://linktr.ee/ig.nitw" className="icon-button" id="last-social-icon">
                 <i className="fas fa-link fab"  ></i>

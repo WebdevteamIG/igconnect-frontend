@@ -83,7 +83,7 @@ export default function TeamMemberCard(props) {
                        </Button>
                     </Grid>
                     <Grid item>
-                       <Button size="small" variant="contained" style={{backgroundColor:"yellow", textTransform:"none"}} color="black" href={props.email}>
+                       <Button size="small" variant="contained" style={{backgroundColor:"yellow", textTransform:"none"}} color="black" href="#myModal">
                               Email
                        </Button>
                     </Grid>

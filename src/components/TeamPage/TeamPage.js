@@ -8,6 +8,7 @@ import ECCTeam from "./ECCTeam";
 import AIRteam from "./AIRTeam";
 import Header from "./Header";
 import sendmail from '../sendmail';
+import StartupCell from "./StartupCell";
 
 const textareastyle = {
   width: "100%",
@@ -31,10 +32,12 @@ export default function TeamPage() {
       <Navbar />
       <Header />
       <TechTeam />
+      <StartupCell/>
       <PRTeam />
       <DesignTeam />
       <ECCTeam />
       <AIRteam />
+     
       <br />
       <div className="container">
         <center>

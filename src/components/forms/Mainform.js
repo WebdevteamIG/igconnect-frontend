@@ -15,7 +15,9 @@ export default function Mainform() {
   const [exists, setExists] = useState(true);
   const [submitted, setSubmitted] = useState(false);
   const [uploading, setUploading] = useState(false);
-
+  const [fileupload, setFileUpload] = useState(false);
+  const [fileName, setFileName] = useState("");
+  const [submitbutton, setSubmitButton] = useState(false)
   useEffect(() => {
     const getData = async () => {
       var resp = await fetch(
@@ -51,12 +53,15 @@ export default function Mainform() {
     var response = await resp.json();
     console.log(response);
     setUploading(false);
+    setFileUpload(true);
+    setFileName(domelem.files[0].name);
     domelem.setAttribute("uploadedurl", response.id);
     console.log(domelem);
   };
 
   const submitData = async (e) => {
     e.preventDefault();
+    setSubmitButton(true)
     var values = [];
     for (let i = 0; i < fields.length; i++) {
       if (document.getElementById(JSON.stringify(i)).type === "file") {
@@ -148,6 +153,7 @@ export default function Mainform() {
                               <div className="drag-text">
                                 <i class="fas fa-upload fas-upload-icon"></i>
                                 <p>Choose file or drag here</p>
+                                {setFileUpload && (<p>{fileName}</p>)}
                               </div>
                             </div>
                           ) : (
@@ -167,14 +173,18 @@ export default function Mainform() {
                               );
                         })}
                         <br />
+                        
                         <div className="p-t-10 mt-3">
                           <button
                             className="btn btn--pill btn--blue"
                             type="submit"
+                            disabled={submitbutton}
                           >
-                            Submit
+                            {(!submitbutton ? <p>submit</p> : <p>Submitting</p>)}
                             </button>
+                            
                         </div>
+                       
                       </form>
                     )}
                     {!fields && (

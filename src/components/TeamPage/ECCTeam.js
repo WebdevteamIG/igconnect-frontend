@@ -5,9 +5,10 @@ import Grid from '@material-ui/core/Grid';
 import TeamMemberCard from './TeamMemberCard';
 import harsh from './photos/harsh.png';
 import abitha from './photos/abitharao.jpg';
-import bhagya from './photos/bhagya.jpg';
-import siddharth from './photos/siddharth.jpg';
-import anshika from './photos/anshika.jpg';
+import venkatesh from './photos/venkatesh.png';
+import akshat from './photos/akshat.jpeg';
+import lakshayapriya from './photos/lakshayapriya.jpeg';
+import satwik from './photos/satwik.jpg';
 
 export default function ECCTeam(props){
  const teamName = "ECC Team"
@@ -28,9 +29,11 @@ export default function ECCTeam(props){
                 <Grid container spacing={2}>
                   <Grid ><TeamMemberCard imageURL={harsh} name="Harsh Garodia" linkedinURL="" githubURL="" email="harshgarodia05@gmail.com" /></Grid>
                   <Grid ><TeamMemberCard imageURL={abitha} name="Abitha Rao" linkedinURL="https://www.linkedin.com/in/abitha-rao-5293401a7" githubURL="" email="abitharaok@gmail.com" /></Grid>
-                  <Grid ><TeamMemberCard imageURL={bhagya} name="Bhagya Trivedi" linkedinURL="https://www.linkedin.com/in/bhagya-trivedi-5753aa114/" githubURL="https://github.com/Bhagyatrivedi27" email="bhagyatrivedi20273@gmail.com"/></Grid>
-                  <Grid ><TeamMemberCard imageURL={siddharth} name="Siddarth Chintalapati" linkedinURL="https://www.linkedin.com/in/siddarth-chintalapati" githubURL="" email="sc941871@gmail.com" /></Grid>
-                  <Grid ><TeamMemberCard imageURL={anshika} name="Anshika Shrivastav" linkedinURL="https://www.linkedin.com/in/anshika-shrivastav-bb28a01ab" githubURL="" email="ashrivastav@student.nitw.ac.in"/></Grid>
+                  <Grid ><TeamMemberCard imageURL={venkatesh} name="Venkatesh Thota" linkedinURL="https://www.linkedin.com/in/venkatesh-thota-3b13871b7" githubURL="" email="thota_821975@student.nitw.ac.in" /></Grid>
+                  <Grid ><TeamMemberCard imageURL={akshat} name="Akshat Rai Laddha" linkedinURL="https://www.linkedin.com/in/akshat-rai-laddha-8905a0189" githubURL="" email="ar832035@student.nitw.ac.in" /></Grid>
+                  <Grid ><TeamMemberCard imageURL={lakshayapriya} name="S.S. Lakshayapriya" linkedinURL="https://www.linkedin.com/in/lakshayapriya-s-s-432367204" githubURL="" email="laksha_951977@student.nitw.ac.in" /></Grid>
+                  <Grid ><TeamMemberCard imageURL={satwik} name="Yagna Satwik" linkedinURL="https://www.linkedin.com/in/yagna-satwik-59b31b214/" githubURL="" email="ys972073@student.nitw.ac.in" /></Grid>
+                 
                  </Grid>
                 </Box>
             </Grid>
