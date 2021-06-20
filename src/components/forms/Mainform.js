@@ -180,7 +180,7 @@ export default function Mainform() {
                             type="submit"
                             disabled={submitbutton}
                           >
-                            {(!submitbutton ? <p>submit</p> : <p>Submitting</p>)}
+                            {(!submitbutton ? <p>submit</p> : <p>Submitted</p>)}
                             </button>
                             
                         </div>
