@@ -8,8 +8,14 @@ import epic from "./collabs/epicbikes.jpeg";
 import kalam from './collabs/kalam.jpg';
 import gbit from './collabs/gbit.png';
 import flowhrex from './collabs/flohrex.png';
-
+import {Link} from 'react-router-dom'
 export default function Startups() {
+  const link={
+    color:"#5dbcd2",
+    letterSpacing:"1px",
+    fontWeight:"bold",
+    fontSize:"25px"
+}
   return (
     <div>
       <Navbar />
@@ -157,6 +163,17 @@ export default function Startups() {
             </a>
           </div>
           <center><br /><br /><h4>These are some of the Startups incbated at Innovation Garage. If you have a startup idea, We would love to help you with it. Go to the Team page and submit your idea, we will contact you!</h4></center>
+          
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3 float-md-center">
+          <div class="jumbotron jumbotron-fluid" align="center">
+              <div class="container">
+                <h1 class="display-10">Got a Startup ?</h1>
+                  <p class="lead">Please fill this form and get registered!</p>
+                  <Link to={`${process.env.PUBLIC_URL}/forms/start-up`} style={link}>Start-up form</Link>
+              </div>
+          </div>
+          </div>
+          
         </div>
       </div>
 
