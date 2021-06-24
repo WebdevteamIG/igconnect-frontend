@@ -7,7 +7,9 @@ import venkaiah from "./photos/venkaiah.jpg";
 import kiran from "./photos/kirankumar.jpg";
 import ranjan from "./photos/ranjanraout.jpg";
 import anjaneyulu from "./photos/anjaneyulu.jpg";
-
+import narasimharaju from './photos/narasimharaju.jpg'
+import muralidhar from './photos/muralidhar.jpg'
+import satish from './photos/satish.jpg'
 export default function Board() {
   return (
     <>
@@ -101,7 +103,6 @@ export default function Board() {
               </div>
             </div>
           </div>
-          <div className="col-lg-2"></div>
           <div className="col-lg-4">
             <div className="card" style={{ width: "18rem" }}>
               <img className="card-img-top" src={ranjan} alt="Card cap" />
@@ -130,6 +131,50 @@ export default function Board() {
               </div>
             </div>
           </div>
+          <div className="col-lg-4">
+            <div className="card" style={{ width: "18rem" }}>
+              <img className="card-img-top" src={narasimharaju} alt="Card cap" />
+              <div className="card-body">
+                <h5 className="card-title">Dr. Narasimharaju B. L</h5>
+                <a
+                  href="https://nitw.ac.in/faculty/id/16242/"
+                  className="btn btn-primary"
+                >
+                  Profile
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-2"></div>
+          <div className="col-lg-4">
+            <div className="card" style={{ width: "18rem" }}>
+              <img className="card-img-top" src={muralidhar} alt="Card cap" />
+              <div className="card-body">
+                <h5 className="card-title">Dr.Muralidhar Pullakandam</h5>
+                <a
+                  href="https://www.nitw.ac.in/faculty/id/16308/"
+                  className="btn btn-primary"
+                >
+                  Profile
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className="card" style={{ width: "18rem" }}>
+              <img className="card-img-top" src={satish} alt="Card cap" />
+              <div className="card-body">
+                <h5 className="card-title">Dr. Maheshwaram Satish</h5>
+                <a
+                  href="https://www.nitw.ac.in/faculty/id/16887/"
+                  className="btn btn-primary"
+                >
+                  Profile
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-2"></div>
           <div className="col-lg-2"></div>
         </div>
       </div>
