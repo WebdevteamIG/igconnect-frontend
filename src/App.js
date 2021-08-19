@@ -1,27 +1,28 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import "./App.css";
-import "./bootstrap.min.css";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import './App.css';
+import './bootstrap.min.css';
 // import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { createBrowserHistory } from "history";
+import { createBrowserHistory } from 'history';
 // import logo from "../igLogo.png";
 
-import HomePage from "./components/HomePage";
-import EventsPage from "./components/EventsPage";
-import OicPage from "./components/OicPage/OicPage";
-import OICidea from "./components/OicPage/OICIdeasubmission";
-import TeamPage from "./components/TeamPage/TeamPage";
-import About from "./components/AboutUsPage/index";
-import Hackathon from "./components/hackathon/index";
-import IdeaAdmin from "./components/OicPage/ideaadmin";
-import Startups from "./components/AboutUsPage/startups";
-import Leaderboard from "./components/Leaderboard/leaderboard";
-import Projects from "./components/Projects/Projects";
-import Userboard from "./components/Leaderboard/Userboard";
-import Teamform from "./components/forms/Teamform";
-import Formadmin from "./components/forms/Formadmin";
-import Mainform from "./components/forms/Mainform";
-import Prodcast from "./components/Podcast/PodcastMain";
+import HomePage from './components/HomePage';
+import EventsPage from './components/EventsPage';
+import formsPage from './components/formsDisplayPage/formsPage';
+import OicPage from './components/OicPage/OicPage';
+import OICidea from './components/OicPage/OICIdeasubmission';
+import TeamPage from './components/TeamPage/TeamPage';
+import About from './components/AboutUsPage/index';
+import Hackathon from './components/hackathon/index';
+import IdeaAdmin from './components/OicPage/ideaadmin';
+import Startups from './components/AboutUsPage/startups';
+import Leaderboard from './components/Leaderboard/leaderboard';
+import Projects from './components/Projects/Projects';
+import Userboard from './components/Leaderboard/Userboard';
+import Teamform from './components/forms/Teamform';
+import Formadmin from './components/forms/Formadmin';
+import Mainform from './components/forms/Mainform';
+import Prodcast from './components/Podcast/PodcastMain';
 import Cynuxsecurity from './components/Projects/Cynuxsecurity';
 import Registerstartup from './components/Registerstartup';
 
@@ -29,7 +30,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Router basename={"/"}>
+        <Router basename={'/'}>
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/`}
@@ -44,6 +45,11 @@ class App extends Component {
             exact
             path={`${process.env.PUBLIC_URL}/events`}
             component={EventsPage}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/forms`}
+            component={formsPage}
           />
           <Route
             exact

@@ -1,0 +1,11 @@
+{
+  "short_name": "IG Connect",
+  "name": "Innovation Garage",
+  "icons": [
+    
+  ],
+  "start_url": "/cii/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000"
+}

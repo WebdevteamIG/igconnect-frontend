@@ -10,6 +10,8 @@ import ishitha from "./photos/ishitha.jpg";
 import divya from "./photos/divya.jpg";
 import rithik from "./photos/rithik.jpg";
 import manav from "./photos/manav.jpg";
+import sahana from "./photos/sahana.jpg";
+
 export default function TechTeam(props) {
   const teamName = "Technical Team";
   return (
@@ -91,6 +93,15 @@ export default function TechTeam(props) {
                       linkedinURL=""
                       githubURL="https://github.com/manavbhadoria"
                       email="manu.bhadoria@gmail.com"
+                    />
+                  </Grid>
+                  <Grid>
+                    <TeamMemberCard
+                      imageURL={sahana}
+                      name="Sahana Murali"
+                      linkedinURL=""
+                      githubURL="https://github.com/sahana-27"
+                      email="sahana2710@gmail.com"
                     />
                   </Grid>
                 </Grid>
