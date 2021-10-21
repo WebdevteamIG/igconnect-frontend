@@ -21,16 +21,7 @@ export default class HomePage extends Component {
             Click here to view our latest ARIIA report
           </a>
         </div>
-        <div>
-          <a
-            href='https://docs.google.com/spreadsheets/d/1csWg95PoiD_SViGdY9OCE0Lj821iUMxvSsCfaOn1Ooo/edit?usp=sharing'
-            target='blank'
-            className='btn btn-secondary'
-            style={{ margin: '30px 20px', justifyContent: 'center', display: 'flex' }}
-          >
-            Incubation Facilities and IPR
-          </a>
-        </div>
+        
         <div className='row '>
           {/* text div */}
           <div className='col-lg-5 col-sm-12' id='mainHomeDiv'>
@@ -98,6 +89,16 @@ export default class HomePage extends Component {
         <Events />
         <Project />
         <Blog />
+        <div>
+          <a
+            href='https://docs.google.com/spreadsheets/d/1csWg95PoiD_SViGdY9OCE0Lj821iUMxvSsCfaOn1Ooo/edit?usp=sharing'
+            target='blank'
+            className='btn btn-secondary'
+            style={{ margin: '30px 20px', justifyContent: 'center', display: 'flex' }}
+          >
+            Incubation Facilities and IPR
+          </a>
+        </div>
         <Footer />
       </div>
     );

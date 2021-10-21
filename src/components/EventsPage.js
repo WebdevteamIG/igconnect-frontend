@@ -8,7 +8,7 @@ import EventsCalender from './EventsCalender';
 import Footer from './Footer';
 import { Link} from 'react-router-dom'
 import toycathon from './Toycathon.png'
-
+import eco1 from './eco1.jpeg'
 const content={
     backgroundColor:"rgb(56,56,56)",
     padding:"15px",
@@ -42,6 +42,27 @@ const Events=(props)=>{return (
     <div>
     <Container>
     <Row>
+        <Col xl="8" style={content}>
+        <h1 style={heading}>ECOVISION</h1>
+        <p>25-10-2021 to 30-10-2021</p>
+        <br></br>
+        <p>Single-use plastic degrades into microplastic which pollutes the environment. It is alarming to note that microplastic is now found on the most remote mountaintops and in the deepest oceans. Single-use plastic destroys the ecological balance and has extremely detrimental long-term implications. </p> 
+        <br></br>
+<p>ECOVISION is an initiative by CII in alignment with the call from the Ministry of Education towards the elimination of single-use plastic. We aim to spread awareness and celebrate the fusion of nature with sustainable and eco-friendly technologies. </p>
+<br></br>
+<p>As part of the ECOVISION initiative, CII will host talks from subject matter experts to highlight the problems and opportunities for sustainable innovation followed by a hackathon in which students showcase their innovative projects. 
+
+This is a golden opportunity for engineering enthusiasts to showcase their creativity through ideas that push for our sustainable development and stand a chance to win prototype translational support.</p>
+
+        <Link to={`${process.env.PUBLIC_URL}/events/ecovision`} style={link}>Learn more</Link>
+        <IoIosShareAlt style={share}/>
+        </Col>
+        <Col xl="4" style={block}>
+        <img src={eco1} style={image} alt="InnovationGarage" />
+
+        </Col>
+    </Row>
+     <Row>
     <Col xl="4" style={block}>
         <img src={toycathon} style={image} alt="InnovationGarage" />
 
