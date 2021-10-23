@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
 import Navbar from './Navbar';
 import header from './images/ecovision-header.png'
 import turtle from './images/ecovision-turtle.png'
@@ -25,7 +24,6 @@ const Ecovision = () => {
         display: "block",
         marginLeft: "auto",
         marginRight: "auto",
-        height: "auto"
     }
     const zeusStyle = {
         width: "100%",
@@ -46,12 +44,12 @@ const Ecovision = () => {
             <br />
             <Container>
                 <Row xs="2">
-                    <Col><img src={zeus} style={zeusStyle} /></Col>
+                    <Col><img src={zeus} alt="" style={zeusStyle} /></Col>
                     <Col>
-                        <img src={timeline} style={column} />
-                        <img src={time} style={zeusStyle} />
+                        <img src={timeline} alt="" style={column} />
+                        <img src={time} alt="" style={zeusStyle} />
                         <a href="https://dare2compete.com/o/IxRc92U?lb=QmKZXO8">
-                        <img src={register} style={column} />
+                        <img src={register} alt="" style={column} />
                         </a>
                     </Col>
                 </Row>

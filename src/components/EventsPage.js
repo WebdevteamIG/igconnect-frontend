@@ -9,7 +9,7 @@ import Footer from './Footer';
 import { Link} from 'react-router-dom'
 import toycathon from './Toycathon.png'
 import eco1 from './eco1.jpeg'
-import Ecovision from './Ecovision';
+
 const content={
     backgroundColor:"rgb(56,56,56)",
     padding:"15px",
