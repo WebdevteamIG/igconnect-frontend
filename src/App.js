@@ -25,6 +25,7 @@ import Mainform from './components/forms/Mainform';
 import Prodcast from './components/Podcast/PodcastMain';
 import Cynuxsecurity from './components/Projects/Cynuxsecurity';
 import Registerstartup from './components/Registerstartup';
+import Ecovision from './components/Ecovision';
 
 class App extends Component {
   render() {
@@ -126,6 +127,7 @@ class App extends Component {
             path={`${process.env.PUBLIC_URL}/registerstartup`}
             component={Registerstartup}
           />
+          <Route exact path={`${process.env.PUBLIC_URL}/events/ecovision`} component={Ecovision} />
         </Router>
       </React.Fragment>
     );
